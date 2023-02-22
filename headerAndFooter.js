@@ -4,7 +4,7 @@ let idiomaSelect= localStorage.getItem("idioma")
     }
    
 iniciarHeaderAndFooter()
-setInterval(mostrarFecha, 1000);
+//setInterval(mostrarFecha, 1000);
 
 function iniciarHeaderAndFooter(){
     cargarBD(idiomaSelect)
@@ -21,7 +21,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
 
     let header= document.getElementsByTagName("header")[0]
     header.innerHTML = `
-    <nav class="navbar text-white navbar-expand-lg navbar-light">
+    <nav class="navbar text-white navbar-expand-lg navbar navbar-dark bg-dark">
 
         <div class="container-xl">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,36 +32,37 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
             <ul id="menu-interior"class="navbar-nav justify-content-around">
                 <li id="inicio" class="nav-item pt-3">
-                    <a class="nav-link text-white" href="Index.html">${arrayM[0]}</a>
+                    <a class="nav-link actived" href="Index.html">${arrayM[0]}</a>
                 </li>
-                <li id="catalogo" class="nav-item pt-3">
-                    <a class="nav-link" href="catalogo.html">${arrayM[2]}</a>
+                <li id="catalogo" class="nav-item pt-3 actived">
+                    <a class="nav-link actived" href="catalogo.html ">${arrayM[2]}</a>
                 </li>
                 <li id="m-novedades" class="nav-item pt-3">
-                    <a class="nav-link" href="#Novedades">${arrayM[3]}</a>
+                    <a class="nav-link actived" href="#Novedades">${arrayM[3]}</a>
                 </li>
                 <li id="m-ofertas" class="nav-item pt-3">
-                    <a class="nav-link" href="#Ofertas">${arrayM[4]}</a>
+                    <a class="nav-link actived" href="#Ofertas">${arrayM[4]}</a>
                 </li>
+                
             </ul>
         </div>
 
 
-            <ul id="menu-iconers"class="nav flex-row pt-3 justify-content-around">
-                        
-                <li > <div class="dropdown ">
-                    <button class="btn btn-secondary d-flex flex-row text-center align-items-center dropdown-toggle bg-transparent border-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <p id="idio-select" value="espanol" class="pt-3">${idiomaSelect}</p>
-                        <i class="fa-solid fa-earth-americas text-dark ms-1"></i>
-                    </button>
-                    <ul class="dropdown-menu" >
+            <ul id="menu-iconers"class="nav flex-row pt-4 justify-content-around">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-flex flex-row" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <p id="idio-select" value="espanol" class="">${idiomaSelect}</p>
+                            <i class="fa-solid fa-earth-americas ms-1 "></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li value="espanol"><a value="espanol" class=" idioma px-1 py-1 dropdown-item" href="#">Español</a></li>
                         <li value="ingles"><a value="ingles" class=" idioma px-1 py-1 dropdown-item" href="#">Inglés</a></li>
                         <li value="euskera"><a value="euskera" class=" idioma px-1 py-1 dropdown-item" href="#">Euskera</a></li>
                     </ul>
                 </li>
                 <div class="d-flex flex-column aling-items-center">
-                    <li ><a id="login" href="login.html"><i class="pt-4 fa-regular fa-circle-user"></i></a></li>
+                    <li ><a id="login" href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
 
                     <div class="ventana" id="ven" style="background-color: trasparent; width: 4rem;height: 1.5rem; color: black; display: none;">
                         <span id="cerrar">${arrayM[21]}<span> 
@@ -69,26 +70,23 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
                     </div>
                 </div>                  
 
-                <li ><a href="favoritos.html"><i class="pt-4 fa-solid fa-heart"></i></a><span id="cantFav" class="cantidad-fav" value="0">${localStorage.getItem("cantFav") !=null? localStorage.getItem("cantFav"):0 }</span></li>
-                <li ><a href="carrito.html"><i class="pt-4 fa-solid fa-cart-shopping"></i></a><span id="cantCarrito" class="cantidad-carrito" value="0">${localStorage.getItem("cantCarrito") !=null? localStorage.getItem("cantCarrito"):0 } </span></li>
+                <li ><a href="favoritos.html"><i class="fa-solid fa-heart"></i></a><span id="cantFav" class="cantidad-fav" value="0">${localStorage.getItem("cantFav") !=null? localStorage.getItem("cantFav"):0 }</span></li>
+                <li ><a href="carrito.html"><i class=" fa-solid fa-cart-shopping"></i></a><span id="cantCarrito" class="cantidad-carrito" value="0">${localStorage.getItem("cantCarrito") !=null? localStorage.getItem("cantCarrito"):0 } </span></li>
                 
             </ul>  
-            <div <li ><p id="fecha" class="pt-4"> ${dia} <span id="hora"></span>${mes} -${date.getDate()}- ${date.getFullYear()} </p></li> </div>  
         </div>
     </nav>
     <div class="d-flex flex-row justify-content-around">
         <p id="frase_imaginacion">${arrayM[5]}</p>
-        <div id="popap" style="width: 300px; height: 300px; display:none ">
-
-        </div>
+        
     </div>
     
     
     `
     eventoCambiarIdioma()
     validarLogin()
-    crearPopap()
-    cerrarPopap()
+    // crearPopap()
+    // cerrarPopap()
     
 }
 
@@ -156,32 +154,18 @@ function cargarFooter(arrayM){
                 <!--Grid row-->
             </form>
             </section>
-            <!-- Section: Form -->
-
-            <!-- Section: Text -->
-            <section class="mb-4">
-
-            </section>
             
-
-            <!-- Section: Links -->
-            <section class="">
-            <!--Grid row-->
             <div class="row">
                 
-
-                <!--Grid column-->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mt-4">
                     <div class="d-flex flex-colum flex-wrap">
-                        <a class="text-white col-12 text-md-start" href="">${arrayM[3+6]}</a>
-                        <a class="text-white col-12 text-md-start" href="">${arrayM[4+6]}</a>
-                        <a class="text-white col-12 text-md-start" href="">${arrayM[5+6]}</a>
-                        <a class="text-white col-12 text-md-start" href="">${arrayM[6+6]}</a>
-                        <a class="text-white col-12 text-md-start" href="">${arrayM[7+6]}</a>
-                        <a class="text-white col-12 text-md-start" href="">${arrayM[8+6]}</a>
+                        <a class="text-white col-12 text-md-start p-1" href="">${arrayM[3+6]}</a>
+                        <a class="text-white col-12 text-md-start p-1" href="">${arrayM[4+6]}</a>
+                        <a class="text-white col-12 text-md-start p-1" href="">${arrayM[5+6]}</a>
+                        <a class="text-white col-12 text-md-start p-1" href="">${arrayM[6+6]}</a>
+                        
                     </div>
                 </div>
-                <!--Grid column-->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mt-4">${arrayM[9+6]}</h6>
@@ -191,28 +175,11 @@ function cargarFooter(arrayM){
                     </div>
                     
                 </div>
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mt-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">${arrayM[10+6]}</h6>
-                    
-                    <div class="d-flex flex-colum flex-wrap m-4">
-                        <p class="col-12 text-md-start"><i class="fas fa-home me-3"></i>${arrayM[11+6]}</p>
-                        <p class="col-12 text-md-start"><i class="fas fa-envelope me-3"></i>${arrayM[12+6]}</p>
-                        <p class="col-12 text-md-start"><i class="fas fa-phone me-3"></i>+ 01 234 567 88</p>
-                    </div>
-                    
-                </div>
                 
             </div>
-            <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
         </div>
-
         <div id="copyright" class="text-center p-3">
-            <a class="text-white" href="">${arrayM[14+6]}</a>
+            <a class="text-white" href="">CompTech.com</a>
         </div>
     `
 }
