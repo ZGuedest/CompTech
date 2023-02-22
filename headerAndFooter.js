@@ -21,7 +21,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
 
     let header= document.getElementsByTagName("header")[0]
     header.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar text-white navbar-expand-lg navbar-light">
 
         <div class="container-xl">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
             <ul id="menu-interior"class="navbar-nav justify-content-around">
                 <li id="inicio" class="nav-item pt-3">
-                    <a class="nav-link" href="Index.html">${arrayM[0]}</a>
+                    <a class="nav-link text-white" href="Index.html">${arrayM[0]}</a>
                 </li>
                 <li id="catalogo" class="nav-item pt-3">
                     <a class="nav-link" href="catalogo.html">${arrayM[2]}</a>

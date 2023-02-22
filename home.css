@@ -68,17 +68,17 @@
   padding-left: 5rem;
 }
 * .btn-primary {
-  background-color: #387373;
+  background-color: #73386a;
   width: 10rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #73386a solid;
   margin-bottom: 0.7rem;
 }
 * .btn-primary:hover {
   background-color: #E4F2E7;
   color: black;
-  border: #387373 solid;
+  border: #73386a solid;
 }
 * .corazon-vacio {
   font-size: 2.3em;
@@ -143,20 +143,20 @@
 }
 * footer {
   padding-top: 4rem;
-  background-color: #387373;
+  background-color: #73386a;
 }
 * footer .btn {
-  background-color: #387373;
+  background-color: #73386a;
   width: 7rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #73386a solid;
   margin-bottom: 0.7rem;
 }
 * footer .btn:hover {
   background-color: #E4F2E7;
   color: black;
-  border: #387373 solid;
+  border: #73386a solid;
 }
 * footer #appel-store {
   background-image: url("./img/appel.png");

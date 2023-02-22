@@ -5,7 +5,7 @@
 
 //VARIABLES
 $color_verdeCl:#E4F2E7; //Este es el verde clarito
-$color_VerdeOsc:#73386a;
+$color_morado:#73386a;
 $color_gris:#827a7c;
 $color_negro:black;
 $color_blanco:white;
@@ -29,7 +29,7 @@ $fontWH2:600;
 //CLASES
 %iconos{
     font-size: 1em;
-    color: $color_negro;
+    color: $color_blanco;
     cursor: pointer;
 }
 
@@ -98,6 +98,8 @@ $fontWH2:600;
 
     margin: 0;
     padding: 0;
+
+
 
     header{
 
