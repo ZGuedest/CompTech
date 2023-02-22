@@ -20,6 +20,7 @@
   background-size: contain;
   margin: 0rem;
   background-size: cover;
+  z-index: 4000;
 }
 * header nav {
   background-color: transparent;
@@ -34,7 +35,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin: 2rem;
-  background-color: transparent;
   margin: 0rem;
 }
 * header nav #buscador {
@@ -175,6 +175,29 @@
   font-size: 2em;
 }
 
+@media (max-width: 991.98px) {
+  #logo {
+    background-image: url("./img/logo.png");
+    width: 80% !important;
+    height: 20rem;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2rem;
+    margin: 0rem;
+  }
+  #frase_imaginacion {
+    padding-top: 0rem !important;
+    padding-left: 1rem !important;
+    font-size: 30px !important;
+  }
+  #menu-iconers {
+    width: 80% !important;
+    padding-top: 0rem !important;
+    justify-content: space-between !important;
+  }
+}
 header {
   background-image: linear-gradient(rgb(56, 115, 115), rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.5)), url("");
   width: 100%;
