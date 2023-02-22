@@ -27,29 +27,28 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div id="logo"></div>
-
+        <a  href="#" class="btn btn-primary mt-4" >  <i class="fa-solid fa-cart-shopping"></i> Vender un producto </a>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
-            <ul id="menu-interior"class="navbar-nav justify-content-around">
+            <ul id="menu-interior"class="navbar-nav justify-content-around"">
                 <li id="inicio" class="nav-item pt-3">
                     <a class="nav-link actived" href="Index.html">${arrayM[0]}</a>
                 </li>
-                <li id="catalogo" class="nav-item pt-3 actived">
+                <li id="catalogo" class="nav-item pt-3 ">
                     <a class="nav-link actived" href="catalogo.html ">${arrayM[2]}</a>
                 </li>
-                <li id="m-novedades" class="nav-item pt-3">
-                    <a class="nav-link actived" href="#Novedades">${arrayM[3]}</a>
-                </li>
+                
                 <li id="m-ofertas" class="nav-item pt-3">
                     <a class="nav-link actived" href="#Ofertas">${arrayM[4]}</a>
                 </li>
-                
+
             </ul>
         </div>
 
 
             <ul id="menu-iconers"class="nav flex-row pt-4 justify-content-around">
-
+            
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle d-flex flex-row" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <p id="idio-select" value="espanol" class="">${idiomaSelect}</p>
@@ -61,7 +60,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
                         <li value="euskera"><a value="euskera" class=" idioma px-1 py-1 dropdown-item" href="#">Euskera</a></li>
                     </ul>
                 </li>
-                <div class="d-flex flex-column aling-items-center">
+                <div class="d-flex flex-column aling-items-center p-2">
                     <li ><a id="login" href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
 
                     <div class="ventana" id="ven" style="background-color: trasparent; width: 4rem;height: 1.5rem; color: black; display: none;">
@@ -70,8 +69,8 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
                     </div>
                 </div>                  
 
-                <li ><a href="favoritos.html"><i class="fa-solid fa-heart"></i></a><span id="cantFav" class="cantidad-fav" value="0">${localStorage.getItem("cantFav") !=null? localStorage.getItem("cantFav"):0 }</span></li>
-                <li ><a href="carrito.html"><i class=" fa-solid fa-cart-shopping"></i></a><span id="cantCarrito" class="cantidad-carrito" value="0">${localStorage.getItem("cantCarrito") !=null? localStorage.getItem("cantCarrito"):0 } </span></li>
+                <li ><a href="favoritos.html"><i class="fa-solid fa-heart p-2"></i></a><span id="cantFav" class="cantidad-fav" value="0">${localStorage.getItem("cantFav") !=null? localStorage.getItem("cantFav"):0 }</span></li>
+                <li ><a href="carrito.html"><i class=" fa-solid fa-cart-shopping p-2"></i></a><span id="cantCarrito" class="cantidad-carrito" value="0">${localStorage.getItem("cantCarrito") !=null? localStorage.getItem("cantCarrito"):0 } </span></li>
                 
             </ul>  
         </div>

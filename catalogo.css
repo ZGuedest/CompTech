@@ -1,4 +1,4 @@
-* header nav #menu-iconers a, * header nav #menu-iconers i {
+* header nav #menu-iconers i {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
@@ -49,6 +49,13 @@ body .img {
 }
 * header nav #menu-iconers {
   width: 30%;
+}
+* header nav #menu-iconers a {
+  font-size: medium;
+  color: white;
+}
+* header nav .btn {
+  width: 18rem;
 }
 * header nav #ven {
   display: none;
@@ -183,7 +190,7 @@ body .img {
     margin-right: 1rem;
   }
   nav {
-    height: 400px !important;
+    height: 350px !important;
   }
   nav a, nav i {
     font-size: 1rem !important;

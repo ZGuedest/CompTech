@@ -128,9 +128,17 @@ $fontWH2:600;
             }
             #menu-iconers{
                 width: 30%;
-                a , i{
+                 i{
                     @extend %iconos;
                 }
+                a {
+                    font-size: medium;
+                    color: $color_blanco;
+                }
+            }
+
+            .btn{
+                width: 18rem;
             }
 
             #ven{
@@ -257,7 +265,7 @@ $fontWH2:600;
         } 
     
         nav{
-            height: 400px !important;
+            height: 370px !important;
             a , i{
                 font-size: 1rem !important;
             }
@@ -265,7 +273,7 @@ $fontWH2:600;
 
         #frase_imaginacion{
             padding-top: 0rem !important;
-            padding-left: 1rem !important;
+            padding-left: 0rem !important;
             font-size: 30px !important;
         }
     

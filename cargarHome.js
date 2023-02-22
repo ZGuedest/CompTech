@@ -58,53 +58,7 @@ function agregarCajasNovedadOfertaMarcas(contenedor_principal,marca){
     </div>
     <div id= "ofertas_caja"class="row justify-content-center">  
     </div>
-    <div id="marcas_caja" class="row justify-content-center">
-      
-        <div class="caja-h2 d-flex flex-row align-items-center justify-content-center">
-            <div class="linea1"></div>
-            <h2 id="mejores-marcas">${marca} </h2>
-            <div class="linea2"></div>
-        </div>
-        
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img4" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img5" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img6" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img7" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img8" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img9" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img10" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img11" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img12" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img13" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img14" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img15" class="img"></div>
-        </div>
-    </div>
 
-    
     
     `
 
