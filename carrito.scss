@@ -1,0 +1,91 @@
+@import "--parcial";
+
+//CLASES
+
+%precio{
+    font-weight: bold;
+    font-size: large;
+}
+
+header{   
+    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.943)),
+    url("")), $wth:100%,$hght: 100px,$margin:0rem);
+
+    background-color: white !important;
+    position: relative;
+    z-index: 4000;
+
+    #inicio,#catalogo{
+        display: block;
+    }
+    #m-ofertas,#m-novedades,#frase_imaginacion,#buscador{
+        display: none;
+    }
+ }
+
+ #cr_contenedor_principal{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    #cr_caja_producto{
+
+        width: 40rem;
+        .cr_imagen_producto{
+    
+            @include img($wth:20%,$hght: 10rem, $margin:0rem);
+        }
+    
+        .cr_precio_producto, .cr_precio_cantidad{
+            @extend %precio;
+        }
+       
+        .cr_basura,.cr_corazon, .cr_carrito
+        {
+            @extend %iconos;
+            font-size: x-large;
+        }
+
+        input{
+            height: 2rem;
+        }
+       
+    }
+    
+    #cr_comprar_pedido{
+        width: 20rem;
+        height:250px;
+        #cr_carrito{
+            @extend %iconos;
+        }
+    
+        #cr_precio_total{
+            @extend %precio;
+            color:$color_VerdeOsc;
+        }
+    
+        .btn{
+            @include button ( $wth: 7rem);
+            font-weight: bold;
+        }
+    
+        #cr_visa, #cr_paypal,#cr_mastercard{
+            @extend %iconos;
+            font-size: x-large;
+        }
+    }
+ }
+
+
+
+@include media-breakpoint-down(lg) {
+   
+    header{
+        height: 300px !important;
+    }
+
+    .imgCF {
+        width: 100% !important; 
+    }
+
+}
+
+

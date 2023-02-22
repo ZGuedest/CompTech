@@ -1,0 +1,36 @@
+@import"--parcial.scss";
+
+header{   
+    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+    url("")), $wth:100%,$hght: 100px,$margin:0rem);
+    #inicio,#catalogo{
+        display: block;
+    }
+    #m-ofertas,#m-novedades,#frase_imaginacion, #buscador{
+        display: none;
+    }
+} 
+
+ #ck_inputnombre, #ck_inputapellidos, #ck_inputTl, #ck_inputCity, #ck_inputdireccion, #ck_inputCp, #ck_inputEmail, #ck_inputPassword {
+     background-color: $color_verdeCl;
+ }
+
+
+#ck_btnpedido{
+    width: 15rem;
+}
+#ck_imgBizum {
+    width: 15px;
+}
+
+
+@include media-breakpoint-down(lg) {
+   
+    header{
+        height: 300px !important;
+    }
+
+}
+    
+
+

@@ -1,0 +1,35 @@
+@import"--parcial.scss";
+
+
+header{   
+
+    #inicio,#catalogo{
+        display: block;
+    }
+    #m-ofertas,#m-novedades{
+        display: none;
+    }
+ }
+
+i{
+    font-size: x-large;
+    padding-right: 0.5rem;
+}
+
+.img{
+    @include img($wth:40%,$hght: 30rem,$margin: 2rem)
+}
+
+
+@include media-breakpoint-only(xs) {
+   
+    .img {
+        width: 80% !important; 
+        height: 20rem !important;
+    }
+
+    .card{
+        width: 80% !important;
+    }
+
+}

@@ -1,0 +1,264 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/variables";
+
+
+//VARIABLES
+$color_verdeCl:#E4F2E7; //Este es el verde clarito
+$color_VerdeOsc:#387373;
+$color_gris:#827a7c;
+$color_negro:black;
+$color_blanco:white;
+$tipografía: sans-serif,Arial, Verdana, Tahoma;
+$fontSizeGeneral: 17px;
+$fontSizeH2: 27px;
+$fontWGeneral: 900;
+$fontWH2:600;
+
+
+  $grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+  );
+
+
+//CLASES
+%iconos{
+    font-size: 1em;
+    color: $color_negro;
+    cursor: pointer;
+}
+
+%imagen{
+    width: 80%;
+    height: 15rem;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2rem;
+}
+
+//MIXINS
+@mixin button ($bg-color:$color_VerdeOsc, $wth: 30rem, $colorletra:$color_blanco){
+    background-color: $bg-color;
+    width: $wth;
+    color: $colorletra ;
+    font-weight: $fontWGeneral;
+    border: $color_VerdeOsc solid;
+    margin-bottom: 0.7rem;
+
+    &:hover{
+        background-color: $color_verdeCl;
+        color: $color_negro ;
+        border: $color_VerdeOsc solid;
+    }
+}
+
+@mixin img ($url:url("./img/guitarra1.jpg"),$wth:80%,$hght: 15rem,$margin: 2rem){
+
+    background-image: $url;
+    width: $wth;
+    height: $hght;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: $margin;
+}
+
+// @include media-breakpoint-down(sm) {...}
+// @include media-breakpoint-down(md) { ... }
+// @include media-breakpoint-down(lg) { ... }
+// @include media-breakpoint-down(xl) { ... }
+// @include media-breakpoint-down(xxl) { ... }
+
+
+// @include media-breakpoint-only(xs) { ... }
+// @include media-breakpoint-only(md) { ... }
+// @include media-breakpoint-only(lg) { ... }
+// @include media-breakpoint-only(xl) { ... }
+// @include media-breakpoint-only(xxl) { ... }
+
+
+@mixin lineas($marginR: 1rem,$marginL: 1rem){
+    border-top: 0.1rem solid gray;
+    width: 22rem;
+    margin-right: $marginR;
+    margin-left:$marginL;
+}
+
+*{
+    font-family:$tipografía;
+    font-size: $fontSizeGeneral;
+
+    margin: 0;
+    padding: 0;
+
+    header{
+
+        @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+        url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);
+        background-size: cover;
+        z-index: 4000;
+
+
+        nav{
+        background-color:transparent;
+        font-weight: $fontWGeneral;
+
+            #logo{
+                @include img ($url:url("./img/logo.png"),$wth:20%,$hght: 5rem);
+                margin: 0rem;
+            }
+
+            #buscador{
+                width: 15rem;
+                height: 2rem;
+            }
+
+            #menu-interior{
+                width: 40%;
+            }
+            #menu-iconers{
+                width: 30%;
+                a , i{
+                    @extend %iconos;
+                }
+            }
+
+            #ven{
+                display: none;
+                cursor: pointer;
+            }
+
+        }
+
+        #frase_imaginacion{
+            font-size: 45px;
+            font-family: Blackadder ITC;
+            padding-top: 6rem;
+            padding-left: 5rem;
+        }
+    }
+
+    .btn-primary{
+        @include button( $wth: 10rem);
+    }
+    .corazon-vacio{
+        font-size: 2.3em;
+        padding-left: 0.7rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .cardH{
+        margin: 2rem;
+        width: 18rem;
+        height: auto;
+
+
+        .card-titleCM{
+            height: 4rem;
+        }
+        .cardTextCM{
+            height: 12rem;
+            overflow: scroll;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &::-webkit-scrollbar {
+                -webkit-appearance: none;
+            }
+
+            &::-webkit-scrollbar:vertical {
+                width:10px;
+            }
+
+            &::-webkit-scrollbar-button:increment,&::-webkit-scrollbar-button {
+                display: none;
+            }
+
+            &::-webkit-scrollbar:horizontal {
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #797979;
+                border-radius: 20px;
+                border: 2px solid #f1f2f3;
+            }
+
+            &::-webkit-scrollbar-track {
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    .img{
+        @include img()
+    }
+
+    .imgCF{
+        @include img($wth:30%,$hght: 12rem,$margin: 0rem);
+        margin-top: 1rem;
+        margin-bottom:2rem;
+    }
+
+    footer{
+        padding-top: 4rem;
+        background-color: $color_VerdeOsc;
+        .btn{
+            @include button( $wth: 7rem);
+        }
+
+        #appel-store{
+            @include img($url:url("./img/appel.png"),$wth:35%,$hght: 7rem,$margin: 1rem );
+
+        }
+        #play-store{
+            @include img($url:url("./img/play-store.png"),$wth:35%,$hght: 7rem,$margin: 1rem );
+
+        }
+
+        #copyright{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .fab{
+            font-size: 2em;
+
+        }
+
+
+    }
+
+    
+}
+
+
+
+
+ @include media-breakpoint-down(lg) {
+    #logo{
+        @include img ($url:url("./img/logo.png"),$wth:80% !important,$hght: 20rem);
+            margin: 0rem;
+        } 
+    
+        #frase_imaginacion{
+            padding-top: 0rem !important;
+            padding-left: 1rem !important;
+            font-size: 30px !important;
+        }
+    
+        #menu-iconers{
+            width: 80% !important;
+            padding-top: 0rem !important;
+            justify-content: space-between!important;
+        }
+ }

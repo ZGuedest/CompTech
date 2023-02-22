@@ -1,0 +1,122 @@
+@import "--parcial";
+
+*{
+    font-family:$tipografía;
+    font-size: $fontSizeGeneral;
+    
+    margin: 0;
+    padding: 0;
+
+    header{
+        #inicio{
+            display: none;
+        }
+
+        #popap{
+            display: none;
+            border-radius: 5%;
+            @include img($url:url("./img/descuento.png"),$wth:80%,$hght: 15rem,$margin: 2rem);
+        }
+    }
+
+    body{
+        .caja-h2{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            h2{
+                font-size: $fontSizeH2;
+                font-weight: $fontWH2;
+            }
+
+            .linea1,.linea2 {
+                @include lineas();
+            }
+        }
+
+        .img{
+            @extend %imagen
+        }
+
+
+        #imgN1{
+            @include img($url:url("./img/guitarra1.jpg"),$wth:80%,$hght: 15rem,$margin: 2rem);
+        }
+
+        #imgN2{
+            @include img($url:url("./img/violin.webp"),$wth:80%,$hght: 15rem,$margin: 2rem);
+
+        }
+
+        #imgN3{
+            @include img($url:url("./img/tambor.jpeg"),$wth:80%,$hght: 15rem,$margin: 2rem);
+
+        }
+
+        
+
+        #img4{
+            @include img($url:url("./img/img4.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img5{
+            @include img($url:url("./img/img5.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img6{
+            @include img($url:url("./img/img6.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+
+        #img7{
+            @include img($url:url("./img/img7.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img8{
+            @include img($url:url("./img/img8.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img9{
+            @include img($url:url("./img/img9.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img10{
+            @include img($url:url("./img/img10.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img11{
+            @include img($url:url("./img/img11.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img12{
+            @include img($url:url("./img/img12.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img13{
+            @include img($url:url("./img/img13.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img14{
+            @include img($url:url("./img/img14.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+
+        #img15{
+            @include img($url:url("./img/img15.jpg"),$wth:80%,$hght: 5rem,$margin: 2rem);
+
+        }
+    }
+
+}
+.ventana{
+    display: none;
+}

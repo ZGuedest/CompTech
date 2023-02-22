@@ -1,0 +1,39 @@
+@import"--parcial.scss";
+
+header{   
+    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+    url("")), $wth:100%,$hght: 100px,$margin:0rem);
+
+    #inicio,#catalogo{
+        display: block;
+    }
+    #m-ofertas,#m-novedades,#frase_imaginacion,#buscador{
+        display: none;
+    }
+ }
+#lg_fondo {
+    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+    url("")), $wth:100%,$hght: 100vh,$margin:0rem); 
+    a , i{
+        @extend %iconos;
+    }
+}
+
+.card{
+    background-color: transparent;
+    border:none;
+    
+}
+
+h2{
+    font-size: 45px; 
+    font-family: Blackadder ITC;
+}
+
+.btn{
+    @include button ($bg-color:$color_VerdeOsc, $wth: 8rem, $colorletra:$color_blanco);
+}
+
+#form_registro, footer, header{
+    display:none
+}

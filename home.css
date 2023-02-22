@@ -1,0 +1,399 @@
+* header nav #menu-iconers a, * header nav #menu-iconers i {
+  font-size: 1em;
+  color: black;
+  cursor: pointer;
+}
+
+* body .img {
+  width: 80%;
+  height: 15rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+
+* {
+  font-family: sans-serif, Arial, Verdana, Tahoma;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+* header {
+  background-image: linear-gradient(rgb(56, 115, 115), rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.5)), url("./img/fondo2.jpg");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0rem;
+  background-size: cover;
+  z-index: 4000;
+}
+* header nav {
+  background-color: transparent;
+  font-weight: 900;
+}
+* header nav #logo {
+  background-image: url("./img/logo.png");
+  width: 20%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+  margin: 0rem;
+}
+* header nav #buscador {
+  width: 15rem;
+  height: 2rem;
+}
+* header nav #menu-interior {
+  width: 40%;
+}
+* header nav #menu-iconers {
+  width: 30%;
+}
+* header nav #ven {
+  display: none;
+  cursor: pointer;
+}
+* header #frase_imaginacion {
+  font-size: 45px;
+  font-family: Blackadder ITC;
+  padding-top: 6rem;
+  padding-left: 5rem;
+}
+* .btn-primary {
+  background-color: #387373;
+  width: 10rem;
+  color: white;
+  font-weight: 900;
+  border: #387373 solid;
+  margin-bottom: 0.7rem;
+}
+* .btn-primary:hover {
+  background-color: #E4F2E7;
+  color: black;
+  border: #387373 solid;
+}
+* .corazon-vacio {
+  font-size: 2.3em;
+  padding-left: 0.7rem;
+  margin-bottom: 1rem;
+}
+* .cardH {
+  margin: 2rem;
+  width: 18rem;
+  height: auto;
+}
+* .cardH .card-titleCM {
+  height: 4rem;
+}
+* .cardH .cardTextCM {
+  height: 12rem;
+  overflow: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+* .cardH .cardTextCM::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+* .cardH .cardTextCM::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+* .cardH .cardTextCM::-webkit-scrollbar-button:increment, * .cardH .cardTextCM::-webkit-scrollbar-button {
+  display: none;
+}
+* .cardH .cardTextCM::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+* .cardH .cardTextCM::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+* .cardH .cardTextCM::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+* .img {
+  background-image: url("./img/guitarra1.jpg");
+  width: 80%;
+  height: 15rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* .imgCF {
+  background-image: url("./img/guitarra1.jpg");
+  width: 30%;
+  height: 12rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+* footer {
+  padding-top: 4rem;
+  background-color: #387373;
+}
+* footer .btn {
+  background-color: #387373;
+  width: 7rem;
+  color: white;
+  font-weight: 900;
+  border: #387373 solid;
+  margin-bottom: 0.7rem;
+}
+* footer .btn:hover {
+  background-color: #E4F2E7;
+  color: black;
+  border: #387373 solid;
+}
+* footer #appel-store {
+  background-image: url("./img/appel.png");
+  width: 35%;
+  height: 7rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem;
+}
+* footer #play-store {
+  background-image: url("./img/play-store.png");
+  width: 35%;
+  height: 7rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem;
+}
+* footer #copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+* footer .fab {
+  font-size: 2em;
+}
+
+@media (max-width: 991.98px) {
+  #logo {
+    background-image: url("./img/logo.png");
+    width: 80% !important;
+    height: 20rem;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2rem;
+    margin: 0rem;
+  }
+  #frase_imaginacion {
+    padding-top: 0rem !important;
+    padding-left: 1rem !important;
+    font-size: 30px !important;
+  }
+  #menu-iconers {
+    width: 80% !important;
+    padding-top: 0rem !important;
+    justify-content: space-between !important;
+  }
+}
+* {
+  font-family: sans-serif, Arial, Verdana, Tahoma;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+* header #inicio {
+  display: none;
+}
+* header #popap {
+  display: none;
+  border-radius: 5%;
+  background-image: url("./img/descuento.png");
+  width: 80%;
+  height: 15rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body .caja-h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+* body .caja-h2 h2 {
+  font-size: 27px;
+  font-weight: 600;
+}
+* body .caja-h2 .linea1, * body .caja-h2 .linea2 {
+  border-top: 0.1rem solid gray;
+  width: 22rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+* body #imgN1 {
+  background-image: url("./img/guitarra1.jpg");
+  width: 80%;
+  height: 15rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #imgN2 {
+  background-image: url("./img/violin.webp");
+  width: 80%;
+  height: 15rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #imgN3 {
+  background-image: url("./img/tambor.jpeg");
+  width: 80%;
+  height: 15rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img4 {
+  background-image: url("./img/img4.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img5 {
+  background-image: url("./img/img5.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img6 {
+  background-image: url("./img/img6.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img7 {
+  background-image: url("./img/img7.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img8 {
+  background-image: url("./img/img8.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img9 {
+  background-image: url("./img/img9.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img10 {
+  background-image: url("./img/img10.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img11 {
+  background-image: url("./img/img11.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img12 {
+  background-image: url("./img/img12.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img13 {
+  background-image: url("./img/img13.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img14 {
+  background-image: url("./img/img14.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+* body #img15 {
+  background-image: url("./img/img15.jpg");
+  width: 80%;
+  height: 5rem;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+
+.ventana {
+  display: none;
+}/*# sourceMappingURL=home.css.map */
