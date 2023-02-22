@@ -29,7 +29,7 @@ $fontWH2:600;
 //CLASES
 %iconos{
     font-size: 1em;
-    color: $color_negro;
+    color: $color_blanco;
     cursor: pointer;
 }
 
@@ -101,8 +101,9 @@ $fontWH2:600;
 
     header{
 
-        @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-        url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);
+        /*@include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+        url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);*/
+        background-color: black;
         background-size: cover;
         z-index: 4000;
 
@@ -112,7 +113,7 @@ $fontWH2:600;
         font-weight: $fontWGeneral;
 
             #logo{
-                @include img ($url:url("./img/logo.png"),$wth:20%,$hght: 5rem);
+                @include img ($url:url(".img\logoWhite.png"),$wth:100%,$hght: 5rem);
                 margin: 0rem;
             }
 

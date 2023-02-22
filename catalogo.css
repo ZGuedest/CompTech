@@ -1,6 +1,6 @@
 * header nav #menu-iconers a, * header nav #menu-iconers i {
   font-size: 1em;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
@@ -21,14 +21,9 @@ body .img {
   padding: 0;
 }
 * header {
-  background-image: linear-gradient(rgb(56, 115, 115), rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.5)), url("./img/fondo2.jpg");
-  width: 100%;
-  height: 500px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
+  /*@include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+  url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);*/
+  background-color: black;
   background-size: cover;
   z-index: 4000;
 }
@@ -37,7 +32,7 @@ body .img {
   font-weight: 900;
 }
 * header nav #logo {
-  background-image: url("./img/logo.png");
+  background-image: url("./img/logohackathoWhite.svg");
   width: 20%;
   height: 5rem;
   background-position: center;
@@ -68,17 +63,17 @@ body .img {
   padding-left: 5rem;
 }
 * .btn-primary {
-  background-color: #387373;
+  background-color: #73386a;
   width: 10rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #73386a solid;
   margin-bottom: 0.7rem;
 }
 * .btn-primary:hover {
   background-color: #E4F2E7;
   color: black;
-  border: #387373 solid;
+  border: #73386a solid;
 }
 * .corazon-vacio {
   font-size: 2.3em;
@@ -143,20 +138,20 @@ body .img {
 }
 * footer {
   padding-top: 4rem;
-  background-color: #387373;
+  background-color: #73386a;
 }
 * footer .btn {
-  background-color: #387373;
+  background-color: #73386a;
   width: 7rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #73386a solid;
   margin-bottom: 0.7rem;
 }
 * footer .btn:hover {
   background-color: #E4F2E7;
   color: black;
-  border: #387373 solid;
+  border: #73386a solid;
 }
 * footer #appel-store {
   background-image: url("./img/appel.png");
@@ -220,7 +215,7 @@ body #checks-cuerda, body #checks-viento, body #checks-percusion, body #checks-e
   width: 10%;
 }
 body #cont-radio-check {
-  border: 2px solid #387373;
+  border: 2px solid #73386a;
   border-radius: 1.5rem;
   padding: 2rem;
   margin-top: 3rem;
