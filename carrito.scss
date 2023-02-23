@@ -8,12 +8,15 @@
 }
 
 header{   
-    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.943)),
-    url("")), $wth:100%,$hght: 100px,$margin:0rem);
-
-    background-color: white !important;
+    // @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.943)),
+    // url("")), $wth:100%,$hght: 100px,$margin:0rem);
     position: relative;
     z-index: 4000;
+
+    nav{
+        height: 150px !important ;
+
+    }
 
     #inicio,#catalogo{
         display: block;

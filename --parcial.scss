@@ -5,15 +5,16 @@
 
 //VARIABLES
 $color_verdeCl:#E4F2E7; //Este es el verde clarito
-$color_VerdeOsc:#73386a;
-$color_gris:#827a7c;
-$color_negro:black;
+$color_VerdeOsc:#387373;
+$color_gris:#a9a6a7;
+$color_negro:#222529;
 $color_blanco:white;
 $tipografía: sans-serif,Arial, Verdana, Tahoma;
 $fontSizeGeneral: 17px;
 $fontSizeH2: 27px;
 $fontWGeneral: 900;
 $fontWH2:600;
+
 
 
   $grid-breakpoints: (
@@ -28,8 +29,8 @@ $fontWH2:600;
 
 //CLASES
 %iconos{
-    font-size: 1em;
-    color: $color_negro;
+    font-size: 1.5rem;
+    color: $color_blanco;
     cursor: pointer;
 }
 
@@ -44,18 +45,18 @@ $fontWH2:600;
 }
 
 //MIXINS
-@mixin button ($bg-color:$color_VerdeOsc, $wth: 30rem, $colorletra:$color_blanco){
+@mixin button ($bg-color:$color_negro, $wth: 30rem, $colorletra:$color_blanco){
     background-color: $bg-color;
     width: $wth;
     color: $colorletra ;
     font-weight: $fontWGeneral;
-    border: $color_VerdeOsc solid;
+    border: $color_gris 1px solid;
     margin-bottom: 0.7rem;
 
     &:hover{
-        background-color: $color_verdeCl;
+        background-color: $color_gris;
         color: $color_negro ;
-        border: $color_VerdeOsc solid;
+        border: $color_negro solid;
     }
 }
 
@@ -101,8 +102,8 @@ $fontWH2:600;
 
     header{
 
-        @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-        url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);
+        // @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+        // url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);
         background-size: cover;
         z-index: 4000;
 
@@ -110,9 +111,10 @@ $fontWH2:600;
         nav{
         background-color:transparent;
         font-weight: $fontWGeneral;
+        height: 300px;
 
             #logo{
-                @include img ($url:url("./img/logo.png"),$wth:20%,$hght: 5rem);
+                @include img ($url:url("./img/logohackathonWhite.svg"),$wth:30%,$hght: 7rem);
                 margin: 0rem;
             }
 
@@ -126,9 +128,17 @@ $fontWH2:600;
             }
             #menu-iconers{
                 width: 30%;
-                a , i{
+                 i{
                     @extend %iconos;
                 }
+                a {
+                    font-size: medium;
+                    color: $color_blanco;
+                }
+            }
+
+            .btn{
+                width: 18rem;
             }
 
             #ven{
@@ -212,17 +222,18 @@ $fontWH2:600;
 
     footer{
         padding-top: 4rem;
-        background-color: $color_VerdeOsc;
+        background-color: $color_negro;
         .btn{
-            @include button( $wth: 7rem);
+            background-color: transparent;
+            width: 7rem;
         }
 
         #appel-store{
-            @include img($url:url("./img/appel.png"),$wth:35%,$hght: 7rem,$margin: 1rem );
+            @include img($url:url("./img/App\ Store.png"),$wth:30%,$hght: 5rem,$margin: 1rem );
 
         }
         #play-store{
-            @include img($url:url("./img/play-store.png"),$wth:35%,$hght: 7rem,$margin: 1rem );
+            @include img($url:url("./img/play_store.png"),$wth:30%,$hght: 5rem,$margin: 1rem );
 
         }
 
@@ -246,13 +257,23 @@ $fontWH2:600;
 
  @include media-breakpoint-down(lg) {
     #logo{
-        @include img ($url:url("./img/logo.png"),$wth:80% !important,$hght: 20rem);
-            margin: 0rem;
+        //@include img ($url:url("./img/logo.png"),$wth:80% !important,$hght: 20rem);
+        @include img ($url:url("./img/logohackathonWhite.svg"),$wth:80%,$hght: 20rem);
+
+            margin-top: 1rem;
+            margin-right: 1rem;
         } 
     
+        nav{
+            height: 370px !important;
+            a , i{
+                font-size: 1rem !important;
+            }
+        }
+
         #frase_imaginacion{
             padding-top: 0rem !important;
-            padding-left: 1rem !important;
+            padding-left: 0rem !important;
             font-size: 30px !important;
         }
     

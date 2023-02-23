@@ -2,7 +2,7 @@
 const productos=[
     {
         "id":1,
-        "varname":"guitarra1",
+        "varname":"1",
         "name": "Yamaha CGS103A Guitarra Clásica",
         "description": "Tapa de pícea. Aros y fondo de nato.Mástil de nato.Diapasón y puente de palisandro (Dalbergia latifolia).Profundidad del cuerpo: 87 - 91mm. Escala: 575mm. Ancho de la cejilla: 43mm. Herrajes cromados. Acabado: Natural", 
         "precioDescription": "138€",

@@ -1,6 +1,6 @@
-* header nav #menu-iconers a, * header nav #menu-iconers i {
-  font-size: 1em;
-  color: black;
+* header nav #menu-iconers i {
+  font-size: 1.5rem;
+  color: white;
   cursor: pointer;
 }
 
@@ -21,25 +21,18 @@ body .img {
   padding: 0;
 }
 * header {
-  background-image: linear-gradient(rgb(56, 115, 115), rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.5)), url("./img/fondo2.jpg");
-  width: 100%;
-  height: 500px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
   background-size: cover;
   z-index: 4000;
 }
 * header nav {
   background-color: transparent;
   font-weight: 900;
+  height: 300px;
 }
 * header nav #logo {
-  background-image: url("./img/logo.png");
-  width: 20%;
-  height: 5rem;
+  background-image: url("./img/logohackathonWhite.svg");
+  width: 30%;
+  height: 7rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -57,6 +50,13 @@ body .img {
 * header nav #menu-iconers {
   width: 30%;
 }
+* header nav #menu-iconers a {
+  font-size: medium;
+  color: white;
+}
+* header nav .btn {
+  width: 18rem;
+}
 * header nav #ven {
   display: none;
   cursor: pointer;
@@ -68,17 +68,17 @@ body .img {
   padding-left: 5rem;
 }
 * .btn-primary {
-  background-color: #387373;
+  background-color: #222529;
   width: 10rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #a9a6a7 1px solid;
   margin-bottom: 0.7rem;
 }
 * .btn-primary:hover {
-  background-color: #E4F2E7;
-  color: black;
-  border: #387373 solid;
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * .corazon-vacio {
   font-size: 2.3em;
@@ -143,25 +143,16 @@ body .img {
 }
 * footer {
   padding-top: 4rem;
-  background-color: #387373;
+  background-color: #222529;
 }
 * footer .btn {
-  background-color: #387373;
+  background-color: transparent;
   width: 7rem;
-  color: white;
-  font-weight: 900;
-  border: #387373 solid;
-  margin-bottom: 0.7rem;
-}
-* footer .btn:hover {
-  background-color: #E4F2E7;
-  color: black;
-  border: #387373 solid;
 }
 * footer #appel-store {
-  background-image: url("./img/appel.png");
-  width: 35%;
-  height: 7rem;
+  background-image: url("./img/App Store.png");
+  width: 30%;
+  height: 5rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -169,9 +160,9 @@ body .img {
   margin: 1rem;
 }
 * footer #play-store {
-  background-image: url("./img/play-store.png");
-  width: 35%;
-  height: 7rem;
+  background-image: url("./img/play_store.png");
+  width: 30%;
+  height: 5rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -187,15 +178,22 @@ body .img {
 
 @media (max-width: 991.98px) {
   #logo {
-    background-image: url("./img/logo.png");
-    width: 80% !important;
+    background-image: url("./img/logohackathonWhite.svg");
+    width: 80%;
     height: 20rem;
     background-position: center;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 2rem;
-    margin: 0rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  nav {
+    height: 350px !important;
+  }
+  nav a, nav i {
+    font-size: 1rem !important;
   }
   #frase_imaginacion {
     padding-top: 0rem !important;
