@@ -2,9 +2,8 @@
 cargarHome(idiomaSelect)
 
 function cargarHome(idiomaSelect){
-    let titulosNov=["Novedades","News","Berrikuntzak"]
-    let titOf=["Ofertas","Oferts","Eskaintzak"]
-    let titulosMarc=["Mejores Marcas","Top Brands","Marka Onenak"]
+    let titulosNov=["Novedades","News"]
+    let titOf=["Ofertas","Oferts"]
 
     let contenedor_principal=document.getElementById("contenedor_principal")
     limpiarContenedor(contenedor_principal)

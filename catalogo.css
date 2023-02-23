@@ -55,7 +55,17 @@ body .img {
   color: white;
 }
 * header nav .btn {
+  background-color: #222529;
   width: 18rem;
+  color: white;
+  font-weight: 900;
+  border: #a9a6a7 1px solid;
+  margin-bottom: 0.7rem;
+}
+* header nav .btn:hover {
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * header nav #ven {
   display: none;
@@ -212,35 +222,20 @@ header #catalogo, header #m-ofertas, header #m-novedades {
   display: none;
 }
 
-body #checks-cuerda, body #checks-viento, body #checks-percusion, body #checks-electronico {
-  display: block;
-  width: 10%;
-}
 body #cont-radio-check {
   border: 2px solid #387373;
   border-radius: 1.5rem;
   padding: 2rem;
   margin-top: 3rem;
 }
-body #cuerda, body #viento, body #percusion, body #electronico {
+body #ordenador, body #periferico, body #componente, body #catalogo {
   width: 20%;
 }
-body #caja-radio-percusion, body #caja-radio-electronico {
+body #caja-radio-accesorio {
   width: 10rem;
 }
-body #ico-cuerda {
-  background-image: url("./img/ico-guitarra.jpeg");
-  width: 20%;
-  height: 50px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
-  background-size: cover;
-}
-body #ico-viento {
-  background-image: url("./img/trompa-ico.jpg");
+body #ordenador-ico {
+  background-image: url("./img/ordenador-ico.png");
   width: 20%;
   height: 50px;
   background-position: center;
@@ -249,9 +244,9 @@ body #ico-viento {
   background-size: contain;
   margin: 0rem;
 }
-body #ico-percusion {
-  background-image: url("./img/percusion-ico.jpg");
-  width: 18%;
+body #periferico-ico {
+  background-image: url("./img/periferico-ico.png");
+  width: 20%;
   height: 50px;
   background-position: center;
   background-color: transparent;
@@ -259,9 +254,19 @@ body #ico-percusion {
   background-size: contain;
   margin: 0rem;
 }
-body #ico-electronico {
-  background-image: url("./img/electronico1.webp");
-  width: 18%;
+body #componente-ico {
+  background-image: url("./img/componente-ico.png");
+  width: 20%;
+  height: 50px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0rem;
+}
+body #accesorio-ico {
+  background-image: url("./img/accesorio-ico.png");
+  width: 20%;
   height: 50px;
   background-position: center;
   background-color: transparent;
@@ -289,12 +294,12 @@ body #offer {
 }
 
 @media (max-width: 991.98px) {
-  #cuerda, #viento, #percusion, #electronico {
+  #ordenador, #periferico, #componente, #catalogo {
     width: 40% !important;
   }
 }
 @media (max-width: 767.98px) {
-  #cuerda, #viento, #percusion, #electronico {
+  #ordenador, #periferico, #componente, #catalogo {
     width: 100% !important;
   }
 }/*# sourceMappingURL=catalogo.css.map */

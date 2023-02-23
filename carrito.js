@@ -3,8 +3,7 @@ iniciarCarrito(idiomaSelect)
 function iniciarCarrito(idiomaSelect){
     let espc = ["Resumen del Pedido", "Comprar","Vaciar", "Aceptamos", "precio del producto", "precio por cantidad","Debe iniciar sesión para tramitar su pedido","Carrito vacío, añada productos al carrito para poder comprar" ];
     let ingc = ["Order Summary", "Buy","Clean","Accept","product price","price by quantity","You must log in to process your order","Empty cart, add products to cart to be able to buy"];
-    let eusc = ["Eskaeraren laburpena", "Erosi","Garbitu", "Onartu","produktuaren prezioa","prezioa kantitatearen arabera","Eskaera tramitatzeko saioa hasi behar du","Karro hutsa, gehitu produktuak gurditxoari erosi ahal izateko"];
-    let arrayc=cambiarIdioma(idiomaSelect, espc, ingc, eusc)
+    let arrayc=cambiarIdioma(idiomaSelect, espc, ingc)
     let productos = cargarDelLocalStorage();
     cargarcarrito(arrayc,productos,idiomaSelect);
 }
