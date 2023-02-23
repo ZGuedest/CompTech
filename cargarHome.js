@@ -4,12 +4,12 @@ cargarHome(idiomaSelect)
 function cargarHome(idiomaSelect){
     let titulosNov=["Novedades","News"]
     let titOf=["Ofertas","Oferts"]
-    debugger
+    
     let contenedor_principal=document.getElementById("contenedor_principal")
     limpiarContenedor(contenedor_principal)
     // let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
     agregarCajasNovedadOfertaMarcas(contenedor_principal)
-    debugger
+    
     let novedades_caja= document.getElementById("novedades_caja")
     let ofertas_caja= document.getElementById("ofertas_caja")
     let productos=cargarDelLocalStorage()
