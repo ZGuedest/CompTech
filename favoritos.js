@@ -65,6 +65,7 @@ function eventBasuraFavorito(idiomaSelect, shopContent, productos){
 
     for(let b=0; b<bas.length;b++){
         bas[b].addEventListener("click",(event)=>{
+            debugger
             eliminarFavoritoEnFavorito(productos, idiomaSelect, shopContent, event)
             
         })

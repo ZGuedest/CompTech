@@ -126,7 +126,7 @@ const productos=[
 
     },
     {
-        "id":8,
+        "id":9,
         "varname":"raton2",
         "name":"Logitech Lift Ratón Inalámbrico para Diestros 4000 DPI Blanco ",
         "description":"Tipo de desplazamiento Rueda.Cantidad de botones 4.Resolución de movimiento 4000 DPI.Personalizable resolución movimiento SiFunciones de los botones Atrás, Interruptor DPI, AdelanteClic silencioso Si.DiseñoFactor de forma mano derecha.Diseño de plancha ergonómico Si.Diseño vertical Si ",
@@ -141,7 +141,7 @@ const productos=[
 
     },
     {
-        "id":9,
+        "id":10,
         "varname":"raton3",
         "name":"Phoenix Ergo T1 Ratón Óptico Trackball Inalámbrico 2400DPI Negro",
         "description":"Funciones inalámbrico con 7 botones.Material ABS acabado en goma.Modo dual Bluetooth + 2.4Ghz inalámbrico.Diseño y ergonomía Distancia de trabajo Hasta 10 metros  ",
@@ -157,7 +157,7 @@ const productos=[
     },
     {
 
-        "id":10,
+        "id":11,
         "varname":"raton4",
         "name":"HyperX Pulsefire Dart Ratón Gaming Inalámbrico 16000DPI",
         "description":" Interfaz del dispositivo: RF inalámbrica + USB.Tecnología de detección de movimientos: Óptico.Tipo de botones Botones presionados.Tipo de desplazamiento Rueda.Cantidad de botones 6Resolución de movimiento: 16000 DPIVelocidad de seguimiento del ratón: 450 ips",
@@ -173,7 +173,7 @@ const productos=[
     },
 
     {
-        "id":11,
+        "id":12,
         "varname":"monitor2",
         "name": "AOC 25G3ZM 24. LED FullHD 240Hz FreeSync Premium ",
         "description": " Pantalla.Tamaño de la pantalla 24.5.Tipo: Plano.Tratamiento del panel Antribrillo.Píxeles por Pulgada 90.Resolución 1920 x 1080.Aspecto: 16.9.Tipo de Panel: VA",
@@ -188,7 +188,7 @@ const productos=[
 
     },
     {
-        "id":12,
+        "id":13,
         "varname":"monitor4",
         "name": "HP X24c 23.6 LED FullHD 144Hz FreeSync Curvo",
         "description":"Diagonal de la pantalla: 68,6 cm (27).Resolución de la pantalla: 2560 x 1440 Pixeles.Tipo HD: Quad HD.Relación de aspecto nativa 16.9.Tecnología de visualización. LCD.Tipo de pantalla: VA.Pantalla táctil. No.Brillo de la pantalla (típico) 350 cd / m.Tiempo de respuesta 1 ms.Forma de la pantalla: Curva",
@@ -205,7 +205,7 @@ const productos=[
 
     {
 
-        "id":13,
+        "id":14,
         "varname":"microfono1",
         "name": "Heil Sound PR40",
         "description":"Sonido especialmente natural con la voz siendo ideal para programas de radio de entrevistas y hablados. Bobina de aluminio de muy baja inercia. Alto rechazo a las interferencias electromagnéticas gracias a su estructura y bobina canceladora. Excelente rechazo trasero y efecto de proximidad mínimo La respuesta en frecuencia más amplia. Aplicaciones: Bombo, Bajo, Viento, Vocal. Emisoras de Radio.",
@@ -220,7 +220,7 @@ const productos=[
 
     },
     {
-        "id":14,
+        "id":15,
         "varname":"microfono2",
         "name": "SHURE SM7B",
         "description":"Peso:765 g. Altura x Ancho x Fondo: 198.7 × 117.0 × 96.0 mm. Respuesta en frecuencia:50 Hz – 20 kHz. Respuesta en frecuencia: Ajustable. Sensibilidad: -59.00 dBV/Pa – 1.12 mV/Pa. Tipo de transductor: Dinámico. Patrón polar: Cardioide. Filtro de corte de graves conmutable: Sí. Conectores: XLR 3 pines. Atenuador: No. Cápsula intercambiable: No. Función principal: Grabación.Salida de auriculares: No. Cápsula: Fija",
@@ -235,7 +235,7 @@ const productos=[
 
     },
     {
-        "id":15,
+        "id":16,
         "varname":"microfono3",
         "name": "RØDE NT1A",
         "description":" Micrófono de diafragma grande de 1 con diafragma chapado en oro. Patrón polar cardioide. Ultra bajo ruido, ruido propio de tan sólo 5 dB (A). Rango de frecuencias: 20 Hz a 22 kHz. Salida de impedancia de 100 Ohmios. Condensador polarizado externamente. Montaje interno de la cápsula del choque. ¡Nota!: Verifique la información sobre compatibilidad e indicaciones de uso en el sitio web del fabricante antes de comprar ",
