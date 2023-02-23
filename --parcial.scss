@@ -99,7 +99,7 @@ $fontWH2:600;
         height: 10vh;
 
             #logo{
-                @include img ($url:url("./img/logohackathonWhite.svg"),$wth:20%,$hght: 5rem);
+                @include img ($url:url("./img/logohackathonWhite.svg"),$wth:10%,$hght: 4rem);
                 margin: 0rem;
             }
 
