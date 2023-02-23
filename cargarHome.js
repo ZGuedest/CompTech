@@ -4,10 +4,11 @@ cargarHome(idiomaSelect)
 function cargarHome(idiomaSelect){
     let titulosNov=["Novedades","News"]
     let titOf=["Ofertas","Oferts"]
+
+    let add=["Añadir", "Add"]
     
     let contenedor_principal=document.getElementById("contenedor_principal")
     limpiarContenedor(contenedor_principal)
-    // let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
     agregarCajasNovedadOfertaMarcas(contenedor_principal)
     
     let novedades_caja= document.getElementById("novedades_caja")
@@ -16,14 +17,16 @@ function cargarHome(idiomaSelect){
     let prodNew = filtrarProductos("novedad",productos)
     let prodOf = filtrarProductos("oferta",productos)
     let titulo=cargarTitulo(idiomaSelect,titulosNov);
-    cargarNovedadesOfertas(novedades_caja, prodNew,titulo)
+    let titbtn = idiomaSelect == "Español" ? add[0]:add[1] ;
+
+    cargarNovedadesOfertas(novedades_caja, prodNew,titulo,titbtn)
     titulo=cargarTitulo(idiomaSelect,titOf)
-    cargarNovedadesOfertas(ofertas_caja, prodOf, titulo)
+    cargarNovedadesOfertas(ofertas_caja, prodOf, titulo,titbtn)
     activarClickComprar(productos)
     eventoCorazon(productos)
 }
 
-function cargarNovedadesOfertas(CajaContent, prod, titulo){
+function cargarNovedadesOfertas(CajaContent, prod, titulo, titbtn){
     CajaContent.append(titulo);
     prod.forEach((p)=>{
       let content = document.createElement ("div");
@@ -34,7 +37,7 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo){
               <h5 class="card-title card-titleCM">${p.name}  ${p.precio}€</h5>
           </div>
           <div class="d-flex flex-row align-items-center">
-              <a  id =${p.id} data-producto =${p.id}  href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> Añadir</a>
+              <a  id =${p.id} data-producto =${p.id}  href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> ${titbtn} </a>
               <i id =${p.id}  class="fa-regular fa-heart corazon-vacio" style="cursor: pointer"></i>
           </div>
   
