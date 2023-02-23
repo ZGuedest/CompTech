@@ -26,6 +26,10 @@ i{
 
 
 @include media-breakpoint-only(xs) {
+
+    #addPro{
+        width: 100% !important;
+    }
    
     .img {
         width: 80% !important; 

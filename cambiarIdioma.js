@@ -41,7 +41,7 @@ function eventoCambiarIdioma(){
 
             if(aux.substring(aux.length-("addproduct.html").length,aux.length)=="addproduct.html" ||
              aux.substring(aux.length-("addproduct.html").length,aux.length)=="ddproduct.html#"){
-                iniciarLogin(idiomaSelect)            
+                inicializarAddProducto(idiomaSelect)            
             }
             
         })
