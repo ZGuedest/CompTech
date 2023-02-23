@@ -1,5 +1,5 @@
 
-// cargarHome(idiomaSelect)
+cargarHome(idiomaSelect)
 
 function cargarHome(idiomaSelect){
     let titulosNov=["Novedades","News","Berrikuntzak"]
