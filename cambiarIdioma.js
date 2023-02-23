@@ -56,7 +56,5 @@ function cambiarIdioma(idioma, esp, ing){
     }else if (idioma=="Inglés"){
         arrayM=inglesM
     }
-
-   
     return arrayM;
 }

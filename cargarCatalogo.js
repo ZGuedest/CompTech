@@ -3,8 +3,8 @@ iniciarCatalogo(idiomaSelect)
 
 function iniciarCatalogo(idiomaSelect){
   
-  const ctlgEsp = ["Ordenadores","Perifericos","Componentes","Complementos"]
-  const ctlgEng = ["Computers","Peripherals","Components","Accessories"]
+  const ctlgEsp = ["Ordenadores", "Periféricos", "Componentes ", "Accesorios"]
+  const ctlgEng = ["Computers", "Peripherals", "Components ", "Accessories"]
   let arrayM=cambiarIdioma(idiomaSelect, ctlgEsp, ctlgEng)
   let radios=cargarMenuCatalogo(arrayM)  
   yesnoCheck(radios)
@@ -19,40 +19,40 @@ function cargarMenuCatalogo(arrayCata){
 
   <div id="radiocatalogo" class="d-flex flex-row flex-wrap justify-content-around" >
 
-      <div id="cuerda" class="form-check form-check-inline">
+      <div id="ordenador" class="form-check form-check-inline">
 
-          <div id="caja-radio-cuerda" class="d-flex flex-row align-items-center justify-content-around">
-              <input id="radio-cuerda" class="form-check-input radio p-1 m-2" type="radio" name="inlineRadioOptions" value="cuerda" >
-              <label class="form-check-label" for="radio-cuerda">${arrayCata[arrayCata.length-1][0]}</label>
-              <div id="ico-cuerda"></div>
+          <div id="caja-radio-ordenador" class="d-flex flex-row align-items-center justify-content-around">
+              <input id="radio-ordenador" class="form-check-input radio p-1 m-2" type="radio" name="inlineRadioOptions" value="ordenador" >
+              <label class="form-check-label" for="radio-ordenador">${arrayCata[arrayCata.length-1][0]}</label>
+              <div id="ordenador-ico"></div>
           </div>
 
       </div>
 
-      <div id="viento"class="form-check form-check-inline ">
-          <div id="caja-radio-viento" class="d-flex  flex-row align-items-center justify-content-around">
-              <input id="radio-viento" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="viento">
-              <label class="form-check-label" for="radio-viento">${arrayCata[arrayCata.length-1][1]}</label>
-              <div id="ico-viento"></div>
+      <div id="periferico"class="form-check form-check-inline ">
+          <div id="caja-radio-periferico" class="d-flex  flex-row align-items-center justify-content-around">
+              <input id="radio-periferico" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="periferico">
+              <label class="form-check-label" for="radio-periferico">${arrayCata[arrayCata.length-1][1]}</label>
+              <div id="periferico-ico"></div>
           </div>
 
       </div>
 
-      <div id="percusion"class="form-check form-check-inline ">
-          <div id="caja-radio-percusion" class="d-flex flex-row align-items-center justify-content-between">
-              <input id="radio-percusion" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions"  value="percusion">
-              <label class="form-check-label" for="radio-percusion">${arrayCata[arrayCata.length-1][2]}</label>
-              <div id="ico-percusion"></div>
+      <div id="componente"class="form-check form-check-inline ">
+          <div id="caja-radio-componente" class="d-flex flex-row align-items-center justify-content-between">
+              <input id="radio-componente" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions"  value="componente">
+              <label class="form-check-label" for="radio-componente">${arrayCata[arrayCata.length-1][2]}</label>
+              <div id="componente-ico"></div>
           </div>
 
 
       </div>
 
-      <div id="electronico"class="form-check form-check-inline ">
-          <div id="caja-radio-electronico" class="d-flex flex-row align-items-center justify-content-between">
-              <input  id="radio-electronico" class="radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="electronico">
-              <label class="form-check-label" for="radio-electronico">${arrayCata[arrayCata.length-1][3]}</label>
-              <div id="ico-electronico"></div>
+      <div id="accesorio"class="form-check form-check-inline ">
+          <div id="caja-radio-accesorio" class="d-flex flex-row align-items-center justify-content-between">
+              <input  id="radio-accesorio" class="radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="accesorio">
+              <label class="form-check-label" for="radio-accesorio">${arrayCata[arrayCata.length-1][3]}</label>
+              <div id="accesorio-ico"></div>
           </div>
 
       </div>
@@ -103,7 +103,7 @@ function pintarCatalogo(shopContent,prod){
 function eventoRadios(radios){
   for(let i=0; i<radios.length ;i++){
     radios[i].addEventListener("change",()=>{
-  
+      debugger
       yesnoCheck(radios)
     } )
 
@@ -112,15 +112,12 @@ function eventoRadios(radios){
 }
 
 function yesnoCheck(radios) {
-  const cajas_checkouts= document.getElementsByClassName("caja_check")
-  const arraycheckout = document.getElementsByClassName("ck");
   const shopContent= document.getElementById("shopContent")
   let productosCat = cargarDelLocalStorage();
 
   let prodCat=[]
   if (radios[0].checked == true) {
-    
-    cambiarDisplayRadioButton(cajas_checkouts[0],cajas_checkouts[1],cajas_checkouts[2],cajas_checkouts[3])
+    debugger
     prodCat= productosPorCategoria("Ordenadores",productosCat)
     pintarCatalogo(shopContent,prodCat)
     localStorage.setItem("radio",0)
@@ -128,14 +125,12 @@ function yesnoCheck(radios) {
 
   } else if (radios[1].checked == true) {
 
-    cambiarDisplayRadioButton(cajas_checkouts[1],cajas_checkouts[0],cajas_checkouts[2],cajas_checkouts[3])
     prodCat= productosPorCategoria("Periféricos",productosCat)
     pintarCatalogo(shopContent,prodCat)
     localStorage.setItem("radio",1)
 
 
   } else if (radios[2].checked == true) {
-    cambiarDisplayRadioButton(cajas_checkouts[2],cajas_checkouts[0],cajas_checkouts[1],cajas_checkouts[3])
     prodCat= productosPorCategoria("Componentes",productosCat)
     pintarCatalogo(shopContent,prodCat)
     localStorage.setItem("radio",2)
@@ -143,134 +138,23 @@ function yesnoCheck(radios) {
 
 
   } else if (radios[3].checked == true) {
-    cambiarDisplayRadioButton(cajas_checkouts[3],cajas_checkouts[1],cajas_checkouts[2],cajas_checkouts[0])
     prodCat= productosPorCategoria("Accesorios",productosCat)
     pintarCatalogo(shopContent,prodCat)
     localStorage.setItem("radio",3)
   }
 
-  eventoCargarProductoPorCheckout(arraycheckout,productosCat)
 }
 
-function cambiarDisplayRadioButton(ck1,ck2,ck3,ck4){
-    ck1.style.display = "block";
-    ck2.style.display = "none";
-    ck3.style.display = "none";
-    ck4.style.display = "none";
 
-}
-
-function descheckearProductos(categoria,arraycheckout){
-
-    let arrayAux = cargarCheckoutPorCategoria(categoria)
-    for (let i = 0; i< arraycheckout.length; i++) {
-        if( (i !=arrayAux[0] && i!= arrayAux[1] && i != arrayAux[2])){
-            arraycheckout[i].checked=false;
-        }
-    }
-}
-
-function cargarCheckoutPorCategoria(categoria){
-
-    let arrayAux = []
-    if(categoria=="cuerda"){
-        arrayAux = [0, 1, 2]
-    }
-    else if( categoria=="viento"){
-        arrayAux = [3, 4, 5]
-    }
-    else if( categoria=="percusion"){
-        arrayAux = [6, 7, 8]
-    }
-    else{
-        arrayAux = [9, 10, 11]
-    }
-
-    return arrayAux;
-}
-
-function productosPorCategoria(categoria, productosCat){
+ function productosPorCategoria(categoria, productos){
   let prodCat=[];
 
-  productosCat.forEach((product)=> {
+  productos.forEach((product)=> {
 
-     if(categoria=="cuerda"){
-
-       if((product.id>-1) && (product.id<10)){
+     if( product.categoria==categoria){
          prodCat.push(product);
-       }
-     }
-     else if(categoria=="viento"){
-       if(product.id>9 && product.id<19){
-         prodCat.push(product)
-       }
-     }
-     else if(categoria=="percusion"){
-       if(product.id>18 && product.id<28){
-         prodCat.push(product)
-       }
-
-     }
-     else{
-       if(product.id>27){
-         prodCat.push(product)
-       }
-     }
-
+    }
+     
    });
    return prodCat
  }
-
-function eventoCargarProductoPorCheckout(arraycheckout,productosCat){
-  for(let i = 0; i<arraycheckout.length; i++){
-      arraycheckout[i].addEventListener ("change", ()=>{
-        
-        let categoria= arraycheckout[i].getAttribute("data-bs-c")
-        let prodchecked = cargarProductoPorCheckout(categoria,productosCat,arraycheckout)
-        let shopContent= document.getElementById("shopContent")
-        pintarCatalogo(shopContent,prodchecked)
-      })
-  }
-}
-
-function cargarProductoPorCheckout (categoria,productosCat,arraycheckout){
-    let prodchecked = [];
-    let arrayckCat = cargarCheckoutPorCategoria(categoria);
-    for(let ck=0; ck<arraycheckout.length; ck++){
-        if(ck == arrayckCat[0] || ck == arrayckCat[1] || ck == arrayckCat[2]) {
-            if(arraycheckout[ck].checked == true){
-
-                let aux=elegirProdPorCheck(arraycheckout[ck],productosCat);
-                for(let j=0; j<aux.length;j++){
-                  prodchecked.push(aux[j]);
-                }
-            }
-
-        }
-    }
-
-    if((arraycheckout[arrayckCat[0]].checked == false)&&(arraycheckout[arrayckCat[1]].checked == false)&&(arraycheckout[arrayckCat[2]].checked == false)){
-      prodchecked= productosPorCategoria(categoria,productosCat)
-    }
-
-    return prodchecked
-}
-
-function elegirProdPorCheck(check,productosCat){
-    let valueCk= check.value
-    let prodsCk=[]
-    for( let i=0; i<productosCat.length;i++){
-        if( productosCat[i].varname.slice(0, -1)==valueCk) {
-            prodsCk.push(productosCat[i])
-        }
-    }
-
-    return prodsCk;
- }
-
-
-
-
-
-
-

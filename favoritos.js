@@ -12,9 +12,7 @@ function iniciarFavoritos(idiomaSelect){
     else if(idiomaSelect=="Inglés"){
         precioProd= "product price"
     }
-    else if(idiomaSelect=="Euskera"){
-        precioProd= "prezioa kantitatearen arabera"
-    }
+    
     let prodsFav= []
     prodsFav= productosFavoritos(productos)
     pintarFavoritos(idiomaSelect,prodsFav,productos,precioProd)

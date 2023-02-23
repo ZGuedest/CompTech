@@ -2,11 +2,16 @@
 
 iniciarLogin(idiomaSelect)
 function iniciarLogin(idiomaSelect){
-  const lgnEsp = ["regresar","Deja tu imaginación volar... sientre la música","Por favor entre los datos de su cuenta","correo","contraseña","Entrar","¿Has olvidado tu contraseña?","Si no tienes cuenta","Regístrate","Somos más que una empresa","Somos un grupo de entusiastas de la música que tiene la suerte de compartir su pasión con personas afines, guiando, aconsejando y también aprendiendo de nuestros clientes. Bienvenidos a nuestra familia: !Viva la música!", "Nombre", "Apellidos","Teléfono", "Correo", "Contraseña","Ciudad", "Dirección","Acepto los terminos y condiciones","Registrarse", "C.P", "datos incorrectos","Datos registrados con éxito, puede iniciar sesión" ]
-  const lgnEng = ["back","Let your imagination fly... feel the music","Please enter your account information","email","password","Log_in","Have you forgotten your password?"," If you don't have an account","Register","We are more than a company","We are a group of music enthusiasts lucky enough to share their passion with like-minded people, guiding, advising and also learning from our customers. Welcome to our family: Long live the music!", "First Name", "Last Name", "Phone", "Mail", "Password","City", "Address","I accept the terms and conditions","Register", "ZIP","Incorrect data", "Data recorded successfully, you can log in"]
-  const lgnEus = ["itzuli","Utzi zure irudimena hegan egiten... sentitu musika","Mesedez sartu zure kontuaren informazioa","posta elektronikoa","pasahitza","Sartu","Pasahitza ahaztu al duzu?","Ez baduzu 'ez daukazu konturik","Erregistratu","Enpresa bat baino gehiago gara","Musika zaleen talde bat gara bere pasioa gogokoekin partekatzeko zortea, gure bezeroak gidatuz, aholkatuz eta baita ikasten ere. Ongi etorri gure familiara: Bizi musika!", "Izena","Abizenak","Telefonoa","Posta elektronikoa","Pasahitza", "Hiria", "Helbidea","Baldintzak eta terminoak onartzen ditut","Erregistratzea", "ZIP","Datu okerrak" ,"Arrakastaz erregistratutako datuak, saioa has dezake"]
+  const lgnEsp = ["regresar","Da nueva vida a tu equipo",
+  "Por favor entre los datos de su cuenta","correo","contraseña","Entrar",
+  "¿Has olvidado tu contraseña?","Si no tienes cuenta","Regístrate",
+  "Somos más que una empresa",
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nihil omnis corrupti tempore iusto eius modi, inventore iste aspernatur, voluptatum, quaerat fugit libero eos? Provident odit harum amet unde sed?", "Nombre", "Apellidos","Teléfono", "Correo", "Contraseña","Ciudad", "Dirección","Acepto los terminos y condiciones","Registrarse", "C.P", "datos incorrectos","Datos registrados con éxito, puede iniciar sesión" ]
+  
+  const lgnEng = ["back","Breathe new life into your machine","Please enter your account information","email","password","Log_in","Have you forgotten your password?"," If you don't have an account","Register","We are more than a company",
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nihil omnis corrupti tempore iusto eius modi, inventore iste aspernatur, voluptatum, quaerat fugit libero eos? Provident odit harum amet unde sed?", "First Name", "Last Name", "Phone", "Mail", "Password","City", "Address","I accept the terms and conditions","Register", "ZIP","Incorrect data", "Data recorded successfully, you can log in"]
 
-  let arrayLog=cambiarIdioma(idiomaSelect, lgnEsp, lgnEng, lgnEus)
+  let arrayLog=cambiarIdioma(idiomaSelect, lgnEsp, lgnEng)
 
   let usuariosRegistrados=[{
     "gmail":"prueba@gmail.com",
@@ -58,7 +63,7 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
           </nav>
 
         <div class="text-center">
-          <img src="img/logo.png"
+          <img src="./img/logohackathonWhite.svg"
             style="width: 185px;" alt="logo">
           <h2 id="frase-imaginacion" class="mt-1 mb-5 pb-1">"${arrayLog[arrayLog.length-1][1]}"</h2>
         </div>

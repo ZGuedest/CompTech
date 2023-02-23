@@ -1,8 +1,12 @@
 @import"--parcial.scss";
 
+*{
+    color: white;
+}
+
 header{   
-    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-    url("")), $wth:100%,$hght: 100px,$margin:0rem);
+    // @include img($url: (linear-gradient( rgb(14, 19, 19),rgba(16, 19, 19, 0.8), rgb(255, 255, 255,0.5)),
+    // url("")), $wth:100%,$hght: 100px,$margin:0rem);
 
     #inicio,#catalogo{
         display: block;
@@ -12,11 +16,12 @@ header{
     }
  }
 #lg_fondo {
-    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-    url("")), $wth:100%,$hght: 100vh,$margin:0rem); 
-    a , i{
-        @extend %iconos;
-    }
+    // @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
+    // url("")), $wth:100%,$hght: 100vh,$margin:0rem); 
+    // @include img($url: (linear-gradient( $color_negro,$color_negro, rgba(255, 255, 255, 0.197)),
+    // url("")), $wth:100%,$hght: 100px,$margin:0rem);
+    background-color: $color_negro;
+    
 }
 
 .card{
@@ -31,9 +36,13 @@ h2{
 }
 
 .btn{
-    @include button ($bg-color:$color_VerdeOsc, $wth: 8rem, $colorletra:$color_blanco);
+    @include button ($bg-color:$color_gris, $wth: 8rem, $colorletra:$color_negro);
 }
 
 #form_registro, footer, header{
     display:none
+}
+
+#frase-imaginacion{
+    color: $color_blanco;
 }

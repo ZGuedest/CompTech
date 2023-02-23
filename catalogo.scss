@@ -12,11 +12,7 @@ header{
 
 }
 body{
-    #checks-cuerda, #checks-viento, #checks-percusion, #checks-electronico{
-        display: block;
-        width: 10%;
-    }
-
+    
     #cont-radio-check{
         border: 2px solid $color_VerdeOsc;
         border-radius: 1.5rem;
@@ -24,28 +20,30 @@ body{
         margin-top: 3rem;
     }
 
-    #cuerda,#viento,#percusion,#electronico{
+    #ordenador,#periferico,#componente,#catalogo{
         width: 20%;
     }
 
-    #caja-radio-percusion, #caja-radio-electronico{
-        width: 10rem;
-    }
-    #ico-cuerda{
-        @include img($url:url("./img/ico-guitarra.jpeg"),$wth:20%,$hght: 50px,$margin:0rem);
-        background-size: cover;
-    }
-    #ico-viento{
-        @include img($url:url("./img/trompa-ico.jpg"),$wth:20%,$hght: 50px,$margin:0rem);
+    #caja-radio-accesorio{
+         width: 10rem;
+     }
+    
+    #ordenador-ico{
+        @include img($url:url("./img/ordenador-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
     }
 
-    #ico-percusion{
-        @include img($url:url("./img/percusion-ico.jpg"),$wth:18%,$hght: 50px,$margin:0rem);
+    #periferico-ico{
+        @include img($url:url("./img/periferico-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
     }
 
-    #ico-electronico{
-        @include img($url:url("./img/electronico1.webp"),$wth:18%,$hght: 50px,$margin:0rem);
+    #componente-ico{
+        @include img($url:url("./img/componente-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
     }
+
+    #accesorio-ico{
+        @include img($url:url("./img/accesorio-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+    }
+    
 
     .img{
         @extend %imagen;
@@ -68,16 +66,14 @@ body{
 }
     
 
-
-
 @include media-breakpoint-down(lg) {
-    #cuerda,#viento,#percusion,#electronico{
+    #ordenador,#periferico,#componente,#catalogo{
         width: 40% !important;
     }
  }
 
  @include media-breakpoint-down(md) {
-    #cuerda,#viento,#percusion,#electronico{
+    #ordenador,#periferico,#componente,#catalogo{
         width: 100% !important;
     }
  }

@@ -1,6 +1,6 @@
 
 /////// FAVORITOS /////
-
+debugger
 function eventoCorazon(productos){
     let corazones= document.getElementsByClassName("corazon-vacio")
     for( let i=0; i< corazones.length; i++){

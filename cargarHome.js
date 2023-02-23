@@ -2,21 +2,20 @@
 cargarHome(idiomaSelect)
 
 function cargarHome(idiomaSelect){
-    let titulosNov=["Novedades","News","Berrikuntzak"]
-    let titOf=["Ofertas","Oferts","Eskaintzak"]
-    let titulosMarc=["Mejores Marcas","Top Brands","Marka Onenak"]
-
+    let titulosNov=["Novedades","News"]
+    let titOf=["Ofertas","Oferts"]
+    debugger
     let contenedor_principal=document.getElementById("contenedor_principal")
     limpiarContenedor(contenedor_principal)
-    let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
-    agregarCajasNovedadOfertaMarcas(contenedor_principal,titulo)
-
+    // let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
+    agregarCajasNovedadOfertaMarcas(contenedor_principal)
+    debugger
     let novedades_caja= document.getElementById("novedades_caja")
     let ofertas_caja= document.getElementById("ofertas_caja")
     let productos=cargarDelLocalStorage()
     let prodNew = filtrarProductos("novedad",productos)
     let prodOf = filtrarProductos("oferta",productos)
-    titulo=cargarTitulo(idiomaSelect,titulosNov);
+    let titulo=cargarTitulo(idiomaSelect,titulosNov);
     cargarNovedadesOfertas(novedades_caja, prodNew,titulo)
     titulo=cargarTitulo(idiomaSelect,titOf)
     cargarNovedadesOfertas(ofertas_caja, prodOf, titulo)
@@ -50,7 +49,7 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo){
     
 }
 
-function agregarCajasNovedadOfertaMarcas(contenedor_principal,marca){
+function agregarCajasNovedadOfertaMarcas(contenedor_principal){
 
     contenedor_principal.innerHTML=`
 
@@ -58,53 +57,7 @@ function agregarCajasNovedadOfertaMarcas(contenedor_principal,marca){
     </div>
     <div id= "ofertas_caja"class="row justify-content-center">  
     </div>
-    <div id="marcas_caja" class="row justify-content-center">
-      
-        <div class="caja-h2 d-flex flex-row align-items-center justify-content-center">
-            <div class="linea1"></div>
-            <h2 id="mejores-marcas">${marca} </h2>
-            <div class="linea2"></div>
-        </div>
-        
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img4" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img5" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img6" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img7" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img8" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img9" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img10" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img11" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img12" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img13" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img14" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img15" class="img"></div>
-        </div>
-    </div>
 
-    
     
     `
 
@@ -160,21 +113,6 @@ function filtrarProductos(opcion, productos){
 }
 
 
-function cargarDelLocalStorage(){
-
-    let aux;
-    let prtos =[];
-    for(let i=0; i<36;i++){
-        
-        aux= localStorage.getItem(i)
-        aux = JSON.parse(aux)
-        prtos.push(aux)
-    }
-  
-    return prtos;
-  
-}
-
 
 function limpiarContenedor(shopContent){
     while (shopContent.firstChild) {
@@ -182,22 +120,3 @@ function limpiarContenedor(shopContent){
     }
 }
 
-
-function crearPopap(){
-    let html= document.getElementsByTagName("html")[0]
-    let popap= document.getElementById("popap")
-
-    html.addEventListener("mouseleave",()=>{
-        popap.style.display="block"
-        popap.style.zIndex="6000"
-    })
-}
-
-function cerrarPopap(){
-    let popap= document.getElementById("popap")
-
-    popap.addEventListener("click",()=>{
-        popap.style.display="none"
-        popap.style.zIndex="0"
-    })
-}

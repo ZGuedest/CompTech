@@ -1,6 +1,6 @@
-* header nav #menu-iconers a, * header nav #menu-iconers i {
-  font-size: 1em;
-  color: black;
+* header nav #menu-iconers i {
+  font-size: 1.5rem;
+  color: white;
   cursor: pointer;
 }
 
@@ -21,25 +21,18 @@ body .img {
   padding: 0;
 }
 * header {
-  background-image: linear-gradient(rgb(56, 115, 115), rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.5)), url("./img/fondo2.jpg");
-  width: 100%;
-  height: 500px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
   background-size: cover;
   z-index: 4000;
 }
 * header nav {
   background-color: transparent;
   font-weight: 900;
+  height: 300px;
 }
 * header nav #logo {
-  background-image: url("./img/logo.png");
-  width: 20%;
-  height: 5rem;
+  background-image: url("./img/logohackathonWhite.svg");
+  width: 30%;
+  height: 7rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -57,6 +50,23 @@ body .img {
 * header nav #menu-iconers {
   width: 30%;
 }
+* header nav #menu-iconers a {
+  font-size: medium;
+  color: white;
+}
+* header nav .btn {
+  background-color: #222529;
+  width: 18rem;
+  color: white;
+  font-weight: 900;
+  border: #a9a6a7 1px solid;
+  margin-bottom: 0.7rem;
+}
+* header nav .btn:hover {
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
+}
 * header nav #ven {
   display: none;
   cursor: pointer;
@@ -65,20 +75,20 @@ body .img {
   font-size: 45px;
   font-family: Blackadder ITC;
   padding-top: 6rem;
-  padding-left: 5rem;
+  display: none;
 }
 * .btn-primary {
-  background-color: #387373;
+  background-color: #222529;
   width: 10rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #a9a6a7 1px solid;
   margin-bottom: 0.7rem;
 }
 * .btn-primary:hover {
-  background-color: #E4F2E7;
-  color: black;
-  border: #387373 solid;
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * .corazon-vacio {
   font-size: 2.3em;
@@ -143,25 +153,16 @@ body .img {
 }
 * footer {
   padding-top: 4rem;
-  background-color: #387373;
+  background-color: #222529;
 }
 * footer .btn {
-  background-color: #387373;
+  background-color: transparent;
   width: 7rem;
-  color: white;
-  font-weight: 900;
-  border: #387373 solid;
-  margin-bottom: 0.7rem;
-}
-* footer .btn:hover {
-  background-color: #E4F2E7;
-  color: black;
-  border: #387373 solid;
 }
 * footer #appel-store {
-  background-image: url("./img/appel.png");
-  width: 35%;
-  height: 7rem;
+  background-image: url("./img/App Store.png");
+  width: 30%;
+  height: 5rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -169,9 +170,9 @@ body .img {
   margin: 1rem;
 }
 * footer #play-store {
-  background-image: url("./img/play-store.png");
-  width: 35%;
-  height: 7rem;
+  background-image: url("./img/play_store.png");
+  width: 30%;
+  height: 5rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -187,19 +188,26 @@ body .img {
 
 @media (max-width: 991.98px) {
   #logo {
-    background-image: url("./img/logo.png");
-    width: 80% !important;
+    background-image: url("./img/logohackathonWhite.svg");
+    width: 80%;
     height: 20rem;
     background-position: center;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 2rem;
-    margin: 0rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  nav {
+    height: 370px !important;
+  }
+  nav a, nav i {
+    font-size: 1rem !important;
   }
   #frase_imaginacion {
     padding-top: 0rem !important;
-    padding-left: 1rem !important;
+    padding-left: 0rem !important;
     font-size: 30px !important;
   }
   #menu-iconers {
@@ -215,35 +223,20 @@ header #catalogo, header #m-ofertas, header #m-novedades {
   display: none;
 }
 
-body #checks-cuerda, body #checks-viento, body #checks-percusion, body #checks-electronico {
-  display: block;
-  width: 10%;
-}
 body #cont-radio-check {
   border: 2px solid #387373;
   border-radius: 1.5rem;
   padding: 2rem;
   margin-top: 3rem;
 }
-body #cuerda, body #viento, body #percusion, body #electronico {
+body #ordenador, body #periferico, body #componente, body #catalogo {
   width: 20%;
 }
-body #caja-radio-percusion, body #caja-radio-electronico {
+body #caja-radio-accesorio {
   width: 10rem;
 }
-body #ico-cuerda {
-  background-image: url("./img/ico-guitarra.jpeg");
-  width: 20%;
-  height: 50px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
-  background-size: cover;
-}
-body #ico-viento {
-  background-image: url("./img/trompa-ico.jpg");
+body #ordenador-ico {
+  background-image: url("./img/ordenador-ico.png");
   width: 20%;
   height: 50px;
   background-position: center;
@@ -252,9 +245,9 @@ body #ico-viento {
   background-size: contain;
   margin: 0rem;
 }
-body #ico-percusion {
-  background-image: url("./img/percusion-ico.jpg");
-  width: 18%;
+body #periferico-ico {
+  background-image: url("./img/periferico-ico.png");
+  width: 20%;
   height: 50px;
   background-position: center;
   background-color: transparent;
@@ -262,9 +255,19 @@ body #ico-percusion {
   background-size: contain;
   margin: 0rem;
 }
-body #ico-electronico {
-  background-image: url("./img/electronico1.webp");
-  width: 18%;
+body #componente-ico {
+  background-image: url("./img/componente-ico.png");
+  width: 20%;
+  height: 50px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0rem;
+}
+body #accesorio-ico {
+  background-image: url("./img/accesorio-ico.png");
+  width: 20%;
   height: 50px;
   background-position: center;
   background-color: transparent;
@@ -292,12 +295,12 @@ body #offer {
 }
 
 @media (max-width: 991.98px) {
-  #cuerda, #viento, #percusion, #electronico {
+  #ordenador, #periferico, #componente, #catalogo {
     width: 40% !important;
   }
 }
 @media (max-width: 767.98px) {
-  #cuerda, #viento, #percusion, #electronico {
+  #ordenador, #periferico, #componente, #catalogo {
     width: 100% !important;
   }
 }/*# sourceMappingURL=catalogo.css.map */
