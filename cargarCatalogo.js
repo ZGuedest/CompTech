@@ -3,10 +3,9 @@ iniciarCatalogo(idiomaSelect)
 
 function iniciarCatalogo(idiomaSelect){
   
-  const ctlgEsp = ["Cuerda","Guitarra","Violín","Bajo","Viento","Trompeta","Flauta","Trompa","Percusión","Batería","Bongó","Miscelanea","Electrónico","Mezcladora","Amplificador", "Microfono"]
-  const ctlgEng = ["Strings","Guitar","Violin","Bass","Wind","Trumpet","Flute","Horn","Percussion","Drums","Bongo","Miscellaneous"," Electronic","Mixer","Amplifier", "Microphone"]
-  const ctlgEus = ["Hariak","Gitarra","Biolina","Baxua","Haizea","Tronpeta","Flauta","Tronpa","Perkusioa","Bateria","Bongo","Denetariko"," Elektronika","Nahastailea","Anplifikadorea","Mikrofonoa"]
-  let arrayM=cambiarIdioma(idiomaSelect, ctlgEsp, ctlgEng, ctlgEus)
+  const ctlgEsp = ["Ordenadores","Perifericos","Componentes","Complementos"]
+  const ctlgEng = ["Computers","Peripherals","Components","Accessories"]
+  let arrayM=cambiarIdioma(idiomaSelect, ctlgEsp, ctlgEng)
   let radios=cargarMenuCatalogo(arrayM)  
   yesnoCheck(radios)
 
@@ -28,98 +27,34 @@ function cargarMenuCatalogo(arrayCata){
               <div id="ico-cuerda"></div>
           </div>
 
-
-          <div id="checks-cuerda" class="caja_check">
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck " data-bs-c="cuerda" type="checkbox" id="check-guitarra" value="guitarra">
-                  <label class="form-check-label" for="check-guitarra">${arrayCata[arrayCata.length-1][1]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck " data-bs-c="cuerda" type="checkbox" id="check-violin" value="violin">
-                  <label   label class="form-check-label" for="check-violin">${arrayCata[arrayCata.length-1][2]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="cuerda" type="checkbox" id="check-bajo" value="bajo">
-                  <label class="form-check-label" for="check-bajo">${arrayCata[arrayCata.length-1][3]}</label>
-              </div>
-
-          </div>
-
       </div>
 
       <div id="viento"class="form-check form-check-inline ">
           <div id="caja-radio-viento" class="d-flex  flex-row align-items-center justify-content-around">
               <input id="radio-viento" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="viento">
-              <label class="form-check-label" for="radio-viento">${arrayCata[arrayCata.length-1][4]}</label>
+              <label class="form-check-label" for="radio-viento">${arrayCata[arrayCata.length-1][1]}</label>
               <div id="ico-viento"></div>
           </div>
 
-
-          <div id="checks-viento" class="caja_check">
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="viento" type="checkbox" id="check-trompeta" value="trompeta">
-                  <label class="form-check-label" for="check-trompeta">${arrayCata[arrayCata.length-1][5]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="viento"  type="checkbox" id="check-flauta" value="flauta">
-                  <label   label class="form-check-label" for="check-flauta">${arrayCata[arrayCata.length-1][6]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="viento" type="checkbox" id="check-trompa" value="trompa">
-                  <label class="form-check-label" for="check-trompa">${arrayCata[arrayCata.length-1][7]}</label>
-              </div>
-
-          </div>
       </div>
 
       <div id="percusion"class="form-check form-check-inline ">
           <div id="caja-radio-percusion" class="d-flex flex-row align-items-center justify-content-between">
               <input id="radio-percusion" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions"  value="percusion">
-              <label class="form-check-label" for="radio-percusion">${arrayCata[arrayCata.length-1][8]}</label>
+              <label class="form-check-label" for="radio-percusion">${arrayCata[arrayCata.length-1][2]}</label>
               <div id="ico-percusion"></div>
           </div>
 
 
-          <div id="checks-percusion" class="caja_check">
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="percusion" type="checkbox" id="check-bateria" value="bateria">
-                  <label class="form-check-label" for="check-bateria">${arrayCata[arrayCata.length-1][9]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="percusion"  type="checkbox" id="check-bongo" value="bongo">
-                  <label   label class="form-check-label" for="check-bongo">${arrayCata[arrayCata.length-1][10]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="percusion"  type="checkbox" id="check-miscelanea" value="miscelanea">
-                  <label class="form-check-label" for="check-miscelanea">${arrayCata[arrayCata.length-1][11]}</label>
-              </div>
-
-          </div>
       </div>
 
       <div id="electronico"class="form-check form-check-inline ">
           <div id="caja-radio-electronico" class="d-flex flex-row align-items-center justify-content-between">
               <input  id="radio-electronico" class="radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="electronico">
-              <label class="form-check-label" for="radio-electronico">${arrayCata[arrayCata.length-1][12]}</label>
+              <label class="form-check-label" for="radio-electronico">${arrayCata[arrayCata.length-1][3]}</label>
               <div id="ico-electronico"></div>
           </div>
 
-
-          <div id="checks-electronico" class="caja_check">
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="electronico" type="checkbox" id="check-mezcladora" value="mezcladora">
-                  <label class="form-check-label" for="check-mezcladora">${arrayCata[arrayCata.length-1][13]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="electronico" type="checkbox" id="check-Amplificador" value="amplificador">
-                  <label   label class="form-check-label" for="check-Amplificador">${arrayCata[arrayCata.length-1][14]}</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input ck" data-bs-c="electronico" type="checkbox" id="check-microfono" value="microfono">
-                  <label class="form-check-label" for="check-microfono">${arrayCata[arrayCata.length-1][15]}</label>
-              </div>
-
-          </div>
       </div>
   </div>
   `
@@ -186,35 +121,31 @@ function yesnoCheck(radios) {
   if (radios[0].checked == true) {
     
     cambiarDisplayRadioButton(cajas_checkouts[0],cajas_checkouts[1],cajas_checkouts[2],cajas_checkouts[3])
-    prodCat= productosPorCategoria("cuerda",productosCat)
+    prodCat= productosPorCategoria("Ordenadores",productosCat)
     pintarCatalogo(shopContent,prodCat)
-    descheckearProductos("cuerda",arraycheckout)
     localStorage.setItem("radio",0)
 
 
   } else if (radios[1].checked == true) {
 
     cambiarDisplayRadioButton(cajas_checkouts[1],cajas_checkouts[0],cajas_checkouts[2],cajas_checkouts[3])
-    prodCat= productosPorCategoria("viento",productosCat)
+    prodCat= productosPorCategoria("Periféricos",productosCat)
     pintarCatalogo(shopContent,prodCat)
-    descheckearProductos("viento",arraycheckout)
     localStorage.setItem("radio",1)
 
 
   } else if (radios[2].checked == true) {
     cambiarDisplayRadioButton(cajas_checkouts[2],cajas_checkouts[0],cajas_checkouts[1],cajas_checkouts[3])
-    prodCat= productosPorCategoria("percusion",productosCat)
+    prodCat= productosPorCategoria("Componentes",productosCat)
     pintarCatalogo(shopContent,prodCat)
-    descheckearProductos("percusion",arraycheckout)
     localStorage.setItem("radio",2)
 
 
 
   } else if (radios[3].checked == true) {
     cambiarDisplayRadioButton(cajas_checkouts[3],cajas_checkouts[1],cajas_checkouts[2],cajas_checkouts[0])
-    prodCat= productosPorCategoria("electronico",productosCat)
+    prodCat= productosPorCategoria("Accesorios",productosCat)
     pintarCatalogo(shopContent,prodCat)
-    descheckearProductos("electronico",arraycheckout)
     localStorage.setItem("radio",3)
   }
 
