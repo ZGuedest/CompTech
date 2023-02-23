@@ -38,6 +38,11 @@ function eventoCambiarIdioma(){
              aux.substring(aux.length-("login.html").length,aux.length)=="ogin.html#"){
                 iniciarLogin(idiomaSelect)            
             }
+
+            if(aux.substring(aux.length-("addproduct.html").length,aux.length)=="addproduct.html" ||
+             aux.substring(aux.length-("addproduct.html").length,aux.length)=="ddproduct.html#"){
+                iniciarLogin(idiomaSelect)            
+            }
             
         })
     }
