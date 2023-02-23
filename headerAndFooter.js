@@ -7,6 +7,7 @@ let idiomaSelect= localStorage.getItem("idioma")
 iniciarHeaderAndFooter()
 //setInterval(mostrarFecha, 1000);
 
+
 function iniciarHeaderAndFooter(){
     cargarBD(idiomaSelect)
     let idioma= idiomaFecha()
@@ -197,6 +198,7 @@ function idiomaFecha(){
     return idioma
 }
 
+module.exports = idiomaFecha
 
 function mostrarFecha(){
     let d = new Date()

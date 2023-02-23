@@ -58,3 +58,4 @@ function cambiarIdioma(idioma, esp, ing){
     }
     return arrayM;
 }
+module.exports=cambiarIdioma

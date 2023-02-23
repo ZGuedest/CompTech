@@ -93,6 +93,8 @@ function seleccionarTitulo(idiomaSelect, array){
     return titulo;
 }
 
+module.exports = seleccionarTitulo;
+
 function filtrarProductos(opcion, productos){
     let prods=[]
     for(let i=0; i<productos.length;i++){
