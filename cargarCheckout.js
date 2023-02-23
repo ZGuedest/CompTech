@@ -215,7 +215,7 @@ function cargarCheckout(arrayCk){
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"> ${arrayCk[arrayCk.length-1][44]}</h5>
-                        <a href="Index.html"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                        <a href="index.html"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
                     </div>
                     <div class="modal-body">
                     ${arrayCk[arrayCk.length-1][45]}
