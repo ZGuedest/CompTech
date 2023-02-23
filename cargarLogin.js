@@ -49,12 +49,11 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
                     <div class="dropdown ">
                       <button class="btn btn-secondary d-flex flex-row text-center align-items-center dropdown-toggle bg-transparent border-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <p id="idio-select" value="espanol" class="pt-3">${idiomaSelect} </p>
-                          <i class="fa-solid fa-earth-americas text-dark ms-1"></i>
+                          <i class="fa-solid fa-earth-americas text-white ms-1"></i>
                       </button>
                       <ul class="dropdown-menu">
                           <li value="espanol"><a value="espanol" class=" idioma px-1 py-1 dropdown-item" href="#">Español</a></li>
                           <li value="ingles"><a value="ingles" class=" idioma px-1 py-1 dropdown-item" href="#">Inglés</a></li>
-                          <li value="euskera"><a value="euskera" class=" idioma px-1 py-1 dropdown-item" href="#">Euskera</a></li>
                       </ul>
                     <div>
                   </li>                
@@ -65,7 +64,7 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
         <div class="text-center">
           <img src="./img/logohackathonWhite.svg"
             style="width: 185px;" alt="logo">
-          <h2 id="frase-imaginacion" class="mt-1 mb-5 pb-1">"${arrayLog[arrayLog.length-1][1]}"</h2>
+          <h2 id="frase-imaginacion" class="mt-4 mb-5 pb-1">${arrayLog[arrayLog.length-1][1]}</h2>
         </div>
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-xl-10">

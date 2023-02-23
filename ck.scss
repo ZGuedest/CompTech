@@ -3,7 +3,7 @@
 header{   
     
 
-    height: 200px;
+    height: 10vh;
     #inicio,#catalogo{
         display: block;
     }
@@ -12,9 +12,6 @@ header{
     }
 } 
 
- #ck_inputnombre, #ck_inputapellidos, #ck_inputTl, #ck_inputCity, #ck_inputdireccion, #ck_inputCp, #ck_inputEmail, #ck_inputPassword {
-     background-color: $color_verdeCl;
- }
 
 
 #ck_btnpedido{

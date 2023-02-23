@@ -96,10 +96,10 @@ $fontWH2:600;
         nav{
         background-color:transparent;
         font-weight: $fontWGeneral;
-        height: 300px;
+        height: 10vh;
 
             #logo{
-                @include img ($url:url("./img/logohackathonWhite.svg"),$wth:30%,$hght: 7rem);
+                @include img ($url:url("./img/logohackathonWhite.svg"),$wth:20%,$hght: 5rem);
                 margin: 0rem;
             }
 
@@ -157,6 +157,7 @@ $fontWH2:600;
         margin: 2rem;
         width: 18rem;
         height: auto;
+        padding: 1rem;
 
 
         .card-titleCM{
@@ -210,17 +211,25 @@ $fontWH2:600;
     footer{
         padding-top: 4rem;
         background-color: $color_negro;
+
+    
+
+        h2{
+            font-size: 25px ;
+        }
+
+
         .btn{
             background-color: transparent;
-            width: 7rem;
+            width: 5rem;
         }
 
         #appel-store{
-            @include img($url:url("./img/App\ Store.png"),$wth:30%,$hght: 5rem,$margin: 1rem );
+            @include img($url:url("./img/App\ Store.png"),$wth:20%,$hght: 4rem,$margin: 1rem );
 
         }
         #play-store{
-            @include img($url:url("./img/play_store.png"),$wth:30%,$hght: 5rem,$margin: 1rem );
+            @include img($url:url("./img/play_store.png"),$wth:20%,$hght: 4rem,$margin: 1rem );
 
         }
 
@@ -229,7 +238,7 @@ $fontWH2:600;
         }
 
         .fab{
-            font-size: 2em;
+            font-size: 1.5em;
 
         }
 

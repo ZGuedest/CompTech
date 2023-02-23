@@ -4,16 +4,6 @@
   cursor: pointer;
 }
 
-body .img {
-  width: 80%;
-  height: 15rem;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 2rem;
-}
-
 * {
   font-family: sans-serif, Arial, Verdana, Tahoma;
   font-size: 17px;
@@ -27,12 +17,12 @@ body .img {
 * header nav {
   background-color: transparent;
   font-weight: 900;
-  height: 300px;
+  height: 10vh;
 }
 * header nav #logo {
   background-image: url("./img/logohackathonWhite.svg");
-  width: 30%;
-  height: 7rem;
+  width: 20%;
+  height: 5rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -73,7 +63,7 @@ body .img {
 }
 * header #frase_imaginacion {
   font-size: 45px;
-  font-family: Blackadder ITC;
+  font-family: sans-serif, Arial, Verdana, Tahoma;
   padding-top: 6rem;
   display: none;
 }
@@ -99,6 +89,7 @@ body .img {
   margin: 2rem;
   width: 18rem;
   height: auto;
+  padding: 1rem;
 }
 * .cardH .card-titleCM {
   height: 4rem;
@@ -155,14 +146,17 @@ body .img {
   padding-top: 4rem;
   background-color: #222529;
 }
+* footer h2 {
+  font-size: 25px;
+}
 * footer .btn {
   background-color: transparent;
-  width: 7rem;
+  width: 5rem;
 }
 * footer #appel-store {
   background-image: url("./img/App Store.png");
-  width: 30%;
-  height: 5rem;
+  width: 20%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -171,8 +165,8 @@ body .img {
 }
 * footer #play-store {
   background-image: url("./img/play_store.png");
-  width: 30%;
-  height: 5rem;
+  width: 20%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -183,7 +177,7 @@ body .img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 * footer .fab {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media (max-width: 991.98px) {
@@ -224,16 +218,13 @@ header #catalogo, header #m-ofertas, header #m-novedades {
 }
 
 body #cont-radio-check {
-  border: 2px solid #387373;
+  border: 2px solid #222529;
   border-radius: 1.5rem;
   padding: 2rem;
   margin-top: 3rem;
 }
-body #ordenador, body #periferico, body #componente, body #catalogo {
+body #ordenador, body #periferico, body #componente, body #accesorio {
   width: 20%;
-}
-body #caja-radio-accesorio {
-  width: 10rem;
 }
 body #ordenador-ico {
   background-image: url("./img/ordenador-ico.png");
@@ -275,32 +266,14 @@ body #accesorio-ico {
   background-size: contain;
   margin: 0rem;
 }
-body #offer {
-  background-image: url("./img/oferta.png");
-  width: 80%;
-  height: 15rem;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 2rem;
-  height: 400px;
-  width: 400px;
-  border-radius: 5%;
-  margin-left: 700px;
-  margin-top: 0px;
-  margin-bottom: -900px;
-  z-index: 9000;
-  position: relative;
-}
 
 @media (max-width: 991.98px) {
-  #ordenador, #periferico, #componente, #catalogo {
+  #ordenador, #periferico, #componente, #accesorio {
     width: 40% !important;
   }
 }
 @media (max-width: 767.98px) {
-  #ordenador, #periferico, #componente, #catalogo {
+  #ordenador, #periferico, #componente, #accesorio {
     width: 100% !important;
   }
 }/*# sourceMappingURL=catalogo.css.map */

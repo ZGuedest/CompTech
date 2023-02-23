@@ -5,21 +5,20 @@
 }
 
 header{   
-    // @include img($url: (linear-gradient( rgb(14, 19, 19),rgba(16, 19, 19, 0.8), rgb(255, 255, 255,0.5)),
-    // url("")), $wth:100%,$hght: 100px,$margin:0rem);
+    
 
     #inicio,#catalogo{
         display: block;
     }
-    #m-ofertas,#m-novedades,#frase_imaginacion,#buscador{
+    #m-ofertas,#m-novedades,#buscador{
         display: none;
+    }
+    i{
+        color: $color_blanco;
     }
  }
 #lg_fondo {
-    // @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-    // url("")), $wth:100%,$hght: 100vh,$margin:0rem); 
-    // @include img($url: (linear-gradient( $color_negro,$color_negro, rgba(255, 255, 255, 0.197)),
-    // url("")), $wth:100%,$hght: 100px,$margin:0rem);
+    
     background-color: $color_negro;
     
 }
@@ -32,7 +31,7 @@ header{
 
 h2{
     font-size: 45px; 
-    font-family: Blackadder ITC;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .btn{
@@ -45,4 +44,6 @@ h2{
 
 #frase-imaginacion{
     color: $color_blanco;
+    font-family: 'Ubuntu', sans-serif;
+
 }

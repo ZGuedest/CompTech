@@ -133,7 +133,7 @@ function cargarFooter(arrayM){
                 
 
                 <!--Grid column-->
-                <div class="col-md-5 col-12">
+                <div class="col-md-4 col-12">
                     <!-- Email input -->
                     <div class="form-outline form-white mb-4">
                     <input type="email" id="form5Example21" placeholder="Email address" class="form-control" />
@@ -168,7 +168,7 @@ function cargarFooter(arrayM){
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mt-4">${arrayM[9+6]}</h6>
-                    <div class="d-flex flex-row flex-wrap justify-content-around" style="width: 100%;">
+                    <div class="d-flex flex-row flex-wrap justify-content-center" style="width: 100%;">
                         <div id="appel-store"></div>
                         <div id="play-store"></div>
                     </div>

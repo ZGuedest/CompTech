@@ -1,79 +1,59 @@
 
-@import "--parcial";
-
+@import "--parcial.scss";
 
 header{
-    #inicio{
-        display: block;
-    }
-    #catalogo, #m-ofertas,#m-novedades{
-        display: none;
-    }
+     #inicio{
+         display: block;
+     }
+     #catalogo, #m-ofertas,#m-novedades{
+         display: none;
+     }
 
 }
 body{
     
-    #cont-radio-check{
-        border: 2px solid $color_VerdeOsc;
-        border-radius: 1.5rem;
-        padding: 2rem;
-        margin-top: 3rem;
-    }
+     #cont-radio-check{
+         border: 2px solid $color_negro;
+         border-radius: 1.5rem;
+         padding: 2rem;
+         margin-top: 3rem;
+     }
 
-    #ordenador,#periferico,#componente,#catalogo{
-        width: 20%;
-    }
+     #ordenador,#periferico,#componente,#accesorio{
+         width: 20%;
+     }
 
-    #caja-radio-accesorio{
-         width: 10rem;
+
+    
+     #ordenador-ico{
+         @include img($url:url("./img/ordenador-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
+
+     #periferico-ico{
+         @include img($url:url("./img/periferico-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
+
+     #componente-ico{
+         @include img($url:url("./img/componente-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
+
+     #accesorio-ico{
+         @include img($url:url("./img/accesorio-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
      }
     
-    #ordenador-ico{
-        @include img($url:url("./img/ordenador-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
-    }
-
-    #periferico-ico{
-        @include img($url:url("./img/periferico-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
-    }
-
-    #componente-ico{
-        @include img($url:url("./img/componente-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
-    }
-
-    #accesorio-ico{
-        @include img($url:url("./img/accesorio-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
-    }
-    
-
-    .img{
-        @extend %imagen;
-    }
-
-    #offer{
-
-        @include img($url:url("./img/oferta.png"));
-        height: 400px;
-        width: 400px;
-        border-radius: 5%;
-        margin-left: 700px;
-        margin-top: 0px;
-        margin-bottom: -900px;
-        z-index: 9000;
-        position: relative;
-    }
 
    
 }
     
 
 @include media-breakpoint-down(lg) {
-    #ordenador,#periferico,#componente,#catalogo{
+    #ordenador,#periferico,#componente,#accesorio{
         width: 40% !important;
     }
  }
 
  @include media-breakpoint-down(md) {
-    #ordenador,#periferico,#componente,#catalogo{
+    #ordenador,#periferico,#componente,#accesorio{
         width: 100% !important;
     }
  }

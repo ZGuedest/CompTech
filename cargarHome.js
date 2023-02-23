@@ -33,7 +33,6 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo){
           <div class="d-flex flex-row align-items-center">
               <h5 class="card-title card-titleCM">${p.name}  ${p.precio}€</h5>
           </div>
-          <p class="card-text description cardTextCM">${p.description}</p>
           <div class="d-flex flex-row align-items-center">
               <a  id =${p.id} data-producto =${p.id}  href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> Añadir</a>
               <i id =${p.id}  class="fa-regular fa-heart corazon-vacio" style="cursor: pointer"></i>

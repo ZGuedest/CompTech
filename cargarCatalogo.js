@@ -21,8 +21,8 @@ function cargarMenuCatalogo(arrayCata){
 
       <div id="ordenador" class="form-check form-check-inline">
 
-          <div id="caja-radio-ordenador" class="d-flex flex-row align-items-center justify-content-around">
-              <input id="radio-ordenador" class="form-check-input radio p-1 m-2" type="radio" name="inlineRadioOptions" value="ordenador" >
+          <div id="caja-radio-ordenador" class="d-flex flex-row align-items-center justify-content-between">
+              <input id="radio-ordenador" class=" radio form-check-input  p-1 m-2" type="radio" name="inlineRadioOptions" value="ordenador" >
               <label class="form-check-label" for="radio-ordenador">${arrayCata[arrayCata.length-1][0]}</label>
               <div id="ordenador-ico"></div>
           </div>
@@ -30,7 +30,7 @@ function cargarMenuCatalogo(arrayCata){
       </div>
 
       <div id="periferico"class="form-check form-check-inline ">
-          <div id="caja-radio-periferico" class="d-flex  flex-row align-items-center justify-content-around">
+          <div id="caja-radio-periferico" class="d-flex  flex-row align-items-center justify-content-between">
               <input id="radio-periferico" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions" value="periferico">
               <label class="form-check-label" for="radio-periferico">${arrayCata[arrayCata.length-1][1]}</label>
               <div id="periferico-ico"></div>
@@ -38,14 +38,12 @@ function cargarMenuCatalogo(arrayCata){
 
       </div>
 
-      <div id="componente"class="form-check form-check-inline ">
+      <div id="componente" class="form-check form-check-inline">
           <div id="caja-radio-componente" class="d-flex flex-row align-items-center justify-content-between">
               <input id="radio-componente" class=" radio form-check-input p-1 m-2" type="radio" name="inlineRadioOptions"  value="componente">
               <label class="form-check-label" for="radio-componente">${arrayCata[arrayCata.length-1][2]}</label>
               <div id="componente-ico"></div>
           </div>
-
-
       </div>
 
       <div id="accesorio"class="form-check form-check-inline ">
@@ -54,7 +52,6 @@ function cargarMenuCatalogo(arrayCata){
               <label class="form-check-label" for="radio-accesorio">${arrayCata[arrayCata.length-1][3]}</label>
               <div id="accesorio-ico"></div>
           </div>
-
       </div>
   </div>
   `
@@ -84,7 +81,6 @@ function pintarCatalogo(shopContent,prod){
       <div class="d-flex flex-row align-items-center">
           <h5 class="card-title card-titleCM">${p.name}  ${p.precio}€</h5>
       </div>
-      <p class="card-text description cardTextCM">${p.description}</p>
       <div class="d-flex flex-row align-items-center">
           <a  id =${p.id}   href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> Añadir</a>
           <i   id =${p.id} class="fa-regular fa-heart corazon-vacio" style="cursor: pointer"></i>
