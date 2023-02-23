@@ -5,6 +5,7 @@ function cargarHome(idiomaSelect) {
   let titOf = ["Ofertas", "Oferts", "Eskaintzak"];
   let titulosMarc = ["Mejores Marcas", "Top Brands", "Marka Onenak"];
 
+<<<<<<< HEAD
   let contenedor_principal = document.getElementById("contenedor_principal");
   limpiarContenedor(contenedor_principal);
   let titulo = seleccionarTitulo(idiomaSelect, titulosMarc);
@@ -43,6 +44,55 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo) {
               </div>
       
           `;
+=======
+function cargarHome(idiomaSelect){
+    let titulosNov=["Novedades","News"]
+    let titOf=["Ofertas","Oferts"]
+
+    let add=["Añadir", "Add"]
+    
+    let contenedor_principal=document.getElementById("contenedor_principal")
+    limpiarContenedor(contenedor_principal)
+    agregarCajasNovedadOfertaMarcas(contenedor_principal)
+    
+    let novedades_caja= document.getElementById("novedades_caja")
+    let ofertas_caja= document.getElementById("ofertas_caja")
+    let productos=cargarDelLocalStorage()
+    let prodNew = filtrarProductos("novedad",productos)
+    let prodOf = filtrarProductos("oferta",productos)
+    let titulo=cargarTitulo(idiomaSelect,titulosNov);
+    let titbtn = idiomaSelect == "Español" ? add[0]:add[1] ;
+
+    cargarNovedadesOfertas(novedades_caja, prodNew,titulo,titbtn)
+    titulo=cargarTitulo(idiomaSelect,titOf)
+    cargarNovedadesOfertas(ofertas_caja, prodOf, titulo,titbtn)
+    activarClickComprar(productos)
+    eventoCorazon(productos)
+}
+
+function cargarNovedadesOfertas(CajaContent, prod, titulo, titbtn){
+    CajaContent.append(titulo);
+    prod.forEach((p)=>{
+      let content = document.createElement ("div");
+      content.className = "col-2 card cardH";
+      content.innerHTML = `
+          <a href="producto.html"><div id=${p.id} class="img imgP" style="background-image:url(${p.src}); height: 200px"></div></a>
+          <div class="d-flex flex-row align-items-center">
+              <h5 class="card-title card-titleCM">${p.name}  ${p.precio}€</h5>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+              <a  id =${p.id} data-producto =${p.id}  href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> ${titbtn} </a>
+              <i id =${p.id}  class="fa-regular fa-heart corazon-vacio" style="cursor: pointer"></i>
+          </div>
+  
+      `;
+  
+      CajaContent.append(content);
+      pintarFavoritos(p)
+    })
+
+    eventoCargarUnProducto(prod)
+>>>>>>> TradProd
     
         CajaContent.append(content);
         pintarFavoritos(p);

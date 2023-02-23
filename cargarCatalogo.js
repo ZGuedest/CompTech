@@ -3,11 +3,11 @@ iniciarCatalogo(idiomaSelect)
 
 function iniciarCatalogo(idiomaSelect){
   
-  const ctlgEsp = ["Ordenadores", "Periféricos", "Componentes ", "Accesorios"]
-  const ctlgEng = ["Computers", "Peripherals", "Components ", "Accessories"]
+  const ctlgEsp = ["Ordenadores", "Periféricos", "Componentes ", "Accesorios", "Añadir"]
+  const ctlgEng = ["Computers", "Peripherals", "Components ", "Accessories", "Add"]
   let arrayM=cambiarIdioma(idiomaSelect, ctlgEsp, ctlgEng)
   let radios=cargarMenuCatalogo(arrayM)  
-  yesnoCheck(radios)
+  yesnoCheck(radios,arrayM)
 
 }
 
@@ -67,11 +67,11 @@ function cargarMenuCatalogo(arrayCata){
   return radios
 }
 
-function pintarCatalogo(shopContent,prod){
+function pintarCatalogo(shopContent,prod, arrayCata){
   while (shopContent.firstChild) {
     shopContent.removeChild(shopContent.firstChild);
   }
-  debugger
+  
   prod.forEach((p)=>{
   let content = document.createElement ("div");
   content.className = "col-2 card cardH";
@@ -82,7 +82,7 @@ function pintarCatalogo(shopContent,prod){
           <h5 class="card-title card-titleCM">${p.name}  ${p.precio}€</h5>
       </div>
       <div class="d-flex flex-row align-items-center">
-          <a  id =${p.id}   href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> Añadir</a>
+          <a  id =${p.id}   href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> ${arrayCata[arrayCata.length-1][4]}</a>
           <i   id =${p.id} class="fa-regular fa-heart corazon-vacio" style="cursor: pointer"></i>
       </div>
 
@@ -99,15 +99,14 @@ function pintarCatalogo(shopContent,prod){
 function eventoRadios(radios){
   for(let i=0; i<radios.length ;i++){
     radios[i].addEventListener("change",()=>{
-      debugger
-      yesnoCheck(radios)
+      yesnoCheck(radios,arrayCata)
     } )
 
   }
 
 }
 
-function yesnoCheck(radios) {
+function yesnoCheck(radios,arrayCata) {
   const shopContent= document.getElementById("shopContent")
   let productosCat = cargarDelLocalStorage();
 
@@ -115,27 +114,27 @@ function yesnoCheck(radios) {
   if (radios[0].checked == true) {
     debugger
     prodCat= productosPorCategoria("Ordenadores",productosCat)
-    pintarCatalogo(shopContent,prodCat)
+    pintarCatalogo(shopContent,prodCat,arrayCata)
     localStorage.setItem("radio",0)
 
 
   } else if (radios[1].checked == true) {
 
     prodCat= productosPorCategoria("Periféricos",productosCat)
-    pintarCatalogo(shopContent,prodCat)
+    pintarCatalogo(shopContent,prodCat,arrayCata)
     localStorage.setItem("radio",1)
 
 
   } else if (radios[2].checked == true) {
     prodCat= productosPorCategoria("Componentes",productosCat)
-    pintarCatalogo(shopContent,prodCat)
+    pintarCatalogo(shopContent,prodCat,arrayCata)
     localStorage.setItem("radio",2)
 
 
 
   } else if (radios[3].checked == true) {
     prodCat= productosPorCategoria("Accesorios",productosCat)
-    pintarCatalogo(shopContent,prodCat)
+    pintarCatalogo(shopContent,prodCat,arrayCata)
     localStorage.setItem("radio",3)
   }
 
