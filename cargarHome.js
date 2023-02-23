@@ -1,5 +1,5 @@
 
-//  cargarHome(idiomaSelect)
+// cargarHome(idiomaSelect)
 
 function cargarHome(idiomaSelect){
     let titulosNov=["Novedades","News","Berrikuntzak"]
@@ -128,7 +128,6 @@ function cargarTitulo(idiomaSelect, array){
 
     return tit
 }
-module.exports = cargarTitulo;
 
 function seleccionarTitulo(idiomaSelect, array){
     let titulo;
