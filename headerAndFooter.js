@@ -36,7 +36,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
             <ul id="menu-interior"class="navbar-nav justify-content-around"">
                 <li id="inicio" class="nav-item pt-3">
-                    <a class="nav-link actived" href="Index.html">${arrayM[0]}</a>
+                    <a class="nav-link actived" href="index.html">${arrayM[0]}</a>
                 </li>
                 <li id="catalogo" class="nav-item pt-3 ">
                     <a class="nav-link actived" href="catalogo.html ">${arrayM[2]}</a>
@@ -233,7 +233,7 @@ function cerrar(){
     cerrar.addEventListener("click",()=>{
     localStorage.clear()
     localStorage.setItem('gmail'," ");
-    window.location.href="Index.html"
+    window.location.href="index.html"
 })
 }
 

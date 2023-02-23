@@ -43,7 +43,7 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
           <nav class="navbar navbar-expand-lg navbar-light">
 
             <ul class="container-xl nav justify-content-around">          
-                  <li><a href="Index.html"><i class="fa-solid fa-arrow-left">  ${arrayLog[arrayLog.length-1][0]} </i></a> </li>
+                  <li><a href="index.html"><i class="fa-solid fa-arrow-left">  ${arrayLog[arrayLog.length-1][0]} </i></a> </li>
                   <li ><p id="fecha" class="pt-4"> ${dia} <span id="hora"></span>${mes} - ${date.getFullYear()} </p></li>
                   <li > 
                     <div class="dropdown ">
@@ -166,7 +166,7 @@ function validarPassword (arrayLog){
     if ((email == "prueba@gmail.com" && password == "1234")|| (email == emailLocalS && password == passLocal)){
         localStorage.setItem('gmail',email);
         localStorage.setItem('pass',password);
-        window.location.assign ("Index.html");
+        window.location.assign ("index.html");
     }else{
         alert (arrayLog[arrayLog.length-1][21])
 

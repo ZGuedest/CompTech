@@ -9,8 +9,8 @@ function eventoCambiarIdioma(){
             localStorage.setItem("idioma",idiomaSelect)
             iniciarHeaderAndFooter()
             let aux=window.location.href
-            if(aux.substring(aux.length-("Index.html").length,aux.length)=="Index.html" ||
-            aux.substring(aux.length-("Index.html").length,aux.length)=="ndex.html#"){
+            if(aux.substring(aux.length-("index.html").length,aux.length)=="index.html" ||
+            aux.substring(aux.length-("index.html").length,aux.length)=="ndex.html#"){
                 cargarHome(idiomaSelect)
             }
             if(aux.substring(aux.length-("catalogo.html").length,aux.length)=="catalogo.html" ||
