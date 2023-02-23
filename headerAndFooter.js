@@ -1,3 +1,6 @@
+debugger
+
+
 let idiomaSelect= localStorage.getItem("idioma")
     if(idiomaSelect==null){
         idiomaSelect="Español";
@@ -29,7 +32,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         </button>
         
         <div id="logo"></div>
-        <a  href="#" class="btn btn-primary mt-4" >  <i class="fa-solid fa-cart-shopping"></i> Vender un producto </a>
+        <a  href="addproduct.html" id="vender_prod" class="btn mt-4"> Vender un producto </a>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
             <ul id="menu-interior"class="navbar-nav justify-content-around"">
                 <li id="inicio" class="nav-item pt-3">

@@ -1,4 +1,4 @@
-
+debugger
 
 addProducto()
 
@@ -36,7 +36,6 @@ function addProducto(){
                 </form>
             </div>
         </div>`
-    let productos=cargarDelLocalStorage()
-    activarClickComprar(productos)
-    eventoCorazon(productos)
+    
+    
 }

@@ -72,18 +72,6 @@ $fontWH2:600;
     margin: $margin;
 }
 
-// @include media-breakpoint-down(sm) {...}
-// @include media-breakpoint-down(md) { ... }
-// @include media-breakpoint-down(lg) { ... }
-// @include media-breakpoint-down(xl) { ... }
-// @include media-breakpoint-down(xxl) { ... }
-
-
-// @include media-breakpoint-only(xs) { ... }
-// @include media-breakpoint-only(md) { ... }
-// @include media-breakpoint-only(lg) { ... }
-// @include media-breakpoint-only(xl) { ... }
-// @include media-breakpoint-only(xxl) { ... }
 
 
 @mixin lineas($marginR: 1rem,$marginL: 1rem){
@@ -102,8 +90,6 @@ $fontWH2:600;
 
     header{
 
-        // @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-        // url("./img/fondo2.jpg")), $wth:100%,$hght: 500px,$margin:0rem);
         background-size: cover;
         z-index: 4000;
 
@@ -138,7 +124,8 @@ $fontWH2:600;
             }
 
             .btn{
-                width: 18rem;
+                @include button ($bg-color:$color_negro, $wth: 18rem, $colorletra:$color_blanco)
+                
             }
 
             #ven{
@@ -152,7 +139,7 @@ $fontWH2:600;
             font-size: 45px;
             font-family: Blackadder ITC;
             padding-top: 6rem;
-            padding-left: 5rem;
+            
         }
     }
 
@@ -251,8 +238,6 @@ $fontWH2:600;
 
     
 }
-
-
 
 
  @include media-breakpoint-down(lg) {

@@ -45,7 +45,17 @@
   color: white;
 }
 * header nav .btn {
+  background-color: #222529;
   width: 18rem;
+  color: white;
+  font-weight: 900;
+  border: #a9a6a7 1px solid;
+  margin-bottom: 0.7rem;
+}
+* header nav .btn:hover {
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * header nav #ven {
   display: none;
@@ -55,7 +65,6 @@
   font-size: 45px;
   font-family: Blackadder ITC;
   padding-top: 6rem;
-  padding-left: 5rem;
 }
 * .btn-primary {
   background-color: #222529;
