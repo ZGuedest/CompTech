@@ -3,6 +3,14 @@
     "-": "^0.0.1",
     "bootstrap": "^5.2.3",
     "g": "^2.0.1",
+    "node-fetch": "^3.3.0",
     "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  },
+  "scripts": {
+    "tests": "jest",
+    "filter": "jest -t"
   }
 }

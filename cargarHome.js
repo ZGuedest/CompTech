@@ -1,5 +1,5 @@
 
-cargarHome(idiomaSelect)
+//  cargarHome(idiomaSelect)
 
 function cargarHome(idiomaSelect){
     let titulosNov=["Novedades","News","Berrikuntzak"]
@@ -128,6 +128,7 @@ function cargarTitulo(idiomaSelect, array){
 
     return tit
 }
+module.exports = cargarTitulo;
 
 function seleccionarTitulo(idiomaSelect, array){
     let titulo;
@@ -140,6 +141,8 @@ function seleccionarTitulo(idiomaSelect, array){
     }
     return titulo;
 }
+
+module.exports = seleccionarTitulo;
 
 function filtrarProductos(opcion, productos){
     let prods=[]
@@ -201,3 +204,4 @@ function cerrarPopap(){
         popap.style.zIndex="0"
     })
 }
+

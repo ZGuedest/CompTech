@@ -65,3 +65,4 @@ function cambiarIdioma(idioma, esp, ing, eusk){
    
     return arrayM;
 }
+module.exports=cambiarIdioma

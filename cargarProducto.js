@@ -52,3 +52,4 @@ function productoIdioma() {
     })
     return p
 }
+module.exports = productoIdioma;

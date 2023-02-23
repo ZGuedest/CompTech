@@ -11,6 +11,7 @@ function iniciarCatalogo(idiomaSelect){
   yesnoCheck(radios)
 
 }
+module.exports = iniciarCatalogo
 
 function cargarMenuCatalogo(arrayCata){
 
@@ -257,6 +258,7 @@ function cargarCheckoutPorCategoria(categoria){
 
     return arrayAux;
 }
+module.exports = cargarCheckoutPorCategoria
 
 function productosPorCategoria(categoria, productosCat){
   let prodCat=[];
