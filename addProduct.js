@@ -1,7 +1,7 @@
 
 inicializarAddProducto()
 
-inicializarAddProducto(){
+function inicializarAddProducto(){
 
     let arrE=["Producto","Nombre del producto", "Precio", "Precio del producto", "Correo", "Correo de contacto con el cliente", "Descripción", "Imagen", "Agregar"]
 
