@@ -1,5 +1,3 @@
-debugger
-
 
 let idiomaSelect= localStorage.getItem("idioma")
     if(idiomaSelect==null){

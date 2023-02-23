@@ -4,18 +4,18 @@ cargarHome(idiomaSelect)
 function cargarHome(idiomaSelect){
     let titulosNov=["Novedades","News"]
     let titOf=["Ofertas","Oferts"]
-
+    debugger
     let contenedor_principal=document.getElementById("contenedor_principal")
     limpiarContenedor(contenedor_principal)
-    let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
-    agregarCajasNovedadOfertaMarcas(contenedor_principal,titulo)
-
+    // let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
+    agregarCajasNovedadOfertaMarcas(contenedor_principal)
+    debugger
     let novedades_caja= document.getElementById("novedades_caja")
     let ofertas_caja= document.getElementById("ofertas_caja")
     let productos=cargarDelLocalStorage()
     let prodNew = filtrarProductos("novedad",productos)
     let prodOf = filtrarProductos("oferta",productos)
-    titulo=cargarTitulo(idiomaSelect,titulosNov);
+    let titulo=cargarTitulo(idiomaSelect,titulosNov);
     cargarNovedadesOfertas(novedades_caja, prodNew,titulo)
     titulo=cargarTitulo(idiomaSelect,titOf)
     cargarNovedadesOfertas(ofertas_caja, prodOf, titulo)
@@ -49,7 +49,7 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo){
     
 }
 
-function agregarCajasNovedadOfertaMarcas(contenedor_principal,marca){
+function agregarCajasNovedadOfertaMarcas(contenedor_principal){
 
     contenedor_principal.innerHTML=`
 
@@ -113,21 +113,6 @@ function filtrarProductos(opcion, productos){
 }
 
 
-function cargarDelLocalStorage(){
-
-    let aux;
-    let prtos =[];
-    for(let i=0; i<36;i++){
-        
-        aux= localStorage.getItem(i)
-        aux = JSON.parse(aux)
-        prtos.push(aux)
-    }
-  
-    return prtos;
-  
-}
-
 
 function limpiarContenedor(shopContent){
     while (shopContent.firstChild) {
@@ -135,22 +120,3 @@ function limpiarContenedor(shopContent){
     }
 }
 
-
-function crearPopap(){
-    let html= document.getElementsByTagName("html")[0]
-    let popap= document.getElementById("popap")
-
-    html.addEventListener("mouseleave",()=>{
-        popap.style.display="block"
-        popap.style.zIndex="6000"
-    })
-}
-
-function cerrarPopap(){
-    let popap= document.getElementById("popap")
-
-    popap.addEventListener("click",()=>{
-        popap.style.display="none"
-        popap.style.zIndex="0"
-    })
-}

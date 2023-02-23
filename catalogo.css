@@ -75,6 +75,7 @@ body .img {
   font-size: 45px;
   font-family: Blackadder ITC;
   padding-top: 6rem;
+  display: none;
 }
 * .btn-primary {
   background-color: #222529;
