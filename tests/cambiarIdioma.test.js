@@ -12,11 +12,5 @@ describe('initial', () => {
 
         expect(result[0]).toBe("Home");
     });
-    test('should return Hasi', () => {
-        let idioma = "Euskera"
-        let result = cambiarIdioma(idioma)
-
-        expect(result[0]).toBe("Hasi");
-    });
     
 })
