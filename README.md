@@ -40,6 +40,15 @@ Project under development to promote the acquisition of second-hand technologica
 Once it's installed you'll need to clone our project:
 ```
 git clone https://github.com/ZGuedest/CompTech.git
+npm install --save-dev jest
+```
+Before starting you'll also need to copy paste the code below on the package.json:
+```
+{
+  "scripts":{
+    "test":"jest"
+  }
+}
 ```
 And last, but not least you'll need to start live server extension from VScode. 
 
@@ -100,8 +109,18 @@ Proyecto en desarrollo para fomentar la adquisición de productos tecnológicos 
 Una vez que esté todo instalado, ya se puede clonar:
 ```
 git clone https://github.com/ZGuedest/CompTech.git
+npm install --save-dev jest
+```
+Antes de comenzar, tienes que copiar y pegar el siguiente código en el paquete.json:
+```
+{
+  "scripts":{
+    "test":"jest"
+  }
+}
 ```
 Y por último, pero no menos importante, debes iniciar la extensión de live server desde VScode.
+
 
 ## :bust_in_silhouette:Personas contribuyentes
 [@marcygon](https://github.com/marcygon)<br>
