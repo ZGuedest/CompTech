@@ -25,16 +25,14 @@ function iniciarLogin(idiomaSelect){
   }]
 
 
-  let idioma=  idiomaFecha()
-  let date = new Date();
-  let dia = date.toLocaleString(idioma, {weekday: 'long'});
-  let mes =date.toLocaleString(idioma+ '-'+idioma, { month: 'long' })
-  cargarLogin(idiomaSelect,arrayLog,date, dia, mes)
+  
+ 
+  cargarLogin(idiomaSelect,arrayLog)
   eventoRegistrarse()
 }
 
 
-function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
+function cargarLogin(idiomaSelect,arrayLog){
 
   
   let caja = document.getElementById("lg_fondo");
@@ -44,7 +42,6 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
 
             <ul class="container-xl nav justify-content-around">          
                   <li><a href="index.html"><i class="fa-solid fa-arrow-left">  ${arrayLog[arrayLog.length-1][0]} </i></a> </li>
-                  <li ><p id="fecha" class="pt-4"> ${dia} <span id="hora"></span>${mes} - ${date.getFullYear()} </p></li>
                   <li > 
                     <div class="dropdown ">
                       <button class="btn btn-secondary d-flex flex-row text-center align-items-center dropdown-toggle bg-transparent border-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">

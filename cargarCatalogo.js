@@ -2,7 +2,6 @@
 iniciarCatalogo(idiomaSelect)
 
 function iniciarCatalogo(idiomaSelect){
-  
   const ctlgEsp = ["Ordenadores", "Periféricos", "Componentes ", "Accesorios", "Añadir"]
   const ctlgEng = ["Computers", "Peripherals", "Components ", "Accessories", "Add"]
   let arrayM=cambiarIdioma(idiomaSelect, ctlgEsp, ctlgEng)
@@ -63,7 +62,7 @@ function cargarMenuCatalogo(arrayCata){
     radios[0].checked=true
     localStorage.setItem("radio",0)
   }
-  eventoRadios(radios)
+  eventoRadios(radios,arrayCata)
   return radios
 }
 
@@ -96,9 +95,10 @@ function pintarCatalogo(shopContent,prod, arrayCata){
   eventoCargarUnProducto(prod)
 }
 
-function eventoRadios(radios){
+function eventoRadios(radios,arrayCata){
   for(let i=0; i<radios.length ;i++){
     radios[i].addEventListener("change",()=>{
+      debugger
       yesnoCheck(radios,arrayCata)
     } )
 
