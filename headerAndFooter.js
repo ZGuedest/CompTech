@@ -5,20 +5,16 @@ let idiomaSelect= localStorage.getItem("idioma")
     }
    
 iniciarHeaderAndFooter()
-//setInterval(mostrarFecha, 1000);
+
 
 function iniciarHeaderAndFooter(){
     cargarBD(idiomaSelect)
-    let idioma= idiomaFecha()
-    let date = new Date();
-    let dia = date.toLocaleString( idioma , {weekday: 'long'});
-    let mes =date.toLocaleString( idioma + '-'+idioma, { month: 'long' })
     let arrayM=cambiarIdioma(idiomaSelect,[],[],[])
-    cargarMenu(arrayM,idiomaSelect,dia,mes,date)
+    cargarMenu(arrayM,idiomaSelect)
     cargarFooter(arrayM)
 }
 
-function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
+function cargarMenu(arrayM,idiomaSelect){
 
     let header= document.getElementsByTagName("header")[0]
     header.innerHTML = `
@@ -30,7 +26,7 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         </button>
         
         <div id="logo"></div>
-        <a  href="addproduct.html" id="vender_prod" class="btn mt-4"> Vender un producto </a>
+        <a  href="addproduct.html" id="vender_prod" class="btn mt-4"> ${arrayM[22]}</a>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
             <ul id="menu-interior"class="navbar-nav justify-content-around"">
                 <li id="inicio" class="nav-item pt-3">
@@ -84,8 +80,6 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
     `
     eventoCambiarIdioma()
     validarLogin()
-    // crearPopap()
-    // cerrarPopap()
     
 }
 
@@ -183,30 +177,6 @@ function cargarFooter(arrayM){
     `
 }
 
-function idiomaFecha(){
-    let idioma;
-    if(idiomaSelect=="Español"){
-        idioma="es"
-    }
-    else if( idiomaSelect=="Inglés"){
-        idioma="en"
-    }
-    else if(idiomaSelect=="Euskera") {
-        idioma="eu"
-    }
-    return idioma
-}
-
-
-function mostrarFecha(){
-    let d = new Date()
-    let mm = d.getMinutes();
-    let min = ("0" + mm).slice(-2);
-    let ss = d.getSeconds();
-    let seg = ("0" + ss).slice(-2);
-    let hora= document.getElementById("hora")
-    hora.innerHTML= "-"+d.getHours()+":"+min+"-"+seg+"-"
-}
 
 function validarLogin(){
     let black=document.getElementById("login");
@@ -234,22 +204,4 @@ function cerrar(){
 })
 }
 
-function crearPopap(){
-    let html= document.getElementsByTagName("html")[0]
-    let popap= document.getElementById("popap")
-
-    html.addEventListener("mouseleave",()=>{
-        popap.style.display="block"
-        popap.style.zIndex="6000"
-    })
-}
-
-function cerrarPopap(){
-    let popap= document.getElementById("popap")
-
-    popap.addEventListener("click",()=>{
-        popap.style.display="none"
-        popap.style.zIndex="0"
-    })
-}
 
