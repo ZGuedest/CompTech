@@ -4,10 +4,9 @@ iniciarProducto()
 function iniciarProducto(){
     const prdtEsp = ["AÑADIR", "Envio gratuito","Devoluciones o cambios permitidos"]
     const prdtEng = ["ADD", "Free shipping","Returns or changes allowed"]
-    const prdtEus = ["GEHITU", "Doako bidalketa", "Itzulketak edo aldaketak onartzen dira"]
     let arrayPr = []
     debugger
-    arrayPr=cambiarIdioma(idiomaSelect, prdtEsp, prdtEng, prdtEus)
+    arrayPr=cambiarIdioma(idiomaSelect, prdtEsp, prdtEng)
     let p= productoIdioma()
     cargarProducto(arrayPr,p)
 }

@@ -17,7 +17,7 @@
 * header nav {
   background-color: transparent;
   font-weight: 900;
-  height: 300px;
+  height: 200px;
 }
 * header nav #logo {
   background-image: url("./img/logohackathonWhite.svg");
@@ -45,7 +45,17 @@
   color: white;
 }
 * header nav .btn {
+  background-color: #222529;
   width: 18rem;
+  color: white;
+  font-weight: 900;
+  border: #a9a6a7 1px solid;
+  margin-bottom: 0.7rem;
+}
+* header nav .btn:hover {
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * header nav #ven {
   display: none;
@@ -53,9 +63,9 @@
 }
 * header #frase_imaginacion {
   font-size: 45px;
-  font-family: Blackadder ITC;
+  font-family: sans-serif, Arial, Verdana, Tahoma;
   padding-top: 6rem;
-  padding-left: 5rem;
+  display: none;
 }
 * .btn-primary {
   background-color: #222529;
@@ -199,7 +209,10 @@
 header #inicio, header #catalogo {
   display: block;
 }
-header #m-ofertas, header #m-novedades {
+header #m-ofertas, header #m-novedades, header #frase-imaginacion {
+  display: none;
+}
+header #vender_prod {
   display: none;
 }
 

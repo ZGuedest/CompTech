@@ -1,17 +1,7 @@
 * header nav #menu-iconers i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   cursor: pointer;
-}
-
-body .img {
-  width: 80%;
-  height: 15rem;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 2rem;
 }
 
 * {
@@ -27,12 +17,12 @@ body .img {
 * header nav {
   background-color: transparent;
   font-weight: 900;
-  height: 300px;
+  height: 10vh;
 }
 * header nav #logo {
   background-image: url("./img/logohackathonWhite.svg");
-  width: 30%;
-  height: 7rem;
+  width: 10%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -55,7 +45,18 @@ body .img {
   color: white;
 }
 * header nav .btn {
-  width: 18rem;
+  background-color: #222529;
+  width: 15rem;
+  color: white;
+  font-weight: 900;
+  border: #a9a6a7 1px solid;
+  margin-bottom: 0.7rem;
+  margin-left: 2rem;
+}
+* header nav .btn:hover {
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * header nav #ven {
   display: none;
@@ -63,9 +64,9 @@ body .img {
 }
 * header #frase_imaginacion {
   font-size: 45px;
-  font-family: Blackadder ITC;
+  font-family: sans-serif, Arial, Verdana, Tahoma;
   padding-top: 6rem;
-  padding-left: 5rem;
+  display: none;
 }
 * .btn-primary {
   background-color: #222529;
@@ -87,8 +88,9 @@ body .img {
 }
 * .cardH {
   margin: 2rem;
-  width: 18rem;
+  width: 15rem;
   height: auto;
+  padding: 1rem;
 }
 * .cardH .card-titleCM {
   height: 4rem;
@@ -145,14 +147,17 @@ body .img {
   padding-top: 4rem;
   background-color: #222529;
 }
+* footer h2 {
+  font-size: 25px;
+}
 * footer .btn {
   background-color: transparent;
-  width: 7rem;
+  width: 5rem;
 }
 * footer #appel-store {
   background-image: url("./img/App Store.png");
-  width: 30%;
-  height: 5rem;
+  width: 20%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -161,8 +166,8 @@ body .img {
 }
 * footer #play-store {
   background-image: url("./img/play_store.png");
-  width: 30%;
-  height: 5rem;
+  width: 20%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -173,13 +178,13 @@ body .img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 * footer .fab {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media (max-width: 991.98px) {
   #logo {
     background-image: url("./img/logohackathonWhite.svg");
-    width: 80%;
+    width: 80% !important;
     height: 20rem;
     background-position: center;
     background-color: transparent;
@@ -190,14 +195,14 @@ body .img {
     margin-right: 1rem;
   }
   nav {
-    height: 350px !important;
+    height: 370px !important;
   }
   nav a, nav i {
     font-size: 1rem !important;
   }
   #frase_imaginacion {
     padding-top: 0rem !important;
-    padding-left: 1rem !important;
+    padding-left: 0rem !important;
     font-size: 30px !important;
   }
   #menu-iconers {
@@ -213,35 +218,17 @@ header #catalogo, header #m-ofertas, header #m-novedades {
   display: none;
 }
 
-body #checks-cuerda, body #checks-viento, body #checks-percusion, body #checks-electronico {
-  display: block;
-  width: 10%;
-}
 body #cont-radio-check {
-  border: 2px solid #387373;
+  border: 2px solid #222529;
   border-radius: 1.5rem;
   padding: 2rem;
   margin-top: 3rem;
 }
-body #cuerda, body #viento, body #percusion, body #electronico {
+body #ordenador, body #periferico, body #componente, body #accesorio {
   width: 20%;
 }
-body #caja-radio-percusion, body #caja-radio-electronico {
-  width: 10rem;
-}
-body #ico-cuerda {
-  background-image: url("./img/ico-guitarra.jpeg");
-  width: 20%;
-  height: 50px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
-  background-size: cover;
-}
-body #ico-viento {
-  background-image: url("./img/trompa-ico.jpg");
+body #ordenador-ico {
+  background-image: url("./img/ordenador-ico.png");
   width: 20%;
   height: 50px;
   background-position: center;
@@ -250,9 +237,9 @@ body #ico-viento {
   background-size: contain;
   margin: 0rem;
 }
-body #ico-percusion {
-  background-image: url("./img/percusion-ico.jpg");
-  width: 18%;
+body #periferico-ico {
+  background-image: url("./img/periferico-ico.png");
+  width: 20%;
   height: 50px;
   background-position: center;
   background-color: transparent;
@@ -260,9 +247,9 @@ body #ico-percusion {
   background-size: contain;
   margin: 0rem;
 }
-body #ico-electronico {
-  background-image: url("./img/electronico1.webp");
-  width: 18%;
+body #componente-ico {
+  background-image: url("./img/componente-ico.png");
+  width: 20%;
   height: 50px;
   background-position: center;
   background-color: transparent;
@@ -270,32 +257,24 @@ body #ico-electronico {
   background-size: contain;
   margin: 0rem;
 }
-body #offer {
-  background-image: url("./img/oferta.png");
-  width: 80%;
-  height: 15rem;
+body #accesorio-ico {
+  background-image: url("./img/accesorio-ico.png");
+  width: 20%;
+  height: 50px;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 2rem;
-  height: 400px;
-  width: 400px;
-  border-radius: 5%;
-  margin-left: 700px;
-  margin-top: 0px;
-  margin-bottom: -900px;
-  z-index: 9000;
-  position: relative;
+  margin: 0rem;
 }
 
 @media (max-width: 991.98px) {
-  #cuerda, #viento, #percusion, #electronico {
+  #ordenador, #periferico, #componente, #accesorio {
     width: 40% !important;
   }
 }
 @media (max-width: 767.98px) {
-  #cuerda, #viento, #percusion, #electronico {
+  #ordenador, #periferico, #componente, #accesorio {
     width: 100% !important;
   }
 }/*# sourceMappingURL=catalogo.css.map */

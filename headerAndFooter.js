@@ -1,3 +1,4 @@
+
 let idiomaSelect= localStorage.getItem("idioma")
     if(idiomaSelect==null){
         idiomaSelect="Español";
@@ -29,11 +30,11 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
         </button>
         
         <div id="logo"></div>
-        <a  href="#" class="btn btn-primary mt-4" >  <i class="fa-solid fa-cart-shopping"></i> Vender un producto </a>
+        <a  href="addproduct.html" id="vender_prod" class="btn mt-4"> Vender un producto </a>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-around" >
             <ul id="menu-interior"class="navbar-nav justify-content-around"">
                 <li id="inicio" class="nav-item pt-3">
-                    <a class="nav-link actived" href="Index.html">${arrayM[0]}</a>
+                    <a class="nav-link actived" href="index.html">${arrayM[0]}</a>
                 </li>
                 <li id="catalogo" class="nav-item pt-3 ">
                     <a class="nav-link actived" href="catalogo.html ">${arrayM[2]}</a>
@@ -57,7 +58,6 @@ function cargarMenu(arrayM,idiomaSelect,dia,mes,date){
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li value="espanol"><a value="espanol" class=" idioma px-1 py-1 dropdown-item" href="#">Español</a></li>
                         <li value="ingles"><a value="ingles" class=" idioma px-1 py-1 dropdown-item" href="#">Inglés</a></li>
-                        <li value="euskera"><a value="euskera" class=" idioma px-1 py-1 dropdown-item" href="#">Euskera</a></li>
                     </ul>
                 </li>
                 <div class="d-flex flex-column aling-items-center p-2">
@@ -133,7 +133,7 @@ function cargarFooter(arrayM){
                 
 
                 <!--Grid column-->
-                <div class="col-md-5 col-12">
+                <div class="col-md-4 col-12">
                     <!-- Email input -->
                     <div class="form-outline form-white mb-4">
                     <input type="email" id="form5Example21" placeholder="Email address" class="form-control" />
@@ -168,7 +168,7 @@ function cargarFooter(arrayM){
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mt-4">${arrayM[9+6]}</h6>
-                    <div class="d-flex flex-row flex-wrap justify-content-around" style="width: 100%;">
+                    <div class="d-flex flex-row flex-wrap justify-content-center" style="width: 100%;">
                         <div id="appel-store"></div>
                         <div id="play-store"></div>
                     </div>
@@ -230,7 +230,7 @@ function cerrar(){
     cerrar.addEventListener("click",()=>{
     localStorage.clear()
     localStorage.setItem('gmail'," ");
-    window.location.href="Index.html"
+    window.location.href="index.html"
 })
 }
 

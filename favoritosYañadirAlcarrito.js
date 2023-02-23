@@ -31,8 +31,10 @@ function añadirFav(corazon,idCora, productos) {
 }
 
 function eliminarFavorito(idCora,productos){
+
     productos[idCora-1].favorito ="false"
-    localStorage.setItem("cantFav",localStorage.getItem("cantFav")-2)
+    let cant=localStorage.getItem("cantFav")-2
+    localStorage.setItem("cantFav",cant)
     cantidadDelIconoCarritoCorazon("cantFav")
 }
 

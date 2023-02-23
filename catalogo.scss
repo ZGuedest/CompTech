@@ -1,83 +1,59 @@
 
-@import "--parcial";
-
+@import "--parcial.scss";
 
 header{
-    #inicio{
-        display: block;
-    }
-    #catalogo, #m-ofertas,#m-novedades{
-        display: none;
-    }
+     #inicio{
+         display: block;
+     }
+     #catalogo, #m-ofertas,#m-novedades{
+         display: none;
+     }
 
 }
 body{
-    #checks-cuerda, #checks-viento, #checks-percusion, #checks-electronico{
-        display: block;
-        width: 10%;
-    }
+    
+     #cont-radio-check{
+         border: 2px solid $color_negro;
+         border-radius: 1.5rem;
+         padding: 2rem;
+         margin-top: 3rem;
+     }
 
-    #cont-radio-check{
-        border: 2px solid $color_VerdeOsc;
-        border-radius: 1.5rem;
-        padding: 2rem;
-        margin-top: 3rem;
-    }
+     #ordenador,#periferico,#componente,#accesorio{
+         width: 20%;
+     }
 
-    #cuerda,#viento,#percusion,#electronico{
-        width: 20%;
-    }
 
-    #caja-radio-percusion, #caja-radio-electronico{
-        width: 10rem;
-    }
-    #ico-cuerda{
-        @include img($url:url("./img/ico-guitarra.jpeg"),$wth:20%,$hght: 50px,$margin:0rem);
-        background-size: cover;
-    }
-    #ico-viento{
-        @include img($url:url("./img/trompa-ico.jpg"),$wth:20%,$hght: 50px,$margin:0rem);
-    }
+    
+     #ordenador-ico{
+         @include img($url:url("./img/ordenador-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
 
-    #ico-percusion{
-        @include img($url:url("./img/percusion-ico.jpg"),$wth:18%,$hght: 50px,$margin:0rem);
-    }
+     #periferico-ico{
+         @include img($url:url("./img/periferico-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
 
-    #ico-electronico{
-        @include img($url:url("./img/electronico1.webp"),$wth:18%,$hght: 50px,$margin:0rem);
-    }
+     #componente-ico{
+         @include img($url:url("./img/componente-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
 
-    .img{
-        @extend %imagen;
-    }
-
-    #offer{
-
-        @include img($url:url("./img/oferta.png"));
-        height: 400px;
-        width: 400px;
-        border-radius: 5%;
-        margin-left: 700px;
-        margin-top: 0px;
-        margin-bottom: -900px;
-        z-index: 9000;
-        position: relative;
-    }
+     #accesorio-ico{
+         @include img($url:url("./img/accesorio-ico.png"),$wth:20%,$hght: 50px,$margin:0rem);
+     }
+    
 
    
 }
     
 
-
-
 @include media-breakpoint-down(lg) {
-    #cuerda,#viento,#percusion,#electronico{
+    #ordenador,#periferico,#componente,#accesorio{
         width: 40% !important;
     }
  }
 
  @include media-breakpoint-down(md) {
-    #cuerda,#viento,#percusion,#electronico{
+    #ordenador,#periferico,#componente,#accesorio{
         width: 100% !important;
     }
  }

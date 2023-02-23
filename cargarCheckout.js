@@ -3,9 +3,8 @@ iniciarCheckout(idiomaSelect)
 function iniciarCheckout(idiomaSelect){
     const chcktEsp = ["Seleccione el Tipo de Envio", "Recogida en tienda","Gratis", " (Puede recoger su pedido a partir del jueves)","Enviar a domicilio 72h", "10€", "(Recibirá su pedido entre las 9:00am y 2:00pm del jueves)","Enviar a domicilio 24h","20€"," (Recibirá su pedido entre las 9:00am y 2:00 de mañana)","Datos del cliente", "Nombre", "Apellidos", "Teléfono", "Ciudad","Dirección", "C.P.", "Correo", "Contraseña","Métodos de pago","Pago con tarjeta", "Número de tarjeta","Mes caducidad","MM","Año caducidad","YY","CCV","CCV","Nombre en la tarjeta","Guardar detalles para pagos rápidos", "Pagos con Bizum","Introduce el teléfono","Teléfono registrado en Bizum","Pago con Paypal","Correo", "Contraseña","Cupón de Descuento","Código del cupón","Resumen del Pedido:","Precio total de los productos","Precio de envio","Descuento","Total a Pagar", "Realizar Pedido","GRACIAS POR CONFIRAR EN NOSOTROS","Tu compra ha sido realizada con exito.","Código inexistente"]
     const chcktEng = ["Select Type of Shipping", "Pick up in store", "Free" ,"(You can pick up your order from Thursday)", "72h home delivery", "€10","(You will receive your order between 9:00 am and 2: 00 pm hours)","24h home delivery","20€","(You will receive your order between 9:00 and 2:00 tomorrow)","Customer data", "Name", "Surname", "Telephone", " City","Address", "ZIP", "Email", "Password","Payment methods","Card payment","Card number","Expiration month" , "MM","Expiration year", "YY", "CCV", "CCV","Name on the card","Save data for quick payments", "Payments with Bizum","Enter telephone number","Telephone number registered in Bizum","Payment with Paypal","Email","Password","Discount Coupon","Coupon Code","Order Summary:","Total Product Price","Shopping Price","Discount", "Total to Pay", "Place order","THANK YOU FOR TRUSTING US", "Your purchase has been successful.","Non-existent code"]
-    const chcktEus = ["Hautatu Bidalketa Mota", "Jaso dendan","Doan","(ostegunetik aurrera jaso dezakezu eskaera)","Bidali zure etxeko helbidera 72 orduko epean", "10 €","(Eskaria 9 bitartean jasoko duzu). :00:00etan eta 14:00etan 00:00etan ostegunean)","Bidali etxeko helbidera 24 orduetan","20€","(Bihar 9:00etatik 02:00etara jasoko duzu zure eskaera)","Bezeroaren datuak", "Izena ", "Abizenak", "Telefonoa", "Hiri", "Helbidea", "ZIP", "E-posta", "Pasahitza","Ordainketa moduak","Txartelaren ordainketa", "Txartel zenbakia","Iraungitze hilabetea", "MM", "Iraungitze-urtea", "YY","CCV","CCV","Izena txartelean","Gorde xehetasunak ordainketa azkarrerako", "Ordainketak Bizum-ekin","Idatzi telefono zenbakia"," Bizum-en erregistratutako telefono-zenbakia", "Ordainketa Paypal-ekin","Eposta elektronikoa", "Pasahitza","Deskontu kupoia","Kupoi kodea","Eskaeraren laburpena:","Produktuen prezio osoa","Bidalketa prezioa"," Deskontua", "Ordaintzeko guztira", "Egin eskaera","ESKERRIK ASKO GUGAN KONFIRATZEAGATIK"," Zure erosketa arrakastaz egin da.","existitzen ez den kodea"]
     let arrayCk = []
-    arrayCk=cambiarIdioma(idiomaSelect, chcktEsp, chcktEng, chcktEus)
+    arrayCk=cambiarIdioma(idiomaSelect, chcktEsp, chcktEng)
     cargarCheckout(arrayCk)
     let radiosEnv= document.getElementsByClassName("radio")
     let gastosE=gastosDeEnvio(radiosEnv)
@@ -215,7 +214,7 @@ function cargarCheckout(arrayCk){
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"> ${arrayCk[arrayCk.length-1][44]}</h5>
-                        <a href="Index.html"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                        <a href="index.html"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
                     </div>
                     <div class="modal-body">
                     ${arrayCk[arrayCk.length-1][45]}
