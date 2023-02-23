@@ -2,29 +2,31 @@
 cargarHome(idiomaSelect)
 
 function cargarHome(idiomaSelect){
-    let titulosNov=["Novedades","News","Berrikuntzak"]
-    let titOf=["Ofertas","Oferts","Eskaintzak"]
-    let titulosMarc=["Mejores Marcas","Top Brands","Marka Onenak"]
+    let titulosNov=["Novedades","News"]
+    let titOf=["Ofertas","Oferts"]
 
+    let add=["Añadir", "Add"]
+    
     let contenedor_principal=document.getElementById("contenedor_principal")
     limpiarContenedor(contenedor_principal)
-    let titulo= seleccionarTitulo(idiomaSelect,titulosMarc);
-    agregarCajasNovedadOfertaMarcas(contenedor_principal,titulo)
-
+    agregarCajasNovedadOfertaMarcas(contenedor_principal)
+    
     let novedades_caja= document.getElementById("novedades_caja")
     let ofertas_caja= document.getElementById("ofertas_caja")
     let productos=cargarDelLocalStorage()
     let prodNew = filtrarProductos("novedad",productos)
     let prodOf = filtrarProductos("oferta",productos)
-    titulo=cargarTitulo(idiomaSelect,titulosNov);
-    cargarNovedadesOfertas(novedades_caja, prodNew,titulo)
+    let titulo=cargarTitulo(idiomaSelect,titulosNov);
+    let titbtn = idiomaSelect == "Español" ? add[0]:add[1] ;
+
+    cargarNovedadesOfertas(novedades_caja, prodNew,titulo,titbtn)
     titulo=cargarTitulo(idiomaSelect,titOf)
-    cargarNovedadesOfertas(ofertas_caja, prodOf, titulo)
+    cargarNovedadesOfertas(ofertas_caja, prodOf, titulo,titbtn)
     activarClickComprar(productos)
     eventoCorazon(productos)
 }
 
-function cargarNovedadesOfertas(CajaContent, prod, titulo){
+function cargarNovedadesOfertas(CajaContent, prod, titulo, titbtn){
     CajaContent.append(titulo);
     prod.forEach((p)=>{
       let content = document.createElement ("div");
@@ -34,9 +36,8 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo){
           <div class="d-flex flex-row align-items-center">
               <h5 class="card-title card-titleCM">${p.name}  ${p.precio}€</h5>
           </div>
-          <p class="card-text description cardTextCM">${p.description}</p>
-          <div class="d-flex flex-row align-items-center">
-              <a  id =${p.id} data-producto =${p.id}  href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> Añadir</a>
+          <div class="d-flex flex-row align-items-center mt-5">
+              <a  id =${p.id} data-producto =${p.id}  href="#" class="btn btn-primary" >  <i class="fa-solid fa-cart-shopping"></i> ${titbtn} </a>
               <i id =${p.id}  class="fa-regular fa-heart corazon-vacio" style="cursor: pointer"></i>
           </div>
   
@@ -50,7 +51,7 @@ function cargarNovedadesOfertas(CajaContent, prod, titulo){
     
 }
 
-function agregarCajasNovedadOfertaMarcas(contenedor_principal,marca){
+function agregarCajasNovedadOfertaMarcas(contenedor_principal){
 
     contenedor_principal.innerHTML=`
 
@@ -58,53 +59,7 @@ function agregarCajasNovedadOfertaMarcas(contenedor_principal,marca){
     </div>
     <div id= "ofertas_caja"class="row justify-content-center">  
     </div>
-    <div id="marcas_caja" class="row justify-content-center">
-      
-        <div class="caja-h2 d-flex flex-row align-items-center justify-content-center">
-            <div class="linea1"></div>
-            <h2 id="mejores-marcas">${marca} </h2>
-            <div class="linea2"></div>
-        </div>
-        
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img4" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img5" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img6" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img7" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img8" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img9" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img10" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img11" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img12" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img13" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img14" class="img"></div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div id= "img15" class="img"></div>
-        </div>
-    </div>
 
-    
     
     `
 
@@ -160,21 +115,6 @@ function filtrarProductos(opcion, productos){
 }
 
 
-function cargarDelLocalStorage(){
-
-    let aux;
-    let prtos =[];
-    for(let i=0; i<36;i++){
-        
-        aux= localStorage.getItem(i)
-        aux = JSON.parse(aux)
-        prtos.push(aux)
-    }
-  
-    return prtos;
-  
-}
-
 
 function limpiarContenedor(shopContent){
     while (shopContent.firstChild) {
@@ -182,22 +122,3 @@ function limpiarContenedor(shopContent){
     }
 }
 
-
-function crearPopap(){
-    let html= document.getElementsByTagName("html")[0]
-    let popap= document.getElementById("popap")
-
-    html.addEventListener("mouseleave",()=>{
-        popap.style.display="block"
-        popap.style.zIndex="6000"
-    })
-}
-
-function cerrarPopap(){
-    let popap= document.getElementById("popap")
-
-    popap.addEventListener("click",()=>{
-        popap.style.display="none"
-        popap.style.zIndex="0"
-    })
-}

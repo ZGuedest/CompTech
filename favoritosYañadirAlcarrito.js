@@ -1,7 +1,9 @@
 
 /////// FAVORITOS /////
 
-function eventoCorazon(productos){
+function eventoCorazon(){
+    let productos= cargarDelLocalStorage()
+
     let corazones= document.getElementsByClassName("corazon-vacio")
     for( let i=0; i< corazones.length; i++){
 
@@ -31,14 +33,17 @@ function añadirFav(corazon,idCora, productos) {
 }
 
 function eliminarFavorito(idCora,productos){
+
     productos[idCora-1].favorito ="false"
-    localStorage.setItem("cantFav",localStorage.getItem("cantFav")-2)
+    let cant=localStorage.getItem("cantFav")-2
+    localStorage.setItem("cantFav",cant)
     cantidadDelIconoCarritoCorazon("cantFav")
 }
 
 ////// CARRITO ///////
 
-function activarClickComprar(productos){
+function activarClickComprar(){
+    let productos= cargarDelLocalStorage()
     let botonesComprar = document.getElementsByClassName("btn-primary");
     for(let i=0; i<botonesComprar.length;i++){
       botonesComprar[i].addEventListener("click",(event)=>{
@@ -71,7 +76,11 @@ function cantidadDelIconoCarritoCorazon(idIco){
 }
 
 function añadirAlCarrito(idBtn, productos){
-    productos[idBtn-1].cantidad++
+
+    let c=productos[idBtn-1].cantidad
+    c=c+1
+    productos[idBtn-1].cantidad=c
+    //productos[idBtn-1].cantidad++
     cargarLocalStorage(productos);
 
 }

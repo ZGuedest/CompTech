@@ -8,12 +8,18 @@
 }
 
 header{   
-    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.943)),
-    url("")), $wth:100%,$hght: 100px,$margin:0rem);
-
-    background-color: white !important;
     position: relative;
     z-index: 4000;
+
+    nav{
+        height: 150px !important ;
+
+        .btn{
+            display:none;
+            
+        }
+
+    }
 
     #inicio,#catalogo{
         display: block;
@@ -40,8 +46,9 @@ header{
        
         .cr_basura,.cr_corazon, .cr_carrito
         {
-            @extend %iconos;
-            font-size: x-large;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $color_negro;
         }
 
         input{
@@ -54,12 +61,14 @@ header{
         width: 20rem;
         height:250px;
         #cr_carrito{
-            @extend %iconos;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $color_negro;
         }
     
         #cr_precio_total{
             @extend %precio;
-            color:$color_VerdeOsc;
+            color:$color_negro;
         }
     
         .btn{
@@ -68,7 +77,8 @@ header{
         }
     
         #cr_visa, #cr_paypal,#cr_mastercard{
-            @extend %iconos;
+            color: $color_negro;
+            cursor: pointer;
             font-size: x-large;
         }
     }
@@ -78,7 +88,7 @@ header{
 
 @include media-breakpoint-down(lg) {
    
-    header{
+    nav{
         height: 300px !important;
     }
 

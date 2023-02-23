@@ -2,11 +2,16 @@
 
 iniciarLogin(idiomaSelect)
 function iniciarLogin(idiomaSelect){
-  const lgnEsp = ["regresar","Deja tu imaginación volar... sientre la música","Por favor entre los datos de su cuenta","correo","contraseña","Entrar","¿Has olvidado tu contraseña?","Si no tienes cuenta","Regístrate","Somos más que una empresa","Somos un grupo de entusiastas de la música que tiene la suerte de compartir su pasión con personas afines, guiando, aconsejando y también aprendiendo de nuestros clientes. Bienvenidos a nuestra familia: !Viva la música!", "Nombre", "Apellidos","Teléfono", "Correo", "Contraseña","Ciudad", "Dirección","Acepto los terminos y condiciones","Registrarse", "C.P", "datos incorrectos","Datos registrados con éxito, puede iniciar sesión" ]
-  const lgnEng = ["back","Let your imagination fly... feel the music","Please enter your account information","email","password","Log_in","Have you forgotten your password?"," If you don't have an account","Register","We are more than a company","We are a group of music enthusiasts lucky enough to share their passion with like-minded people, guiding, advising and also learning from our customers. Welcome to our family: Long live the music!", "First Name", "Last Name", "Phone", "Mail", "Password","City", "Address","I accept the terms and conditions","Register", "ZIP","Incorrect data", "Data recorded successfully, you can log in"]
-  const lgnEus = ["itzuli","Utzi zure irudimena hegan egiten... sentitu musika","Mesedez sartu zure kontuaren informazioa","posta elektronikoa","pasahitza","Sartu","Pasahitza ahaztu al duzu?","Ez baduzu 'ez daukazu konturik","Erregistratu","Enpresa bat baino gehiago gara","Musika zaleen talde bat gara bere pasioa gogokoekin partekatzeko zortea, gure bezeroak gidatuz, aholkatuz eta baita ikasten ere. Ongi etorri gure familiara: Bizi musika!", "Izena","Abizenak","Telefonoa","Posta elektronikoa","Pasahitza", "Hiria", "Helbidea","Baldintzak eta terminoak onartzen ditut","Erregistratzea", "ZIP","Datu okerrak" ,"Arrakastaz erregistratutako datuak, saioa has dezake"]
+  const lgnEsp = ["regresar","Da nueva vida a tu equipo",
+  "Por favor entre los datos de su cuenta","correo","contraseña","Entrar",
+  "¿Has olvidado tu contraseña?","Si no tienes cuenta","Regístrate",
+  "Somos más que una empresa",
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nihil omnis corrupti tempore iusto eius modi, inventore iste aspernatur, voluptatum, quaerat fugit libero eos? Provident odit harum amet unde sed?", "Nombre", "Apellidos","Teléfono", "Correo", "Contraseña","Ciudad", "Dirección","Acepto los terminos y condiciones","Registrarse", "C.P", "datos incorrectos","Datos registrados con éxito, puede iniciar sesión" ]
+  
+  const lgnEng = ["back","Breathe new life into your machine","Please enter your account information","email","password","Log_in","Have you forgotten your password?"," If you don't have an account","Register","We are more than a company",
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nihil omnis corrupti tempore iusto eius modi, inventore iste aspernatur, voluptatum, quaerat fugit libero eos? Provident odit harum amet unde sed?", "First Name", "Last Name", "Phone", "Mail", "Password","City", "Address","I accept the terms and conditions","Register", "ZIP","Incorrect data", "Data recorded successfully, you can log in"]
 
-  let arrayLog=cambiarIdioma(idiomaSelect, lgnEsp, lgnEng, lgnEus)
+  let arrayLog=cambiarIdioma(idiomaSelect, lgnEsp, lgnEng)
 
   let usuariosRegistrados=[{
     "gmail":"prueba@gmail.com",
@@ -20,16 +25,14 @@ function iniciarLogin(idiomaSelect){
   }]
 
 
-  let idioma=  idiomaFecha()
-  let date = new Date();
-  let dia = date.toLocaleString(idioma, {weekday: 'long'});
-  let mes =date.toLocaleString(idioma+ '-'+idioma, { month: 'long' })
-  cargarLogin(idiomaSelect,arrayLog,date, dia, mes)
+  
+ 
+  cargarLogin(idiomaSelect,arrayLog)
   eventoRegistrarse()
 }
 
 
-function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
+function cargarLogin(idiomaSelect,arrayLog){
 
   
   let caja = document.getElementById("lg_fondo");
@@ -38,18 +41,16 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
           <nav class="navbar navbar-expand-lg navbar-light">
 
             <ul class="container-xl nav justify-content-around">          
-                  <li><a href="Index.html"><i class="fa-solid fa-arrow-left">  ${arrayLog[arrayLog.length-1][0]} </i></a> </li>
-                  <li ><p id="fecha" class="pt-4"> ${dia} <span id="hora"></span>${mes} - ${date.getFullYear()} </p></li>
+                  <li><a href="index.html"><i class="fa-solid fa-arrow-left">  ${arrayLog[arrayLog.length-1][0]} </i></a> </li>
                   <li > 
                     <div class="dropdown ">
                       <button class="btn btn-secondary d-flex flex-row text-center align-items-center dropdown-toggle bg-transparent border-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <p id="idio-select" value="espanol" class="pt-3">${idiomaSelect} </p>
-                          <i class="fa-solid fa-earth-americas text-dark ms-1"></i>
+                          <i class="fa-solid fa-earth-americas text-white ms-1"></i>
                       </button>
                       <ul class="dropdown-menu">
                           <li value="espanol"><a value="espanol" class=" idioma px-1 py-1 dropdown-item" href="#">Español</a></li>
                           <li value="ingles"><a value="ingles" class=" idioma px-1 py-1 dropdown-item" href="#">Inglés</a></li>
-                          <li value="euskera"><a value="euskera" class=" idioma px-1 py-1 dropdown-item" href="#">Euskera</a></li>
                       </ul>
                     <div>
                   </li>                
@@ -58,9 +59,9 @@ function cargarLogin(idiomaSelect,arrayLog, date, dia, mes){
           </nav>
 
         <div class="text-center">
-          <img src="img/logo.png"
+          <img src="./img/logohackathonWhite.svg"
             style="width: 185px;" alt="logo">
-          <h2 id="frase-imaginacion" class="mt-1 mb-5 pb-1">"${arrayLog[arrayLog.length-1][1]}"</h2>
+          <h2 id="frase-imaginacion" class="mt-4 mb-5 pb-1">${arrayLog[arrayLog.length-1][1]}</h2>
         </div>
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-xl-10">
@@ -161,7 +162,7 @@ function validarPassword (arrayLog){
     if ((email == "prueba@gmail.com" && password == "1234")|| (email == emailLocalS && password == passLocal)){
         localStorage.setItem('gmail',email);
         localStorage.setItem('pass',password);
-        window.location.assign ("Index.html");
+        window.location.assign ("index.html");
     }else{
         alert (arrayLog[arrayLog.length-1][21])
 

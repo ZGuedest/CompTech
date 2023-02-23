@@ -1,6 +1,6 @@
-* header nav #menu-iconers a, * header nav #menu-iconers i {
-  font-size: 1em;
-  color: black;
+* header nav #menu-iconers i {
+  font-size: 1.3rem;
+  color: white;
   cursor: pointer;
 }
 
@@ -11,25 +11,18 @@
   padding: 0;
 }
 * header {
-  background-image: linear-gradient(rgb(56, 115, 115), rgba(56, 115, 115, 0.8), rgba(255, 255, 255, 0.5)), url("./img/fondo2.jpg");
-  width: 100%;
-  height: 500px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0rem;
   background-size: cover;
   z-index: 4000;
 }
 * header nav {
   background-color: transparent;
   font-weight: 900;
+  height: 10vh;
 }
 * header nav #logo {
-  background-image: url("./img/logo.png");
-  width: 20%;
-  height: 5rem;
+  background-image: url("./img/logohackathonWhite.svg");
+  width: 10%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -47,28 +40,46 @@
 * header nav #menu-iconers {
   width: 30%;
 }
+* header nav #menu-iconers a {
+  font-size: medium;
+  color: white;
+}
+* header nav .btn {
+  background-color: #222529;
+  width: 15rem;
+  color: white;
+  font-weight: 900;
+  border: #a9a6a7 1px solid;
+  margin-bottom: 0.7rem;
+  margin-left: 2rem;
+}
+* header nav .btn:hover {
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
+}
 * header nav #ven {
   display: none;
   cursor: pointer;
 }
 * header #frase_imaginacion {
   font-size: 45px;
-  font-family: Blackadder ITC;
+  font-family: sans-serif, Arial, Verdana, Tahoma;
   padding-top: 6rem;
-  padding-left: 5rem;
+  display: none;
 }
 * .btn-primary {
-  background-color: #387373;
+  background-color: #222529;
   width: 10rem;
   color: white;
   font-weight: 900;
-  border: #387373 solid;
+  border: #a9a6a7 1px solid;
   margin-bottom: 0.7rem;
 }
 * .btn-primary:hover {
-  background-color: #E4F2E7;
-  color: black;
-  border: #387373 solid;
+  background-color: #a9a6a7;
+  color: #222529;
+  border: #222529 solid;
 }
 * .corazon-vacio {
   font-size: 2.3em;
@@ -77,8 +88,9 @@
 }
 * .cardH {
   margin: 2rem;
-  width: 18rem;
+  width: 15rem;
   height: auto;
+  padding: 1rem;
 }
 * .cardH .card-titleCM {
   height: 4rem;
@@ -133,25 +145,19 @@
 }
 * footer {
   padding-top: 4rem;
-  background-color: #387373;
+  background-color: #222529;
+}
+* footer h2 {
+  font-size: 25px;
 }
 * footer .btn {
-  background-color: #387373;
-  width: 7rem;
-  color: white;
-  font-weight: 900;
-  border: #387373 solid;
-  margin-bottom: 0.7rem;
-}
-* footer .btn:hover {
-  background-color: #E4F2E7;
-  color: black;
-  border: #387373 solid;
+  background-color: transparent;
+  width: 5rem;
 }
 * footer #appel-store {
-  background-image: url("./img/appel.png");
-  width: 35%;
-  height: 7rem;
+  background-image: url("./img/App Store.png");
+  width: 20%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -159,9 +165,9 @@
   margin: 1rem;
 }
 * footer #play-store {
-  background-image: url("./img/play-store.png");
-  width: 35%;
-  height: 7rem;
+  background-image: url("./img/play_store.png");
+  width: 20%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -172,12 +178,12 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 * footer .fab {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #logo {
-    background-image: url("./img/logo.png");
+    background-image: url("./img/logohackathonWhite.svg");
     width: 80% !important;
     height: 20rem;
     background-position: center;
@@ -185,11 +191,18 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin: 2rem;
-    margin: 0rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  nav {
+    height: 370px !important;
+  }
+  nav a, nav i {
+    font-size: 1rem !important;
   }
   #frase_imaginacion {
     padding-top: 0rem !important;
-    padding-left: 1rem !important;
+    padding-left: 0rem !important;
     font-size: 30px !important;
   }
   #menu-iconers {
@@ -201,7 +214,10 @@
 header #inicio, header #catalogo {
   display: block;
 }
-header #m-ofertas, header #m-novedades {
+header #m-ofertas, header #m-novedades, header #frase-imaginacion {
+  display: none;
+}
+header #vender_prod {
   display: none;
 }
 
@@ -222,6 +238,9 @@ i {
 }
 
 @media (max-width: 575.98px) {
+  #addPro {
+    width: 100% !important;
+  }
   .img {
     width: 80% !important;
     height: 20rem !important;

@@ -12,9 +12,7 @@ function iniciarFavoritos(idiomaSelect){
     else if(idiomaSelect=="Inglés"){
         precioProd= "product price"
     }
-    else if(idiomaSelect=="Euskera"){
-        precioProd= "prezioa kantitatearen arabera"
-    }
+    
     let prodsFav= []
     prodsFav= productosFavoritos(productos)
     pintarFavoritos(idiomaSelect,prodsFav,productos,precioProd)
@@ -67,6 +65,7 @@ function eventBasuraFavorito(idiomaSelect, shopContent, productos){
 
     for(let b=0; b<bas.length;b++){
         bas[b].addEventListener("click",(event)=>{
+            debugger
             eliminarFavoritoEnFavorito(productos, idiomaSelect, shopContent, event)
             
         })

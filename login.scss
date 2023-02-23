@@ -1,22 +1,26 @@
 @import"--parcial.scss";
 
+*{
+    color: white;
+}
+
 header{   
-    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-    url("")), $wth:100%,$hght: 100px,$margin:0rem);
+    
 
     #inicio,#catalogo{
         display: block;
     }
-    #m-ofertas,#m-novedades,#frase_imaginacion,#buscador{
+    #m-ofertas,#m-novedades,#buscador{
         display: none;
+    }
+    i{
+        color: $color_blanco;
     }
  }
 #lg_fondo {
-    @include img($url: (linear-gradient( rgba(56, 115, 115, 1),rgba(56, 115, 115, 0.8), rgb(255, 255, 255,0.5)),
-    url("")), $wth:100%,$hght: 100vh,$margin:0rem); 
-    a , i{
-        @extend %iconos;
-    }
+    
+    background-color: $color_negro;
+    
 }
 
 .card{
@@ -27,13 +31,19 @@ header{
 
 h2{
     font-size: 45px; 
-    font-family: Blackadder ITC;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .btn{
-    @include button ($bg-color:$color_VerdeOsc, $wth: 8rem, $colorletra:$color_blanco);
+    @include button ($bg-color:$color_gris, $wth: 8rem, $colorletra:$color_negro);
 }
 
 #form_registro, footer, header{
     display:none
+}
+
+#frase-imaginacion{
+    color: $color_blanco;
+    font-family: 'Ubuntu', sans-serif;
+
 }
