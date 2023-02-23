@@ -13,24 +13,9 @@ const productos=[
         "novedad": "false",
         "oferta": "false",
         "favorito":"false",
+        "categoria":"Periféricos",
     },
 
-    {
-
-        "id":2,
-        "varname":"auriculares2",
-        "name": "Logitech G Pro X",
-        "description": "Longitud: 138m.Anchura: 94 m.Altura: 195 m.Peso: 370 g.Transductor: Malla híbrida PRO-G de 50 m.Imán: Neodimio.Respuesta de frecuencia: 20 Hz - 20 kHz.Impedancia: 35 ohmios.Sensibilidad: 91,7 dB SPL a 1 mW y 1 cm", 
-        "precioDescription": " 184,98€",
-        "precio": 184,
-        "src": "./img/auriculares2.jpg",
-        "cantidad": 0,
-        "novedad": "true",
-        "oferta": "true",
-        "favorito":"false",
-        "categoria":"periferico"
-
-    },
     {
         "id":3,
         "varname":"auriculares3",
@@ -42,8 +27,8 @@ const productos=[
         "cantidad": 0,
         "novedad": "false",
         "oferta": "true",
-        "favorito":"true",
-        "categoria":"periferico",
+        "favorito":"false",
+        "categoria":"Periféricos",
 
     },
     {
@@ -57,7 +42,8 @@ const productos=[
         "cantidad": 0,
         "novedad": "false",
         "oferta": "false",
-        "favorito":"false"
+        "favorito":"false",
+        "categoria":"Periféricos",
 
     },
     {
@@ -67,11 +53,12 @@ const productos=[
         "description":"Tipo de desplazamiento Rueda .Cantidad de botones 6.Resolución de movimiento 1600 DPI.Personalizable resolución movimiento Si.Funciones de los botones Atrás, Interruptor DPI, Adelante.Diseño Factor de forma mano derecha.Diseño de plancha ergonómico Si.Diseño vertical Si",
         "precioDescription": "39€",
         "precio": 39,
-        "src": "./img.raton1.jpg",
+        "src": "./img/raton1.jpg",
         "cantidad": 0,
         "novedad": "false",
-        "oferta": "false",
-        "favorito":"false"
+        "oferta": "true",
+        "favorito":"false",
+        "categoria":"Periféricos",
 
     },
     {
@@ -85,7 +72,8 @@ const productos=[
         "cantidad": 0,
         "novedad": "false",
         "oferta": "false",
-        "favorito":"false"
+        "favorito":"false",
+        "categoria":"Periféricoss",
 
     },
     {
@@ -99,92 +87,88 @@ const productos=[
         "cantidad": 0,
         "novedad": "false",
         "oferta": "false",
-        "favorito":"false"
+        "favorito":"false",
+        "categoria":"Periféricoss",
 
     },
     {
 
-    "id":8,
-    "varname":"raton4",
-    "name":"HyperX Pulsefire Dart Ratón Gaming Inalámbrico 16000DPI",
-    "description":" Interfaz del dispositivo: RF inalámbrica + USB.Tecnología de detección de movimientos: Óptico.Tipo de botones Botones presionados.Tipo de desplazamiento Rueda.Cantidad de botones 6Resolución de movimiento: 16000 DPIVelocidad de seguimiento del ratón: 450 ips",
-    "precioDescription": "131 €",
-    "precio": 131,
-    "src": "./img/raton4.png",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
+        "id":8,
+        "varname":"raton4",
+        "name":"HyperX Pulsefire Dart Ratón Gaming Inalámbrico 16000DPI",
+        "description":" Interfaz del dispositivo: RF inalámbrica + USB.Tecnología de detección de movimientos: Óptico.Tipo de botones Botones presionados.Tipo de desplazamiento Rueda.Cantidad de botones 6Resolución de movimiento: 16000 DPIVelocidad de seguimiento del ratón: 450 ips",
+        "precioDescription": "131 €",
+        "precio": 131,
+        "src": "./img/raton4.jpg",
+        "cantidad": 0,
+        "novedad": "false",
+        "oferta": "false",
+        "favorito":"false",
+        "categoria":"Periféricos",
 
-},
-{
-    "id":9,
-    "varname":"portatil1",
-    "name":"Apple MacBook Pro Apple M1 Pro/16GB/1TB SSD/14.2 Apple MacBook Pro Apple M1 Pro/16GB/1TB SSD/14.2",
-    "description":"Chip: Chip M1 Pro de ApplePU de 10 núcleos con 8 núcleos de rendimiento y 2 de eficiencia.GPU de 16 núcleosNeural. Engine de 16 núcleos.200 GB/s de ancho de banda de memoria.Motor multimediaAceleración por hardware para H.264, HEVC, ProRes y ProRes RAW.Motor multimedia.Aceleración por hardware para H.264, HEVC, ProRes y ProRes RAW.Motor de codificación y decodificación ProRes",
-    "precioDescription": " 2499€",
-    "precio": 2499,
-    "src": "./img/portatil1.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-    
-},
-{ 
-    "id":10,
-    "varname":"portattil2",
-    "name":"Acer Predator Triton 500 SE PT516-51s-75K6 Intel Core i7-11800H/32GB/1TB SSD/RTX 3080/16",
-    "description":"Procesador Intel® Core™ i7-11800H.Memoria 32 GB DDR4 3200MHz Memory.Almacenamiento 1024GB PCIe NVMe SSD.Display 16 WQXGA SlimBezel 165Hz WQXGA (2560 x 1600) 16:10.Controlador gráfico NVIDIA® GeForce RTX™ 3080 8 GB VRAM.Sistema operativo Windows 11 Home 64 Bits.Dimensiones (Ancho x Profundidad x Altura) 358.5 (W) x 262.4 (D) x 19.9 (H) mmv",
-    "precioDescription": "2699 €",
-    "precio": 2699,
-    "src": "./img/portatil2.jpg",
-    "cantidad": 0,
-    "novedad": "true",
-    "oferta": "false",
-    "favorito":"false"
+    },
+    {
+        "id":9,
+        "varname":"portatil1",
+        "name":"Apple MacBook Pro Apple M1 Pro/16GB/1TB SSD/14.2",
+        "description":"Chip: Chip M1 Pro de ApplePU de 10 núcleos con 8 núcleos de rendimiento y 2 de eficiencia.GPU de 16 núcleosNeural. Engine de 16 núcleos.200 GB/s de ancho de banda de memoria.Motor multimediaAceleración por hardware para H.264, HEVC, ProRes y ProRes RAW.Motor multimedia.Aceleración por hardware para H.264, HEVC, ProRes y ProRes RAW.Motor de codificación y decodificación ProRes",
+        "precioDescription": " 2499€",
+        "precio": 2499,
+        "src": "./img/portatil1.jpg",
+        "cantidad": 0,
+        "novedad": "false",
+        "oferta": "false",
+        "favorito":"false",
+        "categoria":"Ordenadores",
+        
+    },
+    { 
+        "id":10,
+        "varname":"portattil2",
+        "name":"Acer Predator Triton 500 SE PT516-51s-75K6 ",
+        "description":"Procesador Intel® Core™ i7-11800H.Memoria 32 GB DDR4 3200MHz Memory.Almacenamiento 1024GB PCIe NVMe SSD.Display 16 WQXGA SlimBezel 165Hz WQXGA (2560 x 1600) 16:10.Controlador gráfico NVIDIA® GeForce RTX™ 3080 8 GB VRAM.Sistema operativo Windows 11 Home 64 Bits.Dimensiones (Ancho x Profundidad x Altura) 358.5 (W) x 262.4 (D) x 19.9 (H) mmv",
+        "precioDescription": "2699 €",
+        "precio": 2699,
+        "src": "./img/portatil2.jpg",
+        "cantidad": 0,
+        "novedad": "true",
+        "oferta": "false",
+        "favorito":"false",
+        "categoria":"Ordenadores",
 
-},
-{
-    "id":11,
-    "varname":"portatil3",
-    "name":"Lenovo IdeaPad Gaming 3 15IAH7 Intel Core i5-12500H/16GB/512GB SSD/RTX3050/15.6",
-    "description":" Procesador Intel Core i5-12500H, 12C (4P + 8E) / 16T, P-core 2.5 / 4.5GHz, E-core 1.8 / 3.3GHz, 18MB.Memoria RAM 2x 8GB SO-DIMM DDR4-3200.Almacenamiento 512GB SSD M.2 2280 PCIe 3.0x4 NVMe.Unidad óptica No.Display 15.6. FHD (1920x1080) IPS 250nits Anti-glare, 120Hz, 45% NTSC, DC dimmer.Controlador gráfico NVIDIA GeForce RTX 3050 4GB GDDR6, Boost Clock 1500MHz, TGP 85W",
-    "precioDescription": "1079 €",
-    "precio": 1079,
-    "src": "./img/portatil3.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
 
-},
-{
-    "id":12,
-    "varname":"portatil4",
-    "name": "Lenovo Legion 5 15IAH7H Intel Core i7-12700H/16GB/512GB SSD/RTX3060/15.6",
-    "description":"Procesador Intel Core i7-12700H, 14C (6P + 8E) / 20T, P-core 2.3 / 4.7GHz, E-core 1.7 / 3.5GHz, 24MB.Memoria RAM 16 GB de RAM DDR5-4800.Almacenamiento 512GB SSD M.2 2242 PCIe 4.0x4 NVMe.Teclado retroiluminado Si.Sistema operativo Windows 11 Home 64 Bits",
-    "precioDescription": "1249 € ",
-    "precio": 1249,
-    "src": "./img/portatil4.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
-{
-    "id":13,
-    "varname":"monitor1",
-    "name": "Newskill Icarus IC27Q4-V2P 27 LED QHD 144Hz G-Sync Compatible Curva",
-    "description": "Marca del panel CSOT.Tipo de panel VA.Curvatura R1500.Relación de aspecto 16:9.Tamaño de pantalla 27.Area Activa (H*V)597.888*336.312.Resolución 2560*1440.Tipo de luz de fondo  E-LED.Valor máximo de control de brillo(cd/m2)300nits(typ) , 250 nits (min)",
-    "precioDescription": "349.94 €",
-    "precio": 349.94,
-    "src": "./img/monittor1.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
+    },
+    {
+        "id":11,
+        "varname":"portatil3",
+        "name":"Lenovo IdeaPad Gaming 3 15IAH7",
+        "description":" Procesador Intel Core i5-12500H, 12C (4P + 8E) / 16T, P-core 2.5 / 4.5GHz, E-core 1.8 / 3.3GHz, 18MB.Memoria RAM 2x 8GB SO-DIMM DDR4-3200.Almacenamiento 512GB SSD M.2 2280 PCIe 3.0x4 NVMe.Unidad óptica No.Display 15.6. FHD (1920x1080) IPS 250nits Anti-glare, 120Hz, 45% NTSC, DC dimmer.Controlador gráfico NVIDIA GeForce RTX 3050 4GB GDDR6, Boost Clock 1500MHz, TGP 85W",
+        "precioDescription": "1079 €",
+        "precio": 1079,
+        "src": "./img/portatil3.jpg",
+        "cantidad": 0,
+        "novedad": "false",
+        "oferta": "false",
+        "favorito":"false",
+        "categoria":"Ordenadores",
+
+
+    },
+    {
+        "id":13,
+        "varname":"monitor1",
+        "name": "Newskill Icarus IC27Q4-V2P 27 LED QHD 144Hz G-Sync Compatible Curva",
+        "description": "Marca del panel CSOT.Tipo de panel VA.Curvatura R1500.Relación de aspecto 16:9.Tamaño de pantalla 27.Area Activa (H*V)597.888*336.312.Resolución 2560*1440.Tipo de luz de fondo  E-LED.Valor máximo de control de brillo(cd/m2)300nits(typ) , 250 nits (min)",
+        "precioDescription": "349.94 €",
+        "precio": 349.94,
+        "src": "./img/monitor1.jpg",
+        "cantidad": 0,
+        "novedad": "false",
+        "oferta": "false",
+        "favorito":"false",
+        "categoria":"Componentes",
+
+    },
 {
     "id":14,
     "varname":"monitor2",
@@ -196,129 +180,26 @@ const productos=[
     "cantidad": 0,
     "novedad": "false",
     "oferta": "false",
-    "favorito":"false" 
-},
-{
-    "id":15,
-    "varname":"monitor3",
-    "name": "Samsung Odyssey G6 LS27BG650EUXEN 27 LED QHD 240Hz FreeSync Premium Pro Smart Curva",
-    "description":"Diagonal de la pantalla: 68,6 cm (27).Resolución de la pantalla: 2560 x 1440 Pixeles.Tipo HD: Quad HD.Relación de aspecto nativa 16.9.Tecnología de visualización. LCD.Tipo de pantalla: VA.Pantalla táctil. No.Brillo de la pantalla (típico) 350 cd / m.Tiempo de respuesta 1 ms.Forma de la pantalla: Curva",
-    "precioDescription": " 499.98 €",
-    "precio":  499.98,
-    "src": "./img/trompeta3.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
+    "favorito":"false",
+    "categoria":"Componentes",
+
 },
 {
     "id":16,
     "varname":"monitor4",
     "name": "HP X24c 23.6 LED FullHD 144Hz FreeSync Curvo",
-    "description":"Diagonal de la pantalla: 59,9 cm (23.6).Brillo de la pantalla (típico): 300 cd / m².Resolución de la pantalla: 1920 x 1080 Pixeles.Relación de aspecto nativa 16.9.Tiempo de respuesta 4 ms.Tipo HD: Full HD.Tecnología de visualización: LED.Forma de la pantalla: Plana",
+    "description":"Diagonal de la pantalla: 68,6 cm (27).Resolución de la pantalla: 2560 x 1440 Pixeles.Tipo HD: Quad HD.Relación de aspecto nativa 16.9.Tecnología de visualización. LCD.Tipo de pantalla: VA.Pantalla táctil. No.Brillo de la pantalla (típico) 350 cd / m.Tiempo de respuesta 1 ms.Forma de la pantalla: Curva",
     "precioDescription": " 149.98€ ",
     "precio":149.98 ,
     "src": "./img/monitor4.jpg",
     "cantidad": 0,
     "novedad": "false",
     "oferta": "true",
-    "favorito":"false"
-},
-{
-    "id":17,
-    "varname":"soporte1",
-    "name": "Targus Soporte para Portátil hasta 15.6 con Dock Integrado USB-C",
-    "description":"",
-    "precioDescription": "542 €",
-    "precio": 542,
-    "src": "./img/trompa2.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
-
-{
-    "id":28,
-    "varname":"mezcladora1",
-    "name": "Midas M32R Live",
-    "description":"16 entradas de micrófono. 8 salidas XLR. 8 DCA y 6 grupos Mute. 17 Faders motorizados. Pantalla a color de 5. Interfaz de audio USB de 32x32. 25 Buses de mezcla. DAW Remote Control. Wireless Remote Control vía IOS App. Medidas: 478 x 617 x 208 mm. Peso: 14,3 kg. Incluye adaptadores de Rack",
-    "precioDescription": "2.539 €",
-    "precio": 2.539,
-    "src": "./img/mezcladora1.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
+    "favorito":"false",
+    "categoria":"Componentes",
 
 },
-{
-    "id":29,
-    "varname":"mezcladora2",
-    "name": "ALLEN&HEATH XONE:96",
-    "description":"Diseño análogo Legendary Xone. Diseño de 6 + 2 canales. Tarjetas de sonido dobles de 24 canales de 32 bits / 96 kHz. Traktor Scratch Certified. Filtros Dual Xone VCF con distorsión Crunch. Xone 4-Band EQ. Dos sistemas CUE independientes.innoFADER Cross Fader. EQ de tres bandas para la salida de monitores. Botón para silenciar los monitores. Doble salida master con control independiente de volumen. Inserto en la salida master. Puerto X-Link para conectar un controlador Allen & Heath o una cadena de controladores.",
-    "precioDescription": "2.298 €",
-    "precio": 2.298,
-    "src": "./img/mezcladora2.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
 
-},
-{
-
-    "id":30,
-    "varname":"mezcladora3",
-    "name": "Allen & Heath Qu-24 Chrome",
-    "description":"Para aplicaciones de estudio o directo. 24 entradas mono (XLR o Jack). 3 entradas estéreo (Jack). 4 retornos FX estéreo. 16 buses. 12 Mix Out (LR, Mono Mix 1-4, estéreo Mix 1-3). 4 generadores FX. Salida digital AES. Faders motorizados. Previos AnaLOGIQTM. Pantalla táctil de 800x480. iLive FX Library. dSNAKE Remote Audio Port. Compatible con ME Personal Mixing System. Nuevo Firmware Version 1.9: Pro Factory Presets de micrófono de Audio-Technica, Sennheiser y Shure, control DAW para Window. Nuevo QU-Control App. USB Audio Streaming. Control DAW MIDI. 4 grupos mute. Trim, Polarity, HPF, Gate, Insert, 4-band EQ paramétrico,compresor y Delay para todas las entradas. GEQ 1/3 de octava. Insert, 4-band EQ paramétrico, EQ gráfico, compresor y Delay para salidas Main LR y Mono Mix. Qu-Drive: Multitrack Recording / Playback directo a USB Stick o disco duro. Generador de señal integrado. Medidas: 632 x 471 x 171 mm. Peso: 14Kg. Compatible con Windows y Mac OS. Funda protectora disponible de forma opcional bajo art. n°: 335745. Caja disponible de forma opcional bajo art. n°: 335939",
-    "precioDescription": "3.098 €",
-    "precio": 3.098,
-    "src": "./img/mezcladora3.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
-{
-    "id":31,
-    "varname":"amplificador1",
-    "name": "RA-1592 MKII Integrated Amplifier ",
-    "description":" Ya sea un audiófilo experimentado o un oyente casual, el momento nunca ha sido mejor para ser un amante de la música. Un suministro casi ilimitado de música está a nuestro alcance accesible a través de streaming, medios digitales, vinilos clásicos y más. Rotel ha estado diseñando y fabricando productos de audio de alta fidelidad, alta calidad y alto rendimiento durante más de 60 años, reproduciendo audio con precisión con detalles excepcionales y una claridad sorprendente. El RA-1592MKII continúa con orgullo la tradición y el legado de esta marca icónica. El amplificador integrado RA-1592MKII incluye innovaciones en el diseño de circuitos, optimización de las rutas de la señal de audio y actualizaciones de los componentes críticos de la fuente de alimentación que brindan un rendimiento impresionante con ritmo y sincronización dinámicos.",
-    "precioDescription": "2.999 € ",
-    "precio": 2.999,
-    "src": "./img/amplificador1.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
-{
-    "id":32,
-    "varname":"amplificador2",
-    "name": "PM7000/N1B Stereo Integrated Amplifier ",
-    "description":"Descubra el PM7000N, el primer amplificador de alta fidelidad con retroalimentación de corriente integrado de Marantz con HEOS incorporado. Es la elección perfecta para los audiófilos y contiene componentes de audio de alta calidad, HDAM propios de Marantz, un transformador toroidal y una fuente de alimentación estable y ultrarrápida. Transmita su música favorita y disfrute de archivos de audio digital de alta resolución de 24 bits/192 kHz o DSD 5.6. Puede escuchar sus discos de vinilo favoritos con una calidad de sonido sin precedentes a través de la entrada phono MM. Las entradas digitales admiten audio PCM y, además de MP3, también decodifican archivos digitales sin pérdida como ALAC, FLAC y WAV con hasta 24 bits/192 kHz para una experiencia de sonido de alta resolución. USB-A y HEOS incorporado también permiten la reproducción de archivos DSD a 2,8 y 5,6 MHz. Transmita sus canciones favoritas de forma inalámbrica a través de AirPlay2 y Bluetooth y controle el amplificador con la aplicación HEOS o con Apple Siri, Google Assistant y Amazon Alexa. Sonido potente para todos los gustos: amplificador de alta fidelidad de 2 canales con retroalimentación de corriente discreta integrada; 60 vatios por canal (8 ohmios, 20 Hz - 20 kHz). Circuitos Marantz HDAM-SA3: escenario sonoro amplio y dinámico con el famoso sonido Marantz. Transformador toroidal blindado: potencia alta y limpia para una amplificación pura y sin distorsiones. Bluetooth integrado y función WiFi con soporte de doble banda de 2,4 GHz/5 GHz: Estabilidad de red mejorada incluso en hogares con varias redes WiFi. HEOS incorporado para la transmisión inalámbrica de música: reproduzca música de sus servicios de transmisión favoritos como Spotify Free y Premium, Amazon Music (HD), TIDAL, Deezer, TuneIn Internet Radio y muchos más cómodamente a través de la aplicación HEOS. Amplia gama de conectividad: cuatro entradas analógicas, una salida analógica, una entrada coaxial, dos entradas digitales ópticas y un puerto USB-A para archivos de audio de alta resolución. Reproducción de audio de alta resolución y alto rendimiento: compatibilidad con formatos de alta resolución sin pérdidas ALAC, FLAC y WAV de hasta 24 bits/192 kHz y DSD de 2,8 MHz y 5,6 MHz; potente convertidor D/A AK4490. Sonido de grabación excepcionalmente claro: entrada phono integrada con etapa de entrada FET recientemente desarrollada para mejorar la pureza de la señal y la calidad del sonido",
-    "precioDescription": "1.119 € ",
-    "precio": 1.119,
-    "src": "./img/amplificador2.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
-{
-    "id":33,
-    "varname":"amplificador3",
-    "name": "LAB Gruppen PLM 12K44 SP",
-    "description":"    Con DSP integrado. Potencia: 4 x 3000 W a 2 Ohmios, 4 x 3000 W a 4 Ohmios y 4 x 1900 W a 8 Ohmios. Amplificador de potencia de Clase TD. 'Rational Power Management' (RPM) para una flexibilidad total en la distribución de energía disponible a los 4. canales de salida. 'Power Factor Correction' (PFC) con modelado de consumo de energía para un consumo de corriente mínimo. 'Under Voltage Limiting' (UVL) para funcionamiento continuo durante caídas severas de tensión de red. Supervisión del sistema integrado para la máxima seguridad del sistema. Ventiladores controlados por temperatura y bajo nivel de ruido. Procesamiento 'Lake Processing'. Redes Dante. Frecuencia de muestreo interna: 96 kHz. 4 entradas analógicas XLR con aislamiento de tierra Iso-Float. 4 entradas digitales AES/EBU. 2 conectores Neutrik Ethercon RJ45.2 salidas NL4. 1 salida NLT8. Dimensiones (ancho x alto x profundo): 483 x 88 x 424 mm. Peso: 1. 5 kg. 10 años de garantía LAB Gruppen",
-    "precioDescription": "8.490 €",
-    "precio": 8.490,
-    "src": "./img/amplificador3.jpg",
-    "cantidad": 0,
-    "novedad": "false",
-    "oferta": "false",
-    "favorito":"false"
-},
 {
 
     "id":34,
@@ -331,7 +212,9 @@ const productos=[
     "cantidad": 0,
     "novedad": "false",
     "oferta": "false",
-    "favorito":"false"
+    "favorito":"false",
+    "categoria":"Accesorios",
+
 },
 {
     "id":35,
@@ -344,7 +227,9 @@ const productos=[
     "cantidad": 0,
     "novedad": "true",
     "oferta": "false",
-    "favorito":"false"
+    "favorito":"false",
+    "categoria":"Accesorios",
+
 },
 {
     "id":36,
@@ -357,7 +242,9 @@ const productos=[
     "cantidad": 0,
     "novedad": "false",
     "oferta": "false",
-    "favorito":"false"
+    "favorito":"false",
+    "categoria":"Accesorios",
+
 },
 
 ]
@@ -421,7 +308,7 @@ const ingles=[
 {
     "id":11,
     "name":"Student's Transverse Flute with Case by Gear4music",
-    "description":"Platos cerrados, ideal para principiantes. Fácil respuesta al tocar y sonido claro y brillante. Cuerpo ligero resistente de fabricación fiable. Set de excelente relación calidad-precio, con estuche y accesorios de limpieza",
+    "description":"Platos cerrados, ideal para principiantes. Fácil respuesta al tocar y sonido claro y brillante. Cuerpo ligero resistente de fabricación fiable. Set de excelente relación calidad-precio, con estuche y Accesorioss de limpieza",
     
 },
 {

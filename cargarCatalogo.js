@@ -103,7 +103,7 @@ function pintarCatalogo(shopContent,prod){
 function eventoRadios(radios){
   for(let i=0; i<radios.length ;i++){
     radios[i].addEventListener("change",()=>{
-  
+      debugger
       yesnoCheck(radios)
     } )
 
@@ -117,7 +117,7 @@ function yesnoCheck(radios) {
 
   let prodCat=[]
   if (radios[0].checked == true) {
-    
+    debugger
     prodCat= productosPorCategoria("Ordenadores",productosCat)
     pintarCatalogo(shopContent,prodCat)
     localStorage.setItem("radio",0)
@@ -145,41 +145,16 @@ function yesnoCheck(radios) {
 
 }
 
-function productosPorCategoria(categoria, productosCat){
+
+ function productosPorCategoria(categoria, productos){
   let prodCat=[];
 
-  productosCat.forEach((product)=> {
+  productos.forEach((product)=> {
 
-     if(categoria=="Ordenadores"){
-
-       if((product.id>-1) && (product.id<10)){
+     if( product.categoria==categoria){
          prodCat.push(product);
-       }
-     }
-     else if(categoria=="Periféricos"){
-       if(product.id>9 && product.id<19){
-         prodCat.push(product)
-       }
-     }
-     else if(categoria=="Componentes"){
-       if(product.id>18 && product.id<28){
-         prodCat.push(product)
-       }
-
-     }
-     else{
-       if(product.id>27){
-         prodCat.push(product)
-       }
-     }
-
+    }
+     
    });
    return prodCat
  }
-
-
-
-
-
-
-

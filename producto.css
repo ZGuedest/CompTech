@@ -65,6 +65,7 @@
   font-size: 45px;
   font-family: Blackadder ITC;
   padding-top: 6rem;
+  display: none;
 }
 * .btn-primary {
   background-color: #222529;
@@ -208,7 +209,7 @@
 header #inicio, header #catalogo {
   display: block;
 }
-header #m-ofertas, header #m-novedades {
+header #m-ofertas, header #m-novedades, header #frase-imaginacion {
   display: none;
 }
 header #vender_prod {
