@@ -1,5 +1,5 @@
 * header nav #menu-iconers i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   cursor: pointer;
 }
@@ -21,8 +21,8 @@
 }
 * header nav #logo {
   background-image: url("./img/logohackathonWhite.svg");
-  width: 20%;
-  height: 5rem;
+  width: 10%;
+  height: 4rem;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -46,11 +46,12 @@
 }
 * header nav .btn {
   background-color: #222529;
-  width: 18rem;
+  width: 15rem;
   color: white;
   font-weight: 900;
   border: #a9a6a7 1px solid;
   margin-bottom: 0.7rem;
+  margin-left: 2rem;
 }
 * header nav .btn:hover {
   background-color: #a9a6a7;
@@ -87,7 +88,7 @@
 }
 * .cardH {
   margin: 2rem;
-  width: 18rem;
+  width: 15rem;
   height: auto;
   padding: 1rem;
 }
@@ -183,7 +184,7 @@
 @media (max-width: 991.98px) {
   #logo {
     background-image: url("./img/logohackathonWhite.svg");
-    width: 80%;
+    width: 80% !important;
     height: 20rem;
     background-position: center;
     background-color: transparent;
@@ -221,6 +222,9 @@ header {
 }
 header nav {
   height: 150px !important;
+}
+header nav .btn {
+  display: none;
 }
 header #inicio, header #catalogo {
   display: block;
@@ -287,7 +291,7 @@ header #m-ofertas, header #m-novedades, header #frase_imaginacion, header #busca
 }
 
 @media (max-width: 991.98px) {
-  header {
+  nav {
     height: 300px !important;
   }
   .imgCF {

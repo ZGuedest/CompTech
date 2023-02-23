@@ -63,7 +63,7 @@ function cargarMenuCatalogo(arrayCata){
     radios[0].checked=true
     localStorage.setItem("radio",0)
   }
-  eventoRadios(radios)
+  eventoRadios(radios,arrayCata)
   return radios
 }
 
@@ -91,12 +91,12 @@ function pintarCatalogo(shopContent,prod, arrayCata){
   pintarFavoritos(p)
 
   })
-  activarClickComprar(prod)
+  //activarClickComprar(prod)
   eventoCorazon(prod)
   eventoCargarUnProducto(prod)
 }
 
-function eventoRadios(radios){
+function eventoRadios(radios,arrayCata){
   for(let i=0; i<radios.length ;i++){
     radios[i].addEventListener("change",()=>{
       yesnoCheck(radios,arrayCata)
@@ -112,7 +112,6 @@ function yesnoCheck(radios,arrayCata) {
 
   let prodCat=[]
   if (radios[0].checked == true) {
-    debugger
     prodCat= productosPorCategoria("Ordenadores",productosCat)
     pintarCatalogo(shopContent,prodCat,arrayCata)
     localStorage.setItem("radio",0)
@@ -137,6 +136,8 @@ function yesnoCheck(radios,arrayCata) {
     pintarCatalogo(shopContent,prodCat,arrayCata)
     localStorage.setItem("radio",3)
   }
+
+  activarClickComprar()
 
 }
 

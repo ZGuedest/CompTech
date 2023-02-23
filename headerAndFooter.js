@@ -56,7 +56,7 @@ function cargarMenu(arrayM,idiomaSelect){
                         <li value="ingles"><a value="ingles" class=" idioma px-1 py-1 dropdown-item" href="#">Inglés</a></li>
                     </ul>
                 </li>
-                <div class="d-flex flex-column aling-items-center p-2">
+                <div class="d-flex flex-column aling-items-center p-1">
                     <li ><a id="login" href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
 
                     <div class="ventana" id="ven" style="background-color: trasparent; width: 4rem;height: 1.5rem; color: black; display: none;">

@@ -277,4 +277,7 @@ body #accesorio-ico {
   #ordenador, #periferico, #componente, #accesorio {
     width: 100% !important;
   }
+  #ordenador-ico, #periferico-ico, #componente-ico, #accesorio-ico {
+    height: 30px !important;
+  }
 }/*# sourceMappingURL=catalogo.css.map */

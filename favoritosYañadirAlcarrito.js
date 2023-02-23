@@ -40,10 +40,12 @@ function eliminarFavorito(idCora,productos){
 
 ////// CARRITO ///////
 
-function activarClickComprar(productos){
+function activarClickComprar(){
+    let productos= cargarDelLocalStorage()
     let botonesComprar = document.getElementsByClassName("btn-primary");
     for(let i=0; i<botonesComprar.length;i++){
       botonesComprar[i].addEventListener("click",(event)=>{
+        debugger
           event.preventDefault()
           let idBtn= event.target.id;
           añadirAlCarrito(idBtn,productos)
@@ -73,7 +75,11 @@ function cantidadDelIconoCarritoCorazon(idIco){
 }
 
 function añadirAlCarrito(idBtn, productos){
-    productos[idBtn-1].cantidad++
+
+    let c=productos[idBtn-1].cantidad
+    c=c+1
+    productos[idBtn-1].cantidad=c
+    //productos[idBtn-1].cantidad++
     cargarLocalStorage(productos);
 
 }

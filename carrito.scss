@@ -14,6 +14,11 @@ header{
     nav{
         height: 150px !important ;
 
+        .btn{
+            display:none;
+            
+        }
+
     }
 
     #inicio,#catalogo{
@@ -83,7 +88,7 @@ header{
 
 @include media-breakpoint-down(lg) {
    
-    header{
+    nav{
         height: 300px !important;
     }
 
