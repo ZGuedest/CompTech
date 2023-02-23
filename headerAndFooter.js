@@ -7,6 +7,7 @@ let idiomaSelect= localStorage.getItem("idioma")
 iniciarHeaderAndFooter()
 
 
+
 function iniciarHeaderAndFooter(){
     cargarBD(idiomaSelect)
     let arrayM=cambiarIdioma(idiomaSelect,[],[],[])

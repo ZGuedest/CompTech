@@ -10,6 +10,7 @@ function iniciarCatalogo(idiomaSelect){
   yesnoCheck(radios,arrayM)
 
 }
+module.exports = iniciarCatalogo
 
 function cargarMenuCatalogo(arrayCata){
 

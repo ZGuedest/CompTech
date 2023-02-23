@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "-": "^0.0.1",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.0-alpha1",
     "g": "^2.0.1",
     "mysql": "^2.18.1",
     "sass": "^1.58.0"
@@ -11,7 +11,7 @@
   "version": "1.0.0",
   "main": "addProduct.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   "bugs": {
     "url": "https://github.com/ZGuedest/CompTech/issues"
   },
-  "homepage": "https://github.com/ZGuedest/CompTech#readme"
+  "homepage": "https://github.com/ZGuedest/CompTech#readme",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
 }
-
-
