@@ -16,6 +16,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Ordenadores",
+        "email": "mariaeustakia@gmail.com"
         
     },
     { 
@@ -31,6 +32,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Ordenadores",
+        "email": "mariaeustakia@gmail.com"
 
 
     },
@@ -47,6 +49,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Ordenadores",
+        "email": "mariaeustakia@gmail.com"
 
 
     },
@@ -63,6 +66,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Componentes",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -78,6 +82,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Periféricos",
+        "email": "mariaeustakia@gmail.com"
     },
 
     {
@@ -93,6 +98,7 @@ const productos=[
         "oferta": "true",
         "favorito":"false",
         "categoria":"Periféricos",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -108,6 +114,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Periféricos",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -123,6 +130,7 @@ const productos=[
         "oferta": "true",
         "favorito":"false",
         "categoria":"Periféricos",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -138,6 +146,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Periféricoss",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -153,6 +162,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Periféricoss",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -169,6 +179,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Periféricos",
+        "email": "mariaeustakia@gmail.com"
 
     },
 
@@ -185,6 +196,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Componentes",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -200,6 +212,7 @@ const productos=[
         "oferta": "true",
         "favorito":"false",
         "categoria":"Componentes",
+        "email": "mariaeustakia@gmail.com"
 
     },
 
@@ -217,6 +230,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Accesorios",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -232,6 +246,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Accesorios",
+        "email": "mariaeustakia@gmail.com"
 
     },
     {
@@ -247,6 +262,7 @@ const productos=[
         "oferta": "false",
         "favorito":"false",
         "categoria":"Accesorios",
+        "email": "mariaeustakia@gmail.com"
 
     },
 

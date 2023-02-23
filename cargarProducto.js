@@ -30,6 +30,7 @@ function cargarProducto(arrayPr, p){
                 <div class="cajaenvio-devol mt-5">
                     <div><p><i class="fa-sharp fa-solid fa-truck"></i></i></i>${arrayPr[arrayPr.length-1][1]}</p></div>
                     <div><i class="fa-regular fa-square-check"></i>${arrayPr[arrayPr.length-1][2]}</div>
+                    <div><i class="fa-solid fa-envelope pt-2"></i>${p.email}</div>
                 </div>
             </div>
         </div>
