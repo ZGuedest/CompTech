@@ -32,7 +32,16 @@ Project under development to promote the acquisition of second-hand technologica
 
 ## 🛠️ Open and run the project
 
-**Añadir instrucciones con código**
+**Before you can run this app, you'll need to have the following installed on your machine:**
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+Once it's installed you'll need to clone our project:
+```
+git clone
+```
+And last, but not least you'll need to start live server extension from VScode. 
 
 ## :bust_in_silhouette:Contributors
 [@marcygon](https://github.com/marcygon)<br>
@@ -83,7 +92,16 @@ Proyecto en desarrollo para fomentar la adquisición de productos tecnológicos 
 
 ## 🛠️ Abre y ejecuta el proyecto
 
-**Añadir instrucciones con código**
+**Antes de poder ejecutar el proyecto, debes tener instalado lo siguiente:**
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+Una vez que esté todo instalado, ya se puede clonar:
+```
+git clone
+```
+Y por último, pero no menos importante, debes iniciar la extensión de live server desde VScode.
 
 ## :bust_in_silhouette:Personas contribuyentes
 [@marcygon](https://github.com/marcygon)<br>
