@@ -5,7 +5,6 @@
 
 //VARIABLES
 $color_verdeCl:#E4F2E7; //Este es el verde clarito
-$color_VerdeOsc:#387373;
 $color_gris:#a9a6a7;
 $color_negro:#222529;
 $color_blanco:white;
@@ -137,7 +136,7 @@ $fontWH2:600;
 
         #frase_imaginacion{
             font-size: 45px;
-            font-family: Blackadder ITC;
+            font-family: $tipografía;
             padding-top: 6rem;
             display: none;
             

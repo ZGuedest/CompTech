@@ -41,8 +41,9 @@ header{
        
         .cr_basura,.cr_corazon, .cr_carrito
         {
-            @extend %iconos;
-            font-size: x-large;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $color_negro;
         }
 
         input{
@@ -55,12 +56,14 @@ header{
         width: 20rem;
         height:250px;
         #cr_carrito{
-            @extend %iconos;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $color_negro;
         }
     
         #cr_precio_total{
             @extend %precio;
-            color:$color_VerdeOsc;
+            color:$color_negro;
         }
     
         .btn{
@@ -69,7 +72,8 @@ header{
         }
     
         #cr_visa, #cr_paypal,#cr_mastercard{
-            @extend %iconos;
+            color: $color_negro;
+            cursor: pointer;
             font-size: x-large;
         }
     }

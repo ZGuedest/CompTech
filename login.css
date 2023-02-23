@@ -63,8 +63,9 @@
 }
 * header #frase_imaginacion {
   font-size: 45px;
-  font-family: Blackadder ITC;
+  font-family: sans-serif, Arial, Verdana, Tahoma;
   padding-top: 6rem;
+  display: none;
 }
 * .btn-primary {
   background-color: #222529;

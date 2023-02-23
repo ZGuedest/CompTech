@@ -2,13 +2,13 @@
 
 iniciarLogin(idiomaSelect)
 function iniciarLogin(idiomaSelect){
-  const lgnEsp = ["regresar","Deja tu imaginación volar... siente el código",
+  const lgnEsp = ["regresar","Da nueva vida a tu equipo",
   "Por favor entre los datos de su cuenta","correo","contraseña","Entrar",
   "¿Has olvidado tu contraseña?","Si no tienes cuenta","Regístrate",
   "Somos más que una empresa",
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nihil omnis corrupti tempore iusto eius modi, inventore iste aspernatur, voluptatum, quaerat fugit libero eos? Provident odit harum amet unde sed?", "Nombre", "Apellidos","Teléfono", "Correo", "Contraseña","Ciudad", "Dirección","Acepto los terminos y condiciones","Registrarse", "C.P", "datos incorrectos","Datos registrados con éxito, puede iniciar sesión" ]
   
-  const lgnEng = ["back","Let your imagination fly... feel the code","Please enter your account information","email","password","Log_in","Have you forgotten your password?"," If you don't have an account","Register","We are more than a company",
+  const lgnEng = ["back","Breathe new life into your machine","Please enter your account information","email","password","Log_in","Have you forgotten your password?"," If you don't have an account","Register","We are more than a company",
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nihil omnis corrupti tempore iusto eius modi, inventore iste aspernatur, voluptatum, quaerat fugit libero eos? Provident odit harum amet unde sed?", "First Name", "Last Name", "Phone", "Mail", "Password","City", "Address","I accept the terms and conditions","Register", "ZIP","Incorrect data", "Data recorded successfully, you can log in"]
 
   let arrayLog=cambiarIdioma(idiomaSelect, lgnEsp, lgnEng)

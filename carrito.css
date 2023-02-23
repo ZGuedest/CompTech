@@ -1,4 +1,4 @@
-#cr_contenedor_principal #cr_comprar_pedido #cr_visa, #cr_contenedor_principal #cr_comprar_pedido #cr_paypal, #cr_contenedor_principal #cr_comprar_pedido #cr_mastercard, #cr_contenedor_principal #cr_comprar_pedido #cr_carrito, #cr_contenedor_principal #cr_caja_producto .cr_basura, #cr_contenedor_principal #cr_caja_producto .cr_corazon, #cr_contenedor_principal #cr_caja_producto .cr_carrito, * header nav #menu-iconers i {
+* header nav #menu-iconers i {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
@@ -65,6 +65,7 @@
   font-size: 45px;
   font-family: Blackadder ITC;
   padding-top: 6rem;
+  display: none;
 }
 * .btn-primary {
   background-color: #222529;
@@ -242,7 +243,9 @@ header #m-ofertas, header #m-novedades, header #frase_imaginacion, header #busca
   margin: 0rem;
 }
 #cr_contenedor_principal #cr_caja_producto .cr_basura, #cr_contenedor_principal #cr_caja_producto .cr_corazon, #cr_contenedor_principal #cr_caja_producto .cr_carrito {
-  font-size: x-large;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #222529;
 }
 #cr_contenedor_principal #cr_caja_producto input {
   height: 2rem;
@@ -251,8 +254,13 @@ header #m-ofertas, header #m-novedades, header #frase_imaginacion, header #busca
   width: 20rem;
   height: 250px;
 }
+#cr_contenedor_principal #cr_comprar_pedido #cr_carrito {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #222529;
+}
 #cr_contenedor_principal #cr_comprar_pedido #cr_precio_total {
-  color: #387373;
+  color: #222529;
 }
 #cr_contenedor_principal #cr_comprar_pedido .btn {
   background-color: #222529;
@@ -269,6 +277,8 @@ header #m-ofertas, header #m-novedades, header #frase_imaginacion, header #busca
   border: #222529 solid;
 }
 #cr_contenedor_principal #cr_comprar_pedido #cr_visa, #cr_contenedor_principal #cr_comprar_pedido #cr_paypal, #cr_contenedor_principal #cr_comprar_pedido #cr_mastercard {
+  color: #222529;
+  cursor: pointer;
   font-size: x-large;
 }
 
